@@ -12,17 +12,16 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>PriceZilla</title>
-    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <header class="header">
         <div class="header-inner">
-          <div class="container-fluid px-lg-5">
+          <div class="container-fluid">
             <nav class="navbar navbar-expand-md my-navbar">
 
                 <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-        <a class="navbar-brand" href="#"><span>
-          <img src="./assets/Pricezilla logo.png" class="img-fluid" style="width:8rem ; margin:-3px 0px 0px 0px;"></span>
+        <a class="navbar-brand logo" href="#"><span>
+          <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
         </a>
         <button class="navbar-toggler" 
                 type="button" 
@@ -31,13 +30,13 @@
                 aria-controls="navbarSupportedContent" 
                 aria-expanded="false" 
                 aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" 
@@ -49,9 +48,10 @@
                 Categories
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Laptops</a>
+                <a class="dropdown-item" href="#">Phones</a>
+                <a class="dropdown-item" href="#">Accessories</a>
+                <a class="dropdown-item" href="#">Home Appliances</a>
               </div>
             </li>
             <li class="nav-item">
@@ -61,9 +61,9 @@
               <a class="nav-link" href="#">Wishlist</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="header-btn my-2 my-sm-0" type="submit">Login</button>
-            <button class="header-btn my-2 my-sm-0" type="submit">Sign Up</button>
+          <form class="form-inline my-lg-0 login">
+            <button class="header-btn  my-sm-0" type="submit">Login</button>
+            <button class="header-btn  my-sm-0" type="submit">Sign Up</button>
           </form>
         </div>
       </nav>
@@ -71,74 +71,89 @@
           </div>
         </div>
       </header>
-    <main class="main-landing">
-        <!-- <a href="">hasjjjjbbnjbbh</a> -->
-        <section class="first-landing">
-            <div class="first-landing-1">
-                <p>Search electronic items from different platforms around you</p>
-            </div>
-            <div class="first-landing-2">
-                <div class="first-landing-2-first">
-                    <img src="img/search2.svg" alt="" class="search-icon">
-                    <input type="text" name="" id="search1">
-                </div>
-                <input type="button" value="Search" id="search2">
-            </div>
-        </section>
-        <section class="second-landing">
-            <p class="second-landing-p1">Categories</p>
-            <p class="second-landing-p2">Categories</p>
-            <p class="second-landing-p3">Categories</p>
-            <p class="second-landing-p4">Categories</p>
-            <p class="second-landing-p5">Categories</p>
-            <p class="second-landing-p6">Categories</p>
-            <p class="second-landing-p7">Categories</p>
-            <p class="second-landing-p8">Categories</p>
-        </section>
-        <section class="third-landing">
-            <div class="third-landing-1">
-                <h4>Best selling</h4>
-                <p>See more</p>
-            </div>
-            <div class="third-landing-2">
-               <div class="best-1">
-                <img src="img/2349034631374_status_edce51e05c9f4f36a731d39e2bbdd66f.jpg" alt="">
-               </div>
-                <div class="best-2">
-                    <img src="img/2349034631374_status_edce51e05c9f4f36a731d39e2bbdd66f.jpg" alt="">
-                </div>
-                <div class="best-3">
-                    <img src="img/2349034631374_status_edce51e05c9f4f36a731d39e2bbdd66f.jpg" alt="">
-                </div>
-            </div>
-        </section>
 
-        <section class="fourth-landing">
-            <div class="fourth-landing-1">
-                <h4>Promo deals</h4>
-                <p>See more</p>
-            </div>
-            <div class="fourth-landing-2">
-               <div class="promo-1">
-                <img src="img/2349034631374_status_edce51e05c9f4f36a731d39e2bbdd66f.jpg" alt="">
-               </div>
-                <div class="promo-2">
-                    <img src="img/2349034631374_status_edce51e05c9f4f36a731d39e2bbdd66f.jpg" alt="">
-                </div>
-                <div class="promo-3">
-                    <img src="img/2349034631374_status_edce51e05c9f4f36a731d39e2bbdd66f.jpg" alt="">
-                </div>
-            </div>
-        </section>
 
-        <section class="fifth-landing">
-            <img src="img/2349034631374_status_edce51e05c9f4f36a731d39e2bbdd66f.jpg" alt="">
+      <main class="container">
+
+        <section class=" hero">
+            <div class="hero-search">
+                <h1>Search household items from different platforms around you</h1>
+                <form>
+                  <input type="text" required>
+                  <button type="submit">Search</button>
+                </form>
+            </div>
         </section>
-    </main>  
+    </main>
+      
+    
 
    
 
-  
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-logo"><img src="./assets/Pricezilla logo.png" width="15%" /></div>
+
+        <div class="grid-container">
+        <div class="footer-flexbox">
+           
+           <div class="footer-grid-1 footer-grid-box">
+               <h5>Information</h5>
+               <p>About PriceZilla</p>
+               <p>Reviews</p>
+               <p>Contact - PriceZilla</p>
+               <p>Register your shop</p>
+               <p>Help Center</p>
+   
+           </div>
+           <div class="footer-grid-2 footer-grid-box ">
+               <h5>Guidelines</h5>
+               <p>Terms and Conditions</p>
+               <p>Disclaimer</p>
+               <p>Privacy Policy</p>
+               <p>Cookie Policy</p>
+               <p>Privacy Settings</p>
+           </div>
+           <div class="footer-grid-3 footer-grid-box">
+               <h5>On PriceZilla</h5>
+               <p>Themes and Campaigns</p>
+               <p>Newsroom</p>
+               <p>Articles</p>
+               <p>Shop of the year</p>
+               <p>Categories</p>
+           </div>
+       </div>
+    </div>
+        
+    <div class="news-email-flexbox">
+        <div class="newsletter">
+            <h5>Subscribe to our newsletter</h5>
+            <form>
+                <input type="email" placeholder="enter email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="email-support">
+            <div class="email-icon">
+                <i class="bi bi-envelope h1"></i>
+            </div>
+            <div class="email">
+                <h5>Email Support</h5>
+                <p>help@pricezilla.com</p>
+                <div class="footer-icons">
+                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
+                    <img src="./assets/twitter-icon.png" alt="facebook-icon"/>
+                    <img src="./assets/youtube-icon.png" alt="facebook-icon"/>
+                    <img src="./assets/instagram-icon.png" alt="facebook-icon"/>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+       </footer>
    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
