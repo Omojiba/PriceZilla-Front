@@ -280,7 +280,7 @@ main{
     gap: 62px;
     margin-top: 24px;
 }
-.category{ 
+.category-box{ 
     /* background-color: rgba(255, 124, 68, 1); */
     background-image: linear-gradient(to right, rgba(255, 124, 68, 1), rgba(225, 145, 51, 1));
     border-radius: 8px;
