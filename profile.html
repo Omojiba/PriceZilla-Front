@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/styles/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css"/>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
-        <link rel="stylesheet" type="text/css" href="./styles/login.css">
+
+    <link rel="stylesheet" type="text/css" href="./styles/profile.css">
     <title>PriceZilla</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner">
+    <header class="header"> 
+        <div class="header-inner" id="navscroll">
           <div class="container-fluid">
             <nav class="navbar navbar-expand-md my-navbar">
 
                 <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-        <a class="navbar-brand logo" href="./index.html"><span>
+        <a class="navbar-brand logo" href="#"><span>
           <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
         </a>
-        <button class="navbar-toggler" 
+        <button class="navbar-toggler slime" 
                 type="button" 
                 data-toggle="collapse" 
                 data-target="#navbarSupportedContent" 
@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" 
@@ -63,7 +63,7 @@
             </li>
           </ul>
           <form class="form-inline my-lg-0 login">
-            <button class="header-btn  my-sm-0">Login</button>
+            <button class="header-btn  my-sm-0"><a href="./login.html">Login</a></button>
             <button class="header-btn  my-sm-0"> <a href="./sign-up.html">Sign Up</a></button>
           </form>
         </div>
@@ -71,63 +71,14 @@
       
           </div>
         </div>
-      </header>
+      </header> 
 
-    <main class="container login">
-
-        <section class="login-first">
-          <h6>SIGN IN TO ENJOY GREAT OFFERS FROM PRICEZILLA</h6>
-        </section>
-
-        <section class="login-second">
-          <form action="">
-            <p class="login-second-1">Email</p>
-            <input type="email" name="email" id="email" placeholder="eg. johndoe@gmail.com" required>
-            <p class="login-second-1">Password</p>
-            <div class="login-second-1b">
-              <input type="password" name="password" id="password" required>
-              <img src="assets/icons/ant-design_eye-invisible-outlined.svg" alt="">
-            </div>
-
-            <div class="login-second-2">
-              <div class="login-second-2-first">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <small>Stay signed in</small>
-              </div>
-              <div class="login-second-2-second">
-                <a href=""><small>Forget password?</small></a>
-              </div>
-            </div>
-            <input type="submit" value="Sign In" id="submit">
-
-            <div class="login-second-3">
-              <span></span>
-              <p>OR</p>
-              <span></span>
-            </div>
-
-            <div class="login-second-4">
-              <img src="assets/icons/flat-color-icons_google.svg" alt="">
-              <a href=""><small>Continue with Google</small></a>
-              </div>
-
-              <div class="login-second-5">
-                <img src="assets/icons/logos_facebook.svg" alt="">
-                <a href=""><small>Continue with FaceBook</small></a>
-                </div>
-
-                <div class="login-second-6">
-                  <p>Not a member?</p>
-                  <a href="">Sign up here</a>
-                </div>
-          </form>
-        </section>
-
-    </main>
-    
+      <main class="container">
+        THIS IS THE PROFILE PAGE
+      </main>
 
 
-    <footer class="footer">
+      <footer class="footer">
         <div class="container">
         <div class="footer-logo"><h1>Pricezilla</h1></div>
 
@@ -215,17 +166,22 @@
 
     
   <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+  <script type="text/javascript" src="../PriceZilla-Front/scripts/index.js"></script>
   <script type="text/javascript">
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=40){
+        if($(window).scrollTop() <=20){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');
         }
       });
     });
+
+    
+
   </script>
+    
 </body>
 </html>
