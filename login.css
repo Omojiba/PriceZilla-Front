@@ -1,23 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
 .login{
     /* background-color: #DCDCDC; */
     margin-top: 35px;
    
 }
-.login a{
-    text-decoration: none;
-    color: #262322;
-}
 
 .login-first{
     width: 45%;
     margin-bottom: 48px;
-    margin: 0 27.5%;
+    margin: 0 32%;
     align-items: center;
     justify-content: center;
     padding-bottom: 35px;
@@ -33,7 +23,7 @@
 .login-second{
     width: 50%;
     margin-top: 48px;
-    margin: 0 25%;
+    margin: 0 30%;
     background: #FFFFFF;
     opacity: 0.6;
     box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.25);
@@ -74,7 +64,7 @@
     border-radius: 8px;
 }
 .login-second-1b img{
-    margin-top: 0.8rem;
+
 }
 .login-second #password{
     background: #FFFFFF;
@@ -95,7 +85,6 @@
 .login-second-2{
     width: 100%;
     display: flex;
-    margin-top: 4px;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px;
@@ -114,16 +103,14 @@
     height: 54px;
     margin-top: 32px;
     margin-bottom: 32px;
-    background-color: #FF7C44;
-    color: #F4F4F4;
+    background-color: #BBBBBB;
+    color: #FF7C44;;
     border-radius: 8px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    cursor: pointer;
-    border: 0;
 }
 .login-second-3{
     display: flex;
