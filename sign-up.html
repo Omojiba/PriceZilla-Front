@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../PriceZilla-Front/styles/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="../PriceZilla-Front/styles/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <div class="header-inner">
-          <div class="container-fluid">
+          <div class="container">
             <nav class="navbar navbar-expand-md my-navbar">
 
                 <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
@@ -63,9 +63,9 @@
               <a class="nav-link" href="">Wishlist</a>
             </li>
           </ul>
-          <form class="form-inline my-lg-0 login">
-            <button class="header-btn  my-sm-0" type="submit">Login</button>
-            <button class="header-btn  my-sm-0" type="submit">Sign Up</button>
+          <form class="form-inline my-lg-0 login-signup">
+            <button class="header-btn  my-sm-0"><a href="./login.html">Login</a></button>
+            <button class="header-btn  my-sm-0"> <a href="./sign-up.html">Sign Up</a></button>
           </form>
         </div>
       </nav>
@@ -74,8 +74,39 @@
         </div>
       </header>
 
-      <main class="container">
-<h1>THIS IS THE SIGN UP PAGE</h1>
+      <main class="register">
+        <h1>CREATE AN ACCOUNT AND ENJOY <br>THE  BENEFITS PRICEZILLA OFFERS</h1>
+        <form class="groups">
+          <div class="group">
+            <label for="">Full Name</label>
+          <input type="text" placeholder="John Doe">
+          </div>
+          <div class="group">
+            <label for="">Email</label>
+            <input type="email" placeholder="eg. johndoe@gmail.com">
+          </div>
+          <div class="group" >
+            <label for="">Password</label>
+          <input type="password" placeholder="" >
+          
+          </div>
+          <div class="sign">
+            <div class="checkbox">
+              <input type="checkbox">
+              <label for="Stay signed in" class="Stay-signed-in">Stay signed in</label>
+            </div>
+            <div class="Forget-password">Forget password?</div>
+          </div>
+          <div class="button">
+            <div class="button-text">Sign in</div>
+          </div>
+          
+          <div class="or">OR</div>
+        </form>
+       
+
+
+
       </main>
     
 
@@ -171,7 +202,7 @@
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=40){
+        if($(window).scrollTop() <=70){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');
