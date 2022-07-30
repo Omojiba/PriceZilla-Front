@@ -16,95 +16,105 @@
     <title>PriceZilla</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner">
-          <div class="container">
-            <nav class="navbar navbar-expand-md my-navbar">
+  <header class="header"> 
+    <div class="header-inner" id="navscroll">
+      <div class="container">
+        <nav class="navbar navbar-expand-md my-navbar">
 
-                <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-        <a class="navbar-brand logo" href="#"><span>
-          <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
-        </a>
-        <button class="navbar-toggler" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                 href="#" id="navbarDropdown" 
-                 role="button" 
-                 data-toggle="dropdown" 
-                 aria-haspopup="true" 
-                 aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Laptops</a>
-                <a class="dropdown-item" href="#">Phones</a>
-                <a class="dropdown-item" href="#">Accessories</a>
-                <a class="dropdown-item" href="#">Home Appliances</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Wishlist</a>
-            </li>
-          </ul>
-          <form class="form-inline my-lg-0 login-signup">
-            <button class="header-btn  my-sm-0"><a href="./login.html">Login</a></button>
-            <button class="header-btn  my-sm-0"> <a href="./sign-up.html">Sign Up</a></button>
+            <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
+    <a class="navbar-brand logo" href="./index.html"><span>
+      <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
+    </a>
+    <button class="navbar-toggler slime" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+             href="#" id="navbarDropdown" 
+             role="button" 
+             data-toggle="dropdown" 
+             aria-haspopup="true" 
+             aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Laptops</a>
+            <a class="dropdown-item" href="#">Phones</a>
+            <a class="dropdown-item" href="#">Accessories</a>
+            <a class="dropdown-item" href="#">Home Appliances</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Wishlist</a>
+        </li>
+      </ul>
+      <div class="form-inline my-lg-0 login-signup">
+        <a class="header-btn  my-sm-0" href="./login.html">Login</a>
+        <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  
+      </div>
+    </div>
+  </header> 
+
+      <main class="container">
+        <div class="form-container">
+          <h1>CREATE AN ACCOUNT AND ENJOY THE  BENEFITS PRICEZILLA OFFERS</h1>
+
+
+        <form class="sign-up-form" method="post">
+        
+        
+        <div class="form-group line-1">
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullName" id="fullName" class="form-control" placeholder="John Doe">
+        </div>
+
+        <div class="form-group line-2">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="e.g johndoe@gmail.com">
+        </div>
+        
+
+        <div class="form-group line-3">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-control">
+        </div>
+
+        <div class="form-group stay-signed-checkbox">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Stay signed in
+            </label>
+          </div>
+          <small><a>Forgot Password?</a></small>
+        </div>
+        
+          <input type="submit" name="Sign in" value="Sign up" class="sign-up-btn">
+
+          <div class="or-divider-text"><p>OR</p></div>
+        
           </form>
-        </div>
-      </nav>
-      
-          </div>
-        </div>
-      </header>
-
-      <main class="register">
-        <h1>CREATE AN ACCOUNT AND ENJOY <br>THE  BENEFITS PRICEZILLA OFFERS</h1>
-        <form class="groups">
-          <div class="group">
-            <label for="">Full Name</label>
-          <input type="text" placeholder="John Doe">
-          </div>
-          <div class="group">
-            <label for="">Email</label>
-            <input type="email" placeholder="eg. johndoe@gmail.com">
-          </div>
-          <div class="group" >
-            <label for="">Password</label>
-          <input type="password" placeholder="" >
-          
-          </div>
-          <div class="sign">
-            <div class="checkbox">
-              <input type="checkbox">
-              <label for="Stay signed in" class="Stay-signed-in">Stay signed in</label>
-            </div>
-            <div class="Forget-password">Forget password?</div>
-          </div>
-          <div class="button">
-            <div class="button-text">Sign in</div>
-          </div>
-          
-          <div class="or">OR</div>
-        </form>
        
-
+        </div>
 
 
       </main>
@@ -202,7 +212,7 @@
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=70){
+        if($(window).scrollTop() <=5){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');

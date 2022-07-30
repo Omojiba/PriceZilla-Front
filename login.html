@@ -15,8 +15,8 @@
     <title>PriceZilla</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner">
+    <header class="header"> 
+        <div class="header-inner" id="navscroll">
           <div class="container">
             <nav class="navbar navbar-expand-md my-navbar">
 
@@ -24,7 +24,7 @@
         <a class="navbar-brand logo" href="./index.html"><span>
           <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
         </a>
-        <button class="navbar-toggler" 
+        <button class="navbar-toggler slime" 
                 type="button" 
                 data-toggle="collapse" 
                 data-target="#navbarSupportedContent" 
@@ -62,16 +62,17 @@
               <a class="nav-link" href="">Wishlist</a>
             </li>
           </ul>
-          <form class="form-inline my-lg-0 login-signup">
-            <button class="header-btn  my-sm-0"><a href="./login.html">Login</a></button>
-            <button class="header-btn  my-sm-0"> <a href="./sign-up.html">Sign Up</a></button>
-          </form>
+          <div class="form-inline my-lg-0 login-signup">
+            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
+            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+          </div>
         </div>
       </nav>
       
           </div>
         </div>
-      </header>
+      </header> 
+
 
     <main class="container login">
 
@@ -219,7 +220,7 @@
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=40){
+        if($(window).scrollTop() <=5){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');
