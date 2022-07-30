@@ -511,6 +511,9 @@ gap: 10px;
 border: 1px solid #00303C;;
 border-radius: 8px;
 }
+.buttons a{
+    text-decoration: none;
+}
 .buttons .faq{
     font-weight: 400;
 font-size: 24px;
