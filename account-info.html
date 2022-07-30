@@ -29,78 +29,67 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/account-info.css" />
     <title>PriceZilla</title>
+
   </head>
   <body>
-    <header class="header">
-      <div class="header-inner" id="navscroll">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-md my-navbar">
-            <div class="account-icon">
-              <i class="bi bi-person-circle h1"></i>
-            </div>
-            <a class="navbar-brand logo" href="#"
-              ><span>
-                <img src="./assets/Pricezilla logo.png" style="width: 8rem"
-              /></span>
-            </a>
-            <button
-              class="navbar-toggler slime"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"
-                ><i class="fas fa-bars"></i
-              ></span>
-            </button>
+    <header class="header"> 
+        <div class="header-inner" id="navscroll">
+          <div class="container">
+            <nav class="navbar navbar-expand-md my-navbar">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Categories
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Laptops</a>
-                    <a class="dropdown-item" href="#">Phones</a>
-                    <a class="dropdown-item" href="#">Accessories</a>
-                    <a class="dropdown-item" href="#">Home Appliances</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Wishlist</a>
-                </li>
-              </ul>
-              <form class="form-inline my-lg-0 login">
-                <button class="header-btn my-sm-0">
-                  <a href="./login.html">Login</a>
-                </button>
-                <button class="header-btn my-sm-0">
-                  <a href="./sign-up.html">Sign Up</a>
-                </button>
-              </form>
-            </div>
-          </nav>
+                <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
+        <a class="navbar-brand logo" href="#"><span>
+          <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
+        </a>
+        <button class="navbar-toggler slime" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" 
+                 href="#" id="navbarDropdown" 
+                 role="button" 
+                 data-toggle="dropdown" 
+                 aria-haspopup="true" 
+                 aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Laptops</a>
+                <a class="dropdown-item" href="#">Phones</a>
+                <a class="dropdown-item" href="#">Accessories</a>
+                <a class="dropdown-item" href="#">Home Appliances</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Wishlist</a>
+            </li>
+          </ul>
+          <div class="form-inline my-lg-0 login-signup">
+            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
+            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+          </div>
         </div>
-      </div>
-    </header>
+      </nav>
+      
+          </div>
+        </div>
+    </header> 
+
 
     <main class="container">
       <div class="form">
@@ -261,7 +250,7 @@
       $(function () {
         var navbar = $(".header-inner");
         $(window).scroll(function () {
-          if ($(window).scrollTop() <= 20) {
+          if ($(window).scrollTop() <= 5) {
             navbar.removeClass("navbar-scroll");
           } else {
             navbar.addClass("navbar-scroll");
