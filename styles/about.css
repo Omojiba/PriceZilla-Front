@@ -47,15 +47,16 @@ body {
     padding-bottom: 90px;
 }
 
-.point .category {
+.point .categor {
     position: relative;
     margin-left: 128px;
     width: 70.56%;
     height: 80.86%;
+    /* background-color: none; */
 
 }
 
-.category h3 {
+.categor h3 {
     font-family: 'Roboto';
     position: absolute;
     font-weight: 700;
@@ -69,12 +70,12 @@ body {
     z-index: 10;
 }
 
-.category h3 span {
+.categor h3 span {
     color: #00303C;;
     /* left: 300px; */
 }
 
-.category .shapes {
+.categor .shapes {
     margin-bottom: 45px;
     position: relative;
     width: 39.9%;
@@ -82,7 +83,7 @@ body {
     /* background-color: rebeccapurple; */
 }
 
-.category .shapes .shape {
+.categor .shapes .shape {
     position: absolute;
     background-color: rgba(187, 187, 187, 1);
     border: 1px solid #ffffff;
@@ -566,7 +567,3 @@ line-height: 36px;
 
 color: #F4F4F4;
 }
-
-/* Go to shop */
-
-
