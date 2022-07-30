@@ -63,10 +63,10 @@
           <a class="nav-link" href="#">Wishlist</a>
         </li>
       </ul>
-      <form class="form-inline my-lg-0 login-signup">
-        <button class="header-btn  my-sm-0"><a href="./login.html">Login</a></button>
-            <button class="header-btn  my-sm-0"> <a href="./sign-up.html">Sign Up</a></button>
-      </form>
+      <div class="form-inline my-lg-0 login-signup">
+        <a class="header-btn  my-sm-0" href="./login.html">Login</a>
+        <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+      </div>
     </div>
   </nav>
   
@@ -80,7 +80,7 @@
 
        <!-- About Us category -->
          <section class="point"> 
-            <div class="categor">
+            <div class="category">
                 <div class="lefty">
                     <h3><span>Ab</span>out us</h3>
                     <div class="shapes">
@@ -323,7 +323,7 @@
                     We got you</h3>
                     <div class="buttons">
                         <button class="faq">FAQS</button>
-                        <button class="contact">Contact us</button>
+                       <a href="./contact.html"> <button class="contact">Contact us</button></a>
                     </div>
               </section>
 
@@ -435,7 +435,7 @@
 $(function(){
   var navbar = $('.header-inner');
   $(window).scroll(function(){
-    if($(window).scrollTop() <=40){
+    if($(window).scrollTop() <=5){
       navbar.removeClass('navbar-scroll');
     }else{
       navbar.addClass('navbar-scroll');

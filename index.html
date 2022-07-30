@@ -14,16 +14,16 @@
     <title>PriceZilla</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header-inner">
+  <header class="header"> 
+    <div class="header-inner" id="navscroll">
       <div class="container">
         <nav class="navbar navbar-expand-md my-navbar">
 
             <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-    <a class="navbar-brand logo" href="./index.html"><span>
+    <a class="navbar-brand logo" href="#"><span>
       <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
     </a>
-    <button class="navbar-toggler" 
+    <button class="navbar-toggler slime" 
             type="button" 
             data-toggle="collapse" 
             data-target="#navbarSupportedContent" 
@@ -36,7 +36,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" 
@@ -58,76 +58,115 @@
           <a class="nav-link" href="./about.html">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Wishlist</a>
+          <a class="nav-link" href="">Wishlist</a>
         </li>
       </ul>
-      <form class="form-inline my-lg-0 login-signup">
-        <button class="header-btn  my-sm-0"><a href="./login.html">Login</a></button>
-            <button class="header-btn  my-sm-0"> <a href="./sign-up.html">Sign Up</a></button>
-      </form>
+      <div class="form-inline my-lg-0 login-signup">
+        <a class="header-btn  my-sm-0" href="./login.html">Login</a>
+        <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
+      </div>
     </div>
   </nav>
   
       </div>
     </div>
-  </header>
+  </header> 
 
 
-      <main class="container content-banner">
 
-        <section class=" hero">
-            <div class="hero-search">
-                <h1>Search household items from different platforms around you</h1>
-                <form>
-                  <div class="top-form">
-                    <img src="assets/search2.svg" alt="">
-                    <input type="text" required>
-                  </div>
-                  <button type="submit">Search</button>
-                </form>
-            </div>
-        </section>
+  <main class="container ">
 
-        <!-- <section class="second-container">
-          <div class="category">Categories</div>
-          <div class="category">Categories</div>
-          <div class="category">Categories</div>
-          <div class="category">Categories</div>
-          <div class="category">Categories</div>
-          <div class="category">Categories</div>
-          <div class="category">Categories</div>
-          <div class="category">Categories</div>
-        </section> -->
+    <section class=" hero">
+        <div class="hero-search">
+            <h1>Search household items from different platforms around you</h1>
+            <form>
+              <div class="top-form">
+                <img src="assets/search2.svg" alt="">
+                <input type="text" required>
+              </div>
+              <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
 
-        <!-- <section class="third-container">
-          <div class="third-container-1">
-            <h4>Best selling</h4>
-            <p>See more</p>
-          </div>
+    <section class="second-container">
+      <div class="category-box">Categories</div>
+      <div class="category-box">Categories</div>
+      <div class="category-box">Categories</div>
+      <div class="category-box">Categories</div>
+      <div class="category-box">Categories</div>
+      <div class="category-box">Categories</div>
+      <div class="category-box">Categories</div>
+      <div class="category-box">Categories</div>
+    </section>
 
-          <div class="third-container-2">
-            <img src="assets/1 (2).jpg" alt="">
-            <img src="assets/1 (4).jpg" alt="">
-            <img src="assets/1 (7).jpg" alt="">
-          </div>
-        </section>
 
-        <section class="fourth-container">
-          <div class="fourth-container-1">
-            <h4>Promo deals</h4>
-            <p>See more</p>
-          </div>
+  
+<section class="section">
+<div class="text">
+<h2>Best Selling</h2>
+<h5>See more</h5>
+</div>
+<div class="img">
+<img src="/assets/micro 1.jpg" alt="assets">
 
-          <div class="fourth-container-2">
-            <img src="assets/1 (6).jpg" alt="">
-            <img src="assets/homerrr.jpg" alt="">
-            <img src="assets/1 (8).jpg" alt="">
-          </div>
-        </section>
-        <section class="fifth-container">
-          <img src="assets/1 (1).jpg" alt="">
-        </section> -->
-    </main>
+<img src="/assets/tv 1.jpg" alt="assets">
+
+<img src="/assets/washing machine 1.jpg" alt="assets">
+</div>
+</section>
+
+
+<div class="section">
+<div class="text">
+<h2>Promo deals</h2>
+<h5>See more</h5>
+</div>
+<div class="img">
+<img src="/assets/Cozy-Couch-PNG-File 1.jpg" alt="assets">
+
+<img src="/assets/chanderlier2 1.jpg" alt="assets">
+
+<img src="/assets/speaker2 1.jpg" alt="assets">
+</div>
+
+
+</div>
+<script>
+var i =0;
+var images = [];
+var time = 5000;
+
+//image list
+
+images[0] = '/assets/pexels-marcelo-jaboo-696407 1.jpg';
+images[1] = '/assets/pexels-tranmautritam-326503.jpg';
+
+
+
+// change img
+
+function changeImg(){
+document.slide.src=images[i];
+
+if(i < images.length -1){
+i++;
+}else{
+i =0;
+}
+setTimeout('changeImg()', time)
+}
+
+window.onload = changeImg;
+</script>
+
+<section class="img-slider">
+
+<img class="image" name="slide"  alt="img" width="100%" height="500px">
+</section>
+</main>
+
+
       
     
 

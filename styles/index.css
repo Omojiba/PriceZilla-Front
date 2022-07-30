@@ -8,17 +8,14 @@ body{
 }
 .login-signup a{
     text-decoration: none;
-    color: black
+    color: rgba(187, 187, 187, 1);
+    padding:12px 18px;
+
 }
 
 /* HEADER STYLES */
 .account-icon{
     display: none;
-}
-.header{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
 }
 .header-inner{
     width: 100%;
@@ -30,25 +27,12 @@ body{
     background-color: white;
     
 }
-.content-banner{
-    min-height:400px;
-    height:100%;
-    position: relative;
-    padding-top: 25px;
-}
-.content-banner:before{position:absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-}
+
 .nav-item .nav-link{
     display: block;
     text-transform: capitalize;
     font-weight: 500;
-    color: black;
+    color: rgba(187, 187, 187, 1);
     transition: 0.15s;
 }
     
@@ -56,24 +40,26 @@ body{
         color: rgba(255, 124, 68, 1);
 }
     
-.header-btn{
-    color: black;
+.login-signup a{
     border-radius: 8px;
     background-color: white;
     border:none;
     font-weight: 500;
     outline: none;
-    padding:7px 20px;
+    /* padding:7px 20px; */
     transition: 0.5s;
 }
     
-.header-btn:hover{
+.login-signup a:hover{
     background-color: rgba(255, 124, 68, 1);
     cursor: pointer;
+    color: white;
+
 }
 .header{
     position: relative;
     width: 100%;
+    padding-top: 15px;
 }
 .navbar-scroll{
     background-color: white;
@@ -82,9 +68,8 @@ body{
     top: 0;
     width: 100%;
     z-index: 99;
-    transition-duration: 0.6s;
+    transition-duration: 0.8s;
     box-shadow:0px 1px 10px rgba(0,0,0,0.4);
-    overflow: hidden;
     padding-top: 15px;
 }
     
@@ -129,7 +114,6 @@ body{
     .logo{
         margin-right: 3rem;
     }
-
 } */
 /* @media screen and (min-width: 328px) and (max-width: 510px){
     .account-icon{
@@ -138,7 +122,6 @@ body{
     .logo{
         margin-right: 2rem;
     }
-
 } */
 @media screen and (max-width: 328px){
     /* .account-icon{
@@ -152,7 +135,7 @@ body{
         font-size: 20px;
         margin-left: 30px;
     }
-    .header-btn{
+    .login-signup a{
         font-size: 20px;
     }
     footer{
@@ -170,7 +153,7 @@ body{
 	.header-inner{
         background-color: white!important;
 	}
-    .header-btn{
+    .login-signup a{
         font-size: 14px;
     }
 
@@ -208,20 +191,18 @@ body{
 /* main */
 main{
     min-height: calc(100vh - 211px - 58px);
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 80px;
 }
 .hero{
     width: 100%;
-    height: 60vh;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0, 0, 0, 0.8)), url(../assets/pexels-tranmautritam-326503.jpg);
+    background-image: /*linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0, 0, 0, 0.8)),*/ url(../assets/hero-bg.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 30%;
+    height:70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 24px;
     
 }
 .hero h1{
@@ -280,7 +261,7 @@ main{
     gap: 62px;
     margin-top: 24px;
 }
-.category{ 
+.category-box{ 
     /* background-color: rgba(255, 124, 68, 1); */
     background-image: linear-gradient(to right, rgba(255, 124, 68, 1), rgba(225, 145, 51, 1));
     border-radius: 8px;
@@ -291,115 +272,7 @@ main{
     text-align: center;
 
 }
-.third-container{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    
-    margin-top: 146px;
-    padding: 0px;
-    gap: 28px;
-}
-.third-container-1{
-    display: flex;
-    align-items: center;
-    margin-bottom: 28px;
-    width: 100%;
-    justify-content: space-between;
-}
-.third-container-1 h4{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 72px;
-    color: #262322;
-    text-align: center;
-}
-.third-container-1 p{
-    
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    color: #BBBBBB;
-}
-.third-container-2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-}
-.third-container-2 img{
-    width: 384px;
-    height: 385px;
-    border-radius: 8px;
-}
-.fourth-container{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 110px;
-    padding: 0px;
-    gap: 28px;
-}
-.fourth-container-1{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 28px;
-    align-items: center;
-    padding: 0px;
-    /* gap: 828px; */
-    width: 100%;
-    justify-content: space-between;
-}
-.fourth-container-1 h4{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 72px;
-    color: #262322;
-    text-align: center;
-}
-.fourth-container-1 p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    color: #BBBBBB;
-}
-.fourth-container-2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-}
-.fourth-container-2 img{
-    width: 384px;
-    height: 385px;
-    border-radius: 8px;
-    
-}
-.fifth-container{
-    height: 416.65px;
-    background: #BBBBBB;
-    border-radius: 8px;
-    margin-top: 154px;
 
-}
-.fifth-container img{
-    width: 198.03px;
-    height: 163.64px;
-    margin: 116.33px 492.97px 136.68px 492px;
-}
 @media screen and (max-width: 320px){
     
 }
@@ -742,22 +615,66 @@ main{
     .navbar-scroll{
         width: 100%;
     }
+    
+}
+
+.section{
+    margin: 120px 0;
+    width: 100%;
+    padding: 0;
+}
+
+ .img{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.text h5{
+    color: rgba(187, 187, 187, 1);
+}
+
+.img-slider{
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 
 
+@media screen and (max-width:327px) {
+
+    .img{
+        display: block;
+    }
+    img{
+        width: 250px;
+    }
+    .text1, .text{
+        margin: 0;
+        text-align: center;
+    }
+
+    .img-slider{
+        margin: 0;
+        width: 250px;
+        
+    }
+    
+}
+
+@media screen and(max-width:500px){
 
 
+    .img{
+        display:block;
 
-
-
-
-
-
-
-
-
-
+    }
+}
 
 
 
