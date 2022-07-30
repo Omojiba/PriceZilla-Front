@@ -129,7 +129,63 @@
         </section> -->
     </main>
       
-    
+<div class="container1">
+  <div class="text">
+    <h2>Best Selling</h2>
+  </div>
+  <div class="img">
+    <img src="/assets/micro 1.jpg" alt="assets">
+  
+    <img src="/assets/tv 1.jpg" alt="assets">
+  
+    <img src="/assets/washing machine 1.jpg" alt="assets">
+  </div>
+<div class="container2">
+  <div class="text1">
+    <h2>Promo deals</h2>
+  </div>
+  <div class="img">
+    <img src="/assets/Cozy-Couch-PNG-File 1.jpg" alt="assets">
+  
+    <img src="/assets/chanderlier2 1.jpg" alt="assets">
+  
+    <img src="/assets/speaker2 1.jpg" alt="assets">
+  </div>
+  
+
+</div>
+<script>
+var i =0;
+var images = [];
+var time = 3000;
+
+//image list
+
+images[0] = '/assets/pexels-marcelo-jaboo-696407 1.jpg';
+images[1] = '/assets/pexels-tranmautritam-326503.jpg';
+
+
+
+// change img
+
+function changeImg(){
+  document.slide.src=images[i];
+
+  if(i < images.length -1){
+    i++;
+  }else{
+    i =0;
+  }
+  setTimeout('changeImg()', time)
+}
+
+window.onload = changeImg;
+</script>
+
+<div class="img-slider">
+
+<img class="image" name="slide"  alt="img" width="1000px" height="500px">
+</div>
 
    
 
