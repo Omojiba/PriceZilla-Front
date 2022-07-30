@@ -8,7 +8,9 @@ body{
 }
 .login-signup a{
     text-decoration: none;
-    color: black
+    color: rgba(187, 187, 187, 1);
+    padding:12px 18px;
+
 }
 
 /* HEADER STYLES */
@@ -48,7 +50,7 @@ body{
     display: block;
     text-transform: capitalize;
     font-weight: 500;
-    color: black;
+    color: rgba(187, 187, 187, 1);
     transition: 0.15s;
 }
     
@@ -56,20 +58,21 @@ body{
         color: rgba(255, 124, 68, 1);
 }
     
-.header-btn{
-    color: black;
+.login-signup a{
     border-radius: 8px;
     background-color: white;
     border:none;
     font-weight: 500;
     outline: none;
-    padding:7px 20px;
+    /* padding:7px 20px; */
     transition: 0.5s;
 }
     
-.header-btn:hover{
+.login-signup a:hover{
     background-color: rgba(255, 124, 68, 1);
     cursor: pointer;
+    color: white;
+
 }
 .header{
     position: relative;
@@ -152,7 +155,7 @@ body{
         font-size: 20px;
         margin-left: 30px;
     }
-    .header-btn{
+    .login-signup a{
         font-size: 20px;
     }
     footer{
@@ -170,7 +173,7 @@ body{
 	.header-inner{
         background-color: white!important;
 	}
-    .header-btn{
+    .login-signup a{
         font-size: 14px;
     }
 
