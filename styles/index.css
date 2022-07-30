@@ -716,18 +716,68 @@ main{
     .navbar-scroll{
         width: 100%;
     }
+
+    
+}
+
+ .img{
+    display: flex;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.text{
+    margin-left: 120px;
+}
+ 
+.container2{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.text1{
+    margin-bottom:30px ;
+    margin-left: 120px;
+}
+
+.img-slider{
+    width: 200px;
+    margin-left: 120px;
+    margin-bottom: 50px;
 }
 
 
 
+@media screen and (max-width:327px) {
+
+    .img{
+        display: block;
+    }
+    img{
+        width: 250px;
+    }
+    .text1, .text{
+        margin: 0;
+        text-align: center;
+    }
+
+    .img-slider{
+        margin: 0;
+        width: 250px;
+        
+    }
+    
+}
+
+@media screen and(max-width:500px){
 
 
+    .img{
+        display:block;
 
-
-
-
-
-
+    }
+}
 
 
 
