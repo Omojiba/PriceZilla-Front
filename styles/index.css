@@ -81,7 +81,7 @@ body{
     top: 0;
     width: 100%;
     z-index: 99;
-    transition-duration: 0.6s;
+    transition-duration: 0.8s;
     box-shadow:0px 1px 10px rgba(0,0,0,0.4);
     overflow: hidden;
     padding-top: 15px;

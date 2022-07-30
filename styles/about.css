@@ -365,10 +365,9 @@ color: #262322;
 
 display: flex;
 width: 100%;
-gap: 72px;
-position: relative;
-align-items: flex-start;
+align-items: center;
 padding: 0px;
+justify-content: space-evenly;
 
 
 }
@@ -378,7 +377,7 @@ padding: 0px;
 width: 28.95%;
 height: auto;
 /* padding: 700px; */
-background: rgba(255, 124, 68, 1);
+background: #00303C;
 color: #F4F4F4;
 
 position: relative;
@@ -400,7 +399,7 @@ width: 100%;
 padding-left: 8px;
 margin-top: 41px;
 margin-bottom: 10px;
-color: #262322;
+color: #BBBBBB;
 }
 .frame-80 .frame-77{
     display: flex;
@@ -418,7 +417,7 @@ gap: 16px;
 .frame-77 .icons .fa{
 font-size: 24px;
 
-color: #262322;
+color: #BBBBBB;
 /* position: absolute; */
 
 }
