@@ -131,11 +131,10 @@
     margin-bottom: 32px;
 }
 .login-second-3 span{
-    height: 0.1px;
+    height: 0.2px;
     width: 45%;
-    border: 1px solid #262322;
+    background-color:   #262322;
     margin-top: 0.75rem;
-
 }
 .login-second-4{
     display: flex;
