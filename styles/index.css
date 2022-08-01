@@ -114,6 +114,7 @@ body{
     .logo{
         margin-right: 3rem;
     }
+
 } */
 /* @media screen and (min-width: 328px) and (max-width: 510px){
     .account-icon{
@@ -122,6 +123,7 @@ body{
     .logo{
         margin-right: 2rem;
     }
+
 } */
 @media screen and (max-width: 328px){
     /* .account-icon{
@@ -675,6 +677,9 @@ main{
 
     }
 }
+
+
+
 
 
 
