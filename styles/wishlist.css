@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  max-height: 100vh;
+  max-width: 1440px;
+}
+
+/* STYLING FOR THE ENTIRE HEADER SECTION 
+
+.header {
+   
+
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 5%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+} */
+
+
+/* STYLING THE LOGO 
+.wishlist-logo {
+  margin-top: 0%;
+  height: 3rem;
+  left: 90%;
+ 
+}
+
+
+/* STYLING THE NAV BAR  */
+ 
+/* .navigation ul {
+  list-style: none;
+}
+
+.header .navigation ul li {
+  float: left;
+  position: relative;
+}
+
+.navigation ul li {
+  top: 0;
+  position: absolute;
+}
+
+.header .navigation ul li a {
+  font-size: 20px;
+  color: #262322;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  transition: all 0.2s ease;
+  margin-left: 30px;
+ 
+} */
+
+/* WHEN USERS HOVER OVER THE NAV LINKS */
+
+/* .header .navigation ul li a:hover {
+  color: #ff7c44;
+} */
+
+
+/* STYLING THE DROP DOWN IN CATEGORIES */
+
+/* .header .navigation ul li ul {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  border-radius: 10px;
+  color: white;
+  display: none;
+}
+
+.header .navigation ul li ul li a {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.header .navigation ul li ul li ul {
+  position: absolute;
+  top: 0;
+  right: 300px;
+} */
+
+/* STYLING THE DROP DOWN CONTENT FOR CATEGORIES */
+
+/* .categories {
+  background-color: #ff7c44;
+  font-family: Roboto,sans-serif;
+  transition: all 3secs;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 2.8rem;
+  width: 100%;
+  z-index: 10;
+} */
+
+
+/* WHEN USES HOVER THE DROP DOWN CONTENT */
+
+/* .categories:hover {
+  border-bottom: 1px dashed gray;
+  background-color: whitesmoke;
+  transition: transform 0.7s ease-in-out;
+} */
+
+/* SETTING THE CONTENT TO DISPLAY WHEN IT'S HOVERED ON */
+/* .header .navigation ul li:hover > ul {
+  display: initial;
+} */
+
+
+
+/* STYLING THE PROFILE  */
+
+/* .profile.img {
+  width: 58px;
+  height: 58px;
+}
+.profile {
+  display: flex;
+  margin-left: 300px;
+} */
+
+
+/* STYLING THE ICONS USED (drop down & notification bell) */
+/* .fa-chevron-down {
+  vertical-align: middle;
+  justify-content: center;
+  margin: auto;
+  padding: 2px;
+}
+
+.fa-bell {
+  margin-top: 8%;
+  padding-left: 10%;
+} */
+
+/* STYLING THE BOX AROUND THE MAIN CONTENT  */
+
+#wishlist-box {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.wishlist.box {
+  width: 70vw;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 20px 20px 0px;
+}
+
+
+/* STYLING THE MAIN PARENT CONTAINER CONTENT TO FIT IN THE MIDDLE OF THE BOX */
+.box {
+  display: grid;
+  place-items: center;
+}
+
+/* REDUCED THE SIZE OF THE CART IMAGE */
+
+.wishlist.cart {
+  height: 60%;
+  opacity: 0.7;
+}
+
+/* STYLING THE MAIN TEXT IN THE BOX */
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: px;
+}
+
+/* STYLING THE P TAG TEXT IN THE BOX */
+
+p {
+  font-size: 20;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+/* STYLING THE ADD NOW BUTTON IN THE BOX */
+
+.add.now {
+  background-color: #ff7c44;
+  border-radius: 5px;
+  color: white;
+  padding: 2%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+}
+
+
+/* WHEN USERS HOVER THE ADD NOW BUTTON IN THE BOX */
+
+.add.now:hover {
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in ;
+}
+
+
+
