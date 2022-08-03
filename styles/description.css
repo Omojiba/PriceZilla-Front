@@ -261,12 +261,15 @@ color: #FFFFFF;
     background: #F4F4F4;
    padding-bottom: 94px;
    margin-bottom: 96px;
+   overflow-x: auto;
+   /* min-width: 300px; */
     
 }
 .link{
    padding-top: 48px;
 margin: 0 68px;
 padding-bottom: 50px;
+/* background-color: red; */
 }
 .link .tabs{
     display: flex;
@@ -286,15 +289,13 @@ padding-bottom: 16px;
   
 }
 .link .tabs .tab a[data-switcher]{
-    font-size: 29px;
+    font-size: 32px;
     line-height: 38px;
     /* identical to box height */
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     align-items: center;
-    /* font-weight: 700; */
 
-    /* background-color: violet; */
     
     color: #BBBBBB;
     

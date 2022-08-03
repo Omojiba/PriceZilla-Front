@@ -362,22 +362,18 @@ display: flex;
 width: 100%;
 align-items: center;
 padding: 0px;
-justify-content: space-evenly;
+gap: 72px;
+/* justify-content: space-evenly; */
 
 
 }
 .testimonials .testimonial{
-    position: absolute;
-/* width: 348px; */
-width: 28.95%;
 height: auto;
-/* padding: 700px; */
+
 background: #00303C;
 color: #F4F4F4;
-
 position: relative;
-/* left: 0px;
-top: 0px; */
+
 border: 1px solid #F4F4F4;
 border-radius: 0px 32px;
 padding: 0 8px;
