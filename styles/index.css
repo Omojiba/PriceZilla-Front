@@ -115,17 +115,19 @@ body{
 @media screen and (max-width: 426px) {
     .logo img{
         width: 6rem;
-        margin-left: 40px;
+        margin-left: 60px; 
     }
     
 }
 
 
 
-/* main */
+                                   /* main */
+
+                          /* HERO SECTION */
 main{
     min-height: calc(100vh - 211px - 58px);
-    margin-top: 20px;
+    margin-top: px;
     margin-bottom: 80px;
 }
 .hero{
@@ -284,7 +286,7 @@ main{
 }
 
 
-/* CATEGORIES BOXES */
+                                              /* CATEGORIES BOXES */
 .categories-container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -316,7 +318,6 @@ main{
 }
 @media screen and (max-width: 500px) {
     .categories-mobile .flickity-button {
-        background: red;
         width: 15px;
         height: 15px;
       } 
@@ -330,8 +331,7 @@ main{
         margin-right: 15px;
         width: 25%;
     }
-    
-    
+     
     
 }
 .carousel {
@@ -379,7 +379,9 @@ main{
     width: 100%;
 }
 
-/*         BEST SELLING SECTION     */
+
+
+                             /*         BEST SELLING SECTION     */
 .best-selling-container, .promo-deals-container{
     display: flex;
     width: 100%;
