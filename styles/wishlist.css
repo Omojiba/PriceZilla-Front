@@ -28,7 +28,6 @@ body {
   z-index: 1;
 } */
 
-
 /* STYLING THE LOGO 
 .wishlist-logo {
   margin-top: 0%;
@@ -39,7 +38,7 @@ body {
 
 
 /* STYLING THE NAV BAR  */
- 
+
 /* .navigation ul {
   list-style: none;
 }
@@ -71,7 +70,6 @@ body {
 /* .header .navigation ul li a:hover {
   color: #ff7c44;
 } */
-
 
 /* STYLING THE DROP DOWN IN CATEGORIES */
 
@@ -109,7 +107,6 @@ body {
   z-index: 10;
 } */
 
-
 /* WHEN USES HOVER THE DROP DOWN CONTENT */
 
 /* .categories:hover {
@@ -123,8 +120,6 @@ body {
   display: initial;
 } */
 
-
-
 /* STYLING THE PROFILE  */
 
 /* .profile.img {
@@ -135,7 +130,6 @@ body {
   display: flex;
   margin-left: 300px;
 } */
-
 
 /* STYLING THE ICONS USED (drop down & notification bell) */
 /* .fa-chevron-down {
@@ -156,46 +150,52 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  display: grid;
-  place-items: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;  */
+   display: grid;
+  place-items: center;  
+  
 }
 
 .wishlist.box {
   width: 70vw;
-  height: 80vh;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 20px 20px 0px;
 }
 
-
-/* STYLING THE MAIN PARENT CONTAINER CONTENT TO FIT IN THE MIDDLE OF THE BOX */
-.box {
+/* STYLING THE MAIN CHILD CONTAINER CONTENT TO FIT IN THE MIDDLE OF THE BOX */
+.content {
   display: grid;
   place-items: center;
 }
 
-/* REDUCED THE SIZE OF THE CART IMAGE */
+/* REDUCED THE SIZE & OPACITY OF THE CART IMAGE */
 
-.wishlist.cart {
+.cart {
   height: 60%;
   opacity: 0.7;
 }
 
-/* STYLING THE MAIN TEXT IN THE BOX */
+/* STYLING THE MAIN TEXT (h2) IN THE BOX */
 
-h2 {
+.empty {
   text-transform: uppercase;
   font-size: 30px;
-  line-height: px;
+  font-weight: 700;
+  color: #262322;
+  font-size: "Roboto", sans-serif;
 }
 
 /* STYLING THE P TAG TEXT IN THE BOX */
 
-p {
+.tap-here {
   font-size: 20;
   padding-top: 1%;
   padding-bottom: 5%;
+  color: rgba(38, 35, 34, 0.7);
 }
 
 /* STYLING THE ADD NOW BUTTON IN THE BOX */
@@ -210,14 +210,86 @@ p {
   border: none;
 }
 
-
 /* WHEN USERS HOVER THE ADD NOW BUTTON IN THE BOX */
 
 .add.now:hover {
   cursor: pointer;
   text-transform: uppercase;
-  transition: transform 0.3s ease-in ;
+  transition: transform 0.3s ease-in;
 }
 
 
 
+
+
+/* STYLING THE RESPONSIVENESS OF THE BOX */
+
+
+
+@media screen and (min-width: 327px) and (max-width: 440px)
+{
+  .cart {
+    height: 40%;
+  }
+
+  .empty {
+    font-size: 1em;
+  
+  }
+
+  .tap-here {
+    font-size: 0.7em;
+    text-align: center;
+  }
+
+  .add.now {
+    font-size: 0.9rem;
+    
+  }
+
+
+
+}
+
+ @media screen and (min-width: 441px) and (max-width: 600px) {
+  .empty {
+    font-size: 1.2em;
+  
+  }
+
+  .tap-here {
+    font-size: 0.7em;
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+
+  .empty {
+    font-size: 1.5em;
+  
+  }
+
+  .tap-here {
+    font-size: 0.9em;
+  }
+}
+
+  
+
+  @media screen and (min-width: 611px) and (max-width: 991px) {
+    #wishlist-box {
+      padding-right: 100px; 
+       
+
+    }
+  
+
+
+}
+
+
+/* display: flex;
+    align-items: center;
+    justify-content: center;
+ */
