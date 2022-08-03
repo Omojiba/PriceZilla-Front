@@ -2,10 +2,10 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* color: rgba(255, 255, 255, 1); */
     position: relative;
    min-height: 100vh;
@@ -26,6 +26,7 @@ body {
 main{
     margin-top: 24px;
     padding: 0 128px;
+    padding-bottom: 100px;
 }
 .pad{
     padding: 0 128px;
@@ -56,7 +57,7 @@ margin: 0;
 }
 .frame-162 .fa{
 font-size: 24px;
-/* margin-bottom: 5px; */
+margin-bottom: 5px;
 /* background-color: firebrick; */
 /* position: absolute; */
 }
@@ -136,7 +137,7 @@ position: relative;
 }
 .hoover p{
     font-weight: 700;
-font-size: 47px;
+font-size: 48px;
 line-height: 72px;
 
 color: #131313;
@@ -247,7 +248,7 @@ background: #FF7C44;
 border-radius: 8px;
 
 font-weight: 400;
-font-size: 20px;
+font-size: 23px;
 line-height: 36px;
 border: none;
 color: #FFFFFF;
@@ -259,6 +260,7 @@ color: #FFFFFF;
 .information{
     background: #F4F4F4;
    padding-bottom: 94px;
+   margin-bottom: 96px;
     
 }
 .link{
@@ -430,4 +432,82 @@ line-height: 30px;
 
 
 color: rgba(38, 35, 34, 0.6);
+}
+
+.related-products{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    text-align: center;
+    position: relative;
+    
+}
+.related-products .text{
+  
+   justify-content: center;
+}
+.related-products .text p{
+    margin: 0;
+    font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+align-items: center;
+color: #262322;
+padding-bottom: 16px;
+border-bottom: 5px solid #FF7C44;
+}
+
+.related-products .products{
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    position: relative;
+    align-items: flex-start;
+  
+  
+}
+.related-products .products .relate{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+gap: 17px;
+   
+}
+.relate img{
+    height: 100%;
+    border-radius: 10px;
+   
+}
+.relate .frame-200{
+    text-transform: uppercase;
+   gap: 4px;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: flex-start;
+}
+.frame-200 h5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    margin: 0;
+    text-align: center;
+    
+    color: #131313;
+}
+.frame-200 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    margin: 0;
+    color: #131313;
 }
