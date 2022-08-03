@@ -330,24 +330,14 @@ body {
 /* Testimonials */
 
 .testimonial-row{
-    display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-/* background-color: red; */
 gap: 24px;
 margin-bottom: 125px;
-position: relative;
 }
 .testimonial-row .frame-81{
-    display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 8px;
+text-align: center;
 }
 .testimonial-row .frame-81 p{
-    font-weight: 400;
+font-weight: 400;
 font-size: 24px;
 line-height: 36px;
 color: #262322;
@@ -360,112 +350,53 @@ color: #262322;
 }
 
 .testimonials{
-    /* background-color: red; */
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+column-gap: 5rem;
+margin-top: 50px;
 
-
-display: flex;
-width: 100%;
-align-items: center;
-padding: 0px;
-justify-content: space-evenly;
 
 
 }
 .testimonials .testimonial{
-    position: absolute;
-/* width: 348px; */
-width: 28.95%;
-height: auto;
-/* padding: 700px; */
 background: #00303C;
-color: #F4F4F4;
-
-position: relative;
-/* left: 0px;
-top: 0px; */
-border: 1px solid #F4F4F4;
+color: #BBBBBB;
+padding: 40px 0 0px 10px;
 border-radius: 0px 32px;
-padding: 0 8px;
-}
- .testimonial .frame-80{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 18px;
-position: relative;
-/* position: absolute; */
-width: 100%;
-padding-left: 8px;
-margin-top: 41px;
-margin-bottom: 10px;
-color: #BBBBBB;
-}
-.frame-80 .frame-77{
-    display: flex;
-flex-direction: column;
-position: relative;
-align-items: flex-start;
-padding: 0px;
-width: 100%;
-gap: 16px;
-}
-.frame-80 .frame-77 .icons{
-   position: relative;
-  
-}
-.frame-77 .icons .fa{
-font-size: 24px;
-
-color: #BBBBBB;
-/* position: absolute; */
+height: 40vh;
 
 }
-
-
-.frame-80 .frame-77 p{
-    width: 100%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.testimonial .testimony{
     font-size: 24px;
-    line-height: 36px;  
 }
+
 .frame-79{
-    display: flex;
+display: flex;
 flex-direction: row;
 align-items: center;
-padding: 0px;
 gap: 12px;
-
 
 }
 .frame-79 .frame-4{
-    width: 64px;
-height: 64px;
-border-radius: 200px;
+ 
 }
 .frame-4 img{
-    width: 64px;
-    height: 64px;
-    border-radius: 200px;
+    margin-bottom: 5px;
 }
 .frame-78{
-    display: flex;
+display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
-gap: 4px;
+padding-top: 10px;
+gap: 3px;
 }
 .frame-78 h4{
-    font-weight: 400;
+font-weight: 400;
 font-size: 20px;
-line-height: 30px;
 }
 .frame-78 p{
-    font-weight: 400;
+font-weight: 400;
 font-size: 16px;
-line-height: 24px;
 } 
 
 /* Testimonials Ends*/
@@ -534,13 +465,16 @@ border: none;
 
 /* Go to shop */
 .shop{
-    /* background-color: red; */
-    /* background: rgba(255, 124, 68, 1); */
-position: relative;
-/* width: 1184px; */
+
+background-image: url(../assets/tele\ 1.png);
+background-size: cover;
+background-repeat: no-repeat;
 border: 1px solid #F4F4F4;
 border-radius: 0px 50px;
 height: 274px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .shop img{
     width: 100%;
@@ -548,16 +482,8 @@ height: 274px;
 border-radius: 0px 50px;
 }
 .shop button{
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
 padding: 12px 20px;
-gap: 10px;
-position: absolute;
-left: 30.66%;
-top: 55.5%;
-
-border: 0;
+border: none;
 background:  rgba(255, 124, 68, 1);
 border-radius: 8px;
 }

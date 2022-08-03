@@ -74,9 +74,13 @@
     </div>
   </header> 
 
-      <main class="container">
+
+      <main class="container main-container">
         <div class="form-container">
-          <h1>CREATE AN ACCOUNT AND ENJOY THE  BENEFITS PRICEZILLA OFFERS</h1>
+          <div class="form-header-text">
+          <h3>CREATE AN ACCOUNT AND ENJOY THE  BENEFITS PRICEZILLA OFFERS</h3>
+          <div class="last-line">  <p>Already a member? <a href="./login.html">Sign in here</a></p></div>
+        </div>
 
 
         <form class="sign-up-form" method="post">
@@ -84,7 +88,7 @@
         
         <div class="form-group line-1">
           <label for="fullName">Full Name</label>
-          <input type="text" name="fullName" id="fullName" class="form-control" placeholder="John Doe">
+          <input type="text" name="fullName" id="fullName" class="form-control" placeholder="John Doe" >
         </div>
 
         <div class="form-group line-2">
@@ -95,22 +99,38 @@
 
         <div class="form-group line-3">
           <label for="password">Password</label>
+        <div class="toggle-password">
           <input type="password" name="password" id="password" class="form-control">
+          <i class="bi bi-eye-slash visibility-icon"></i>
+          </div>
+        
         </div>
 
-        <div class="form-group stay-signed-checkbox">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Stay signed in
-            </label>
-          </div>
-          <small><a>Forgot Password?</a></small>
+        <div class="form-group mb-4 form-check">
+          <input type="checkbox" class="form-check-input" id="rememberMe">
+          <label class="form-check-label" for="rememberMe">Remember me</label>
         </div>
         
           <input type="submit" name="Sign in" value="Sign up" class="sign-up-btn">
 
-          <div class="or-divider-text"><p>OR</p></div>
+          <div class="or-divider-text">
+            <span></span>
+            <p>OR</p> 
+            <span></span>
+          </div>
+
+          <button>
+            <img src="assets/icons/flat-color-icons_google.svg" alt="">
+            Continue with Google
+          </button>
+          <button>
+            <img src="assets/icons/logos_facebook.svg" alt="">
+            Continue with Facebook
+          </button>
+
+        <div class="last-line">  <p>Already a member? <a href="./login.html">Sign in here</a></p></div>
+
+          
         
           </form>
        
@@ -212,12 +232,31 @@
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=5){
+        if($(window).scrollTop() <=15){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');
         }
       });
+    });
+  </script>
+  <script>
+    const visibilityIcon = document.querySelector(".visibility-icon");
+    const passwordInput = document.querySelector(".toggle-password input");
+
+    var passwordVisible = true;
+
+
+    visibilityIcon.addEventListener('click', function() {
+      if (passwordVisible){
+        passwordInput.setAttribute('type', 'text');
+        visibilityIcon.setAttribute('class', "bi-eye");
+      }else{
+        passwordInput.setAttribute('type', 'password')
+        visibilityIcon.setAttribute('class', 'bi-eye-slash')
+      }
+      passwordVisible = !passwordVisible
+
     });
   </script>
 </body>
