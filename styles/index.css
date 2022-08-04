@@ -549,7 +549,7 @@ main{
 
 
 
-/* FOOTER STYLING */
+/* FOOTER STYLING FOR DESKTOP / TABLET */
 
 
 .footer{
@@ -558,24 +558,24 @@ main{
     color: white; 
 }
 .footer-logo{
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     margin-bottom: 50px;
 }
 .footer-flexbox{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 25%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.footer-list{
     width: 100%;
 }
-.email{
-    overflow: hidden;
+.footer-flexbox .guidelines{
+    padding-left: 70px;
 }
-.grid-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 50px;
+.footer-list p, .email p{
+    font-size: 16px;
 }
 .news-email-flexbox{
     display: flex;
@@ -584,14 +584,18 @@ main{
 }
 .email-support{
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap:40px;
 }
 .email-icon{
-    margin-bottom: 40px;
+    font-size: 34px;
+    transform: translateY(-10px);
 }
-.email h5{
-    font-weight: 700;
+.footer-icons img{
+    width: 20px;
+    height: 20px;
+}
+.spaced-icon{
+    margin-left: 15px;
 }
 .newsletter form input{
     padding: 1rem 2rem;
@@ -606,331 +610,107 @@ main{
     border: none;
     background-color: rgba(255, 124, 68, 1);
 }
-.footer-icons img{
-    margin-left: 40px;
-    height: 30px;
-    width: 30px;
-}
-.footer-icons{
-    display: flex;
-    margin-right: 50px;
-    transform: translateX(-40px);
-}
-.email-support-mobile{
+.mobile-footer{
     display: none;
 }
 
-@media screen and (min-width:991px) and (max-width: 1200px){
-    .newsletter form button, .newsletter form input{
-        padding: 0.7rem 1rem
-
-    }
-    .footer-icons{
-        margin-right: 20px;
-    }
-    .footer-icons img{
-        width: 25px;
-        height: 25px;
-    }
-    .footer-logo img{
-        width: 20%;
-    }
+@media screen and (max-width: 992px) {
     .newsletter form input{
-        width: 20rem;
+        width: 20rem
     }
-}
-@media screen and (max-width: 991px){
-    .newsletter form input{
-        width: 15rem;
-    }
-    .email-icon i{
-        font-size: 30px;
-        padding-bottom: 30px;
-    }
-    .news-email-flexbox{
-        gap: 20px;
-    }
-    .footer-icons{
-        margin-right: 10px;
-    }
-    .footer-icons img{
-        width: 18px;
-        height: 18px;
-    }
-    .footer-logo img{
-        width: 30%;
-    }
-}
-@media only screen and (width: 540px) {
-    .newsletter form input{
-        width: 8rem;
-        border: 1px solid red;
-        position: relative;
-    }
-    .email-support-mobile{
-        margin-left: 20px;
-        position: absolute;
-        transform: translateX(50px);
-    }
-    
-}
-@media screen and (min-width: 500px) and (max-width: 768px){
-    .newsletter form input{
-        width: 13rem;
-        padding: 0.5rem 0.7rem;
-        font-size: 14px;
-        
-    }
-    .newsletter form button{
-        padding: 0.5rem 0.2rem;
-        font-size: 14px;
-        position: absolute;
-    }
-    .footer-icons{
-        margin-right: 10px;
-        transform: translateX(px);
-        
-        
-    }
-    .footer-icons img{
-        width: 18px;
-        height: 18px;
-    }
-    .footer-list h1{
-        font-size: smaller;   
-    }
-    .footer-list p{
-        font-size: 14px;
-    }
-    .email-support-mobile .email-icon{
-        transform: translateY(-15px);
-        font-size: 18px;
-    }
-    .footer-logo img{
-        width: 30%;
-    }
-
-}
-@media screen and (max-width: 479px){
     .email-support{
-        display: none;
-    }
-    .footer-flexbox .email-support-mobile{
-        display: block;
-        display: flex;
-        align-items: center;
+        gap: 20px
     }
     .footer-flexbox{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 50px;
-        row-gap: 20px;
+        gap: 0;
+        justify-content: space-evenly;
     }
-    .email-icon{
-        transform: translateY(-15px);
-    }
-    .email-icon img{
-        width: 18px;
-        height: 18px;
-    }
-    .news-email-flexbox{
-        padding-left: 50px;
-        width: 100%;
-    }
-    .newsletter form input{
-        width: 18rem;
-    }
-    .newsletter h5{
-        text-align: center;
-    }
-    .footer-icons{
-        margin: 0;
-        position: absolute;
-    }
-    .footer-icons img{
-        width: 20px;
-        height: 20px;
-        margin-left: 2px;
-    }
-    .footer-icons .spaced-icon{
-        margin-left: 10px;
-    }
-}
-
-@media screen and (max-width: 425px){
-    .email-support{
-        display: none;
-    }
-    .email-support-mobile{
-        margin-top: 120px;
-        gap: 20px;
-        transform: translateY(30px);
-        transform: translateX(170px);
-        position: absolute;
-        margin-bottom: 30px;
-    }
-    .footer-flexbox{
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        padding-left: 30px;
-        row-gap: 20px;
-    }
-    .footer-flexbox  .guidelines{
+    .guidelines{
         padding-left: 0;
     }
-    .email-icon{
-        transform: translateY(0px);
-    }
-    .email-support-mobile .email-icon img{
-        width: 12px;
-        height: 12px;
-    }
-    .news-email-flexbox{
-        padding-left: 20px;
-        width: 100%;
-    }
-    .newsletter form input{
-        width: 15rem;
-        padding: 0.7rem 0.8rem;
-    }
-    .newsletter h5{
-        text-align: center;
-    }
-    .newsletter{
-        padding: 0px;
-        margin: auto;
-    }
-    .footer-flexbox h5{
-        font-size: 18px;
-    }
-    .footer-flexbox p{
-        font-size: 12px;
-    }
-    .guidelines{
-        padding-left: 40%;
-    }
-    .newsletter form button{
-        padding: 0.7rem 0.5rem;
+    .on-pricezilla{
+        padding-left: 40px;
     }
 }
 
-@media screen and (max-width: 376px){
-    .email-support{
-        display: none;
-    }
-    .email-support-mobile{
-        display: block;
-        display: flex;
-        align-items: center;
-        transform: translateY(30px);
-        transform: translateX(170px);
-        position: absolute;
-        margin-bottom: 30px;
-        
-    }
-    .slime span i{
-        margin-left: 20px;
-    }
-    .email-support-mobile .email{
-        padding-right: 15px;
-    }
-    .email-support-mobile .email-icon i{
-        font-size: 20px;
-    }
-    .email-support-mobile .footer-icons{
-        margin-right: 0px;
-        transform: translateX(3px);
-    }
-    .email-support-mobile .footer-icons img{
-        width: 15px;
-        height: 15px;
-    }
-    .footer-flexbox{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 0px;
-        row-gap: 20px;
-    }
-    .email-icon{
-        transform: translateY(0px);
-    }
-    .email-support-mobile .email-icon img{
-        width: 10px;
-        height: 10px;
-    }
-    .news-email-flexbox{
-        padding-left: 10px;
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
     .newsletter form input{
-        width: 14rem;
-        padding: 0.7rem 0.8rem;
-    }
-    .newsletter h5{
-        text-align: center;
-    }
-    .newsletter{
-        padding: 0px;
-    }
-    .footer-flexbox h5{
-        font-size: 16px;
-    }
-    .footer-flexbox p{
-        font-size: 14px;
-    }
-    .guidelines{
-        padding-left: 10%;
-    }
-    
-    .newsletter form button{
-        padding: 0.7rem 0.5rem;
-    }
-}
-
-@media screen and (max-width: 321px){
-    .footer-flexbox .email-support-mobile{
-        transform: translateY(0px);
-        transform: translateX(140px);
-        position: absolute;
-        gap: 0;
-        margin-bottom: 40px;
-    }
-    .email-support-mobile .email p{
-        width: fit-content;
-    }
-    .footer-flexbox{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 0px;
-        row-gap: 20px;
-    }
-    .email-support-mobile .footer-icons{
-        margin-right: 0;
-        transform: translateX(0px);
-    }
-    .email{
-        padding-left: 10px;
-    }
-    .email-support-mobile .footer-icons img{
-        margin-left: 0px; 
-    }
-    .email-support-mobile .footer-icons .spaced-icon{
-        margin-left: 15px;
-    }
-    .newsletter form input{
-        width: 12rem;
-        padding: 0.7rem 0.8rem;
-    }
-    .newsletter form button{
-        font-size: 14px;
+        width: 13rem;
         padding: 0.8rem 0.5rem;
     }
-    .navbar-scroll{
-        width: 100%;
+    .email-icon{
+        font-size: 24px;
+    }
+    .newsletter form button{
+        padding: 0.8rem 0.7rem;
+        border-radius: 0px 10px 10px 0px ;
     }
     
 }
 
+
+/* FOOTER STYLING FOR MOBILE VIEW */
+@media screen and (max-width: 515px) {
+    .desktop-footer{
+        display: none;
+    }
+    .mobile-footer{
+        width: 100%;
+        display: block;
+    }
+    .footer-flexbox1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    .footer-flexbox2{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    .newsletter{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .newsletter form input{
+        width: 70%;
+    } 
+}
+@media screen and (max-width: 425px) {
+    .footer-flexbox1, .footer-flexbox2{
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width: 380px) {
+    .email-support{
+        gap: 10px
+    }
+    .mobile-footer p{
+        font-size: 13px;
+    }
+    .email-icon{
+        font-size: 20px;
+        transform: translateX(-10px);
+    }
+}
+@media screen and (max-width: 341px) {
+    .newsletter form input{
+        width: 60%;
+    }
+    .email-support{
+        gap: 0px;
+    }
+    .footer-icons img{
+        width: 16px;
+        height: 16px;
+    }
+    
+}
 
 
 

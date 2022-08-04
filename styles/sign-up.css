@@ -166,9 +166,9 @@ footer{
         
     }
     .or-divider-text span{
-    height: 0.2px;
+    height: 0.1px;
     width: 45%;
-    background-color:   rgba(38, 35, 34, 0.4);
+    border: 0.5px solid rgba(38, 35, 34, 0.4);
     margin-top: 0.75rem;
     }
     .sign-up-form button{
