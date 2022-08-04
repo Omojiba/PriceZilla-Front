@@ -6,14 +6,9 @@
 body{
     font-family: 'Roboto' sans-serif;
 }
-.login-signup a{
-    text-decoration: none;
-    color: black;
-    padding:12px 18px;
 
-}
 
-/* HEADER STYLES */
+                                                        /* HEADER STYLES */
 .account-icon{
     display: none;
 }
@@ -21,6 +16,12 @@ body{
     width: 28px;
     height: 28px;
     border-radius: 50%;
+}
+.login-signup a{
+    text-decoration: none;
+    color: black;
+    padding:12px 18px;
+
 }
 .header-inner{
     width: 100%;
@@ -172,7 +173,6 @@ body{
                           /* HERO SECTION */
 main{
     min-height: calc(100vh - 211px - 58px);
-    margin-top: px;
     margin-bottom: 80px;
 }
 .hero{
@@ -651,28 +651,50 @@ main{
         gap: 20px;
     }
     .footer-icons{
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .footer-icons img{
-        width: 25px;
-        height: 25px;
+        width: 18px;
+        height: 18px;
     }
     .footer-logo img{
         width: 30%;
     }
 }
-
-@media screen and (min-width: 500px) and (max-width: 768px){
+@media only screen and (width: 540px) {
     .newsletter form input{
         width: 8rem;
+        border: 1px solid red;
+        position: relative;
+    }
+    .email-support-mobile{
+        margin-left: 20px;
+        position: absolute;
+        transform: translateX(50px);
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 768px){
+    .newsletter form input{
+        width: 13rem;
         padding: 0.5rem 0.7rem;
+        font-size: 14px;
+        
     }
     .newsletter form button{
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 0.2rem;
+        font-size: 14px;
+        position: absolute;
     }
     .footer-icons{
         margin-right: 10px;
-        transform: translateX(-20px);
+        transform: translateX(px);
+        
+        
+    }
+    .footer-icons img{
+        width: 18px;
+        height: 18px;
     }
     .footer-list h1{
         font-size: smaller;   
@@ -680,24 +702,23 @@ main{
     .footer-list p{
         font-size: 14px;
     }
-    .email-icon{
+    .email-support-mobile .email-icon{
         transform: translateY(-15px);
+        font-size: 18px;
     }
     .footer-logo img{
         width: 30%;
     }
 
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 479px){
     .email-support{
         display: none;
     }
-    .email-support-mobile{
+    .footer-flexbox .email-support-mobile{
         display: block;
         display: flex;
         align-items: center;
-        gap: 20px;
-        transform: translateY(-60px);
     }
     .footer-flexbox{
         display: grid;
@@ -724,14 +745,15 @@ main{
     }
     .footer-icons{
         margin: 0;
+        position: absolute;
     }
     .footer-icons img{
         width: 20px;
         height: 20px;
         margin-left: 2px;
     }
-    .spaced-icon{
-        margin-left: 0;
+    .footer-icons .spaced-icon{
+        margin-left: 10px;
     }
 }
 
@@ -740,12 +762,12 @@ main{
         display: none;
     }
     .email-support-mobile{
-        display: block;
-        display: flex;
-        align-items: center;
+        margin-top: 120px;
         gap: 20px;
-        transform: translateY(-65px);
-        padding-left: 20%;
+        transform: translateY(30px);
+        transform: translateX(170px);
+        position: absolute;
+        margin-bottom: 30px;
     }
     .footer-flexbox{
         display: grid;
@@ -753,8 +775,11 @@ main{
         padding-left: 30px;
         row-gap: 20px;
     }
+    .footer-flexbox  .guidelines{
+        padding-left: 0;
+    }
     .email-icon{
-        transform: translateY(-10px);
+        transform: translateY(0px);
     }
     .email-support-mobile .email-icon img{
         width: 12px;
@@ -765,7 +790,7 @@ main{
         width: 100%;
     }
     .newsletter form input{
-        width: 17rem;
+        width: 15rem;
         padding: 0.7rem 0.8rem;
     }
     .newsletter h5{
@@ -773,6 +798,7 @@ main{
     }
     .newsletter{
         padding: 0px;
+        margin: auto;
     }
     .footer-flexbox h5{
         font-size: 18px;
@@ -796,7 +822,10 @@ main{
         display: block;
         display: flex;
         align-items: center;
-        transform: translateY(-65px);
+        transform: translateY(30px);
+        transform: translateX(170px);
+        position: absolute;
+        margin-bottom: 30px;
         
     }
     .slime span i{
@@ -810,6 +839,7 @@ main{
     }
     .email-support-mobile .footer-icons{
         margin-right: 0px;
+        transform: translateX(3px);
     }
     .email-support-mobile .footer-icons img{
         width: 15px;
@@ -822,7 +852,7 @@ main{
         row-gap: 20px;
     }
     .email-icon{
-        transform: translateY(-10px);
+        transform: translateY(0px);
     }
     .email-support-mobile .email-icon img{
         width: 10px;
@@ -833,7 +863,7 @@ main{
         width: 100%;
     }
     .newsletter form input{
-        width: 15rem;
+        width: 14rem;
         padding: 0.7rem 0.8rem;
     }
     .newsletter h5{
@@ -858,11 +888,12 @@ main{
 }
 
 @media screen and (max-width: 321px){
-    .email-support-mobile{
-        padding-left: 0px;
-        padding-right: 0px;
-        gap: 0px;
-        transform: translateY(-75px);
+    .footer-flexbox .email-support-mobile{
+        transform: translateY(0px);
+        transform: translateX(140px);
+        position: absolute;
+        gap: 0;
+        margin-bottom: 40px;
     }
     .email-support-mobile .email p{
         width: fit-content;
@@ -881,9 +912,7 @@ main{
         padding-left: 10px;
     }
     .email-support-mobile .footer-icons img{
-        margin-left: 0px;
-        
-        
+        margin-left: 0px; 
     }
     .email-support-mobile .footer-icons .spaced-icon{
         margin-left: 15px;
