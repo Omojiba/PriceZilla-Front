@@ -4,18 +4,24 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Roboto' sans-serif;
+}
+
+
+                                                        /* HEADER STYLES */
+.account-icon{
+    display: none;
+}
+.account-icon img{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
 }
 .login-signup a{
     text-decoration: none;
-    color: rgba(187, 187, 187, 1);
+    color: black;
     padding:12px 18px;
 
-}
-
-/* HEADER STYLES */
-.account-icon{
-    display: none;
 }
 .header-inner{
     width: 100%;
@@ -31,8 +37,7 @@ body{
 .nav-item .nav-link{
     display: block;
     text-transform: capitalize;
-    font-weight: 500;
-    color: rgba(187, 187, 187, 1);
+    color: black;
     transition: 0.15s;
 }
     
@@ -46,14 +51,14 @@ body{
     border:none;
     font-weight: 500;
     outline: none;
-    /* padding:7px 20px; */
+     
     transition: 0.5s;
 }
     
 .login-signup a:hover{
-    background-color: rgba(255, 124, 68, 1);
+     background-color: rgba(255, 124, 68, 1); 
     cursor: pointer;
-    color: white;
+     color: white; 
 
 }
 .header{
@@ -72,64 +77,22 @@ body{
     box-shadow:0px 1px 10px rgba(0,0,0,0.4);
     padding-top: 15px;
 }
+.logo img{
+    width: 9rem;
+}
     
-/* @media  (min-width: 767px) and (max-width: 775px){
-    .login{
-        padding-right: 10px;
-    
-    }
-    .nav-link{
-        font-size: 10px;
-    }
-} */
 @media screen and (max-width: 767px ){
     .account-icon{
         display: block;
     }
-    /* main{
-        margin: 0 20px 60px 20px;
-        
-    } */
     
 }
 @media only screen and (min-width: 768px){
-    /* main{
-        margin: 0 60px 80px 60px;
-    } */
-    /* .logo{
-        margin-left: 40px; 
-    }
-    .login{
-        padding-right: 30px;
-    } */
     .nav-link{
         font-size: 14px;
     }
 
 }
-/* @media screen and (min-width: 511px) and (max-width: 613px){
-    .account-icon{
-        margin-right: 6rem
-    }
-    .logo{
-        margin-right: 3rem;
-    }
-
-} */
-/* @media screen and (min-width: 328px) and (max-width: 510px){
-    .account-icon{
-        margin-right: 3rem
-    }
-    .logo{
-        margin-right: 2rem;
-    }
-
-} */
-@media screen and (max-width: 328px){
-    /* .account-icon{
-        margin-right: 2rem;
-    } */
-} 
 @media only screen and (min-width:1200px){
 	.nav-item > .nav-link{
         padding: 5px 10px !important;
@@ -143,12 +106,6 @@ body{
     footer{
         font-size: 20px;
     }
-    /* .login{
-        padding-right: 120px;
-    }
-    .logo{
-        margin-left: 120px;
-    } */
 }
 
 @media only screen and (max-width:992px){
@@ -160,45 +117,67 @@ body{
     }
 
 }
-@media screen and (min-width: 775px) and (max-width: 913px){
-    /* .logo{
-        margin-left: 20px;
-    }
-    .login{
-        padding-right: 20px;
-    }
-    main{
-        margin: 0 30px 60px 30px;
-    } */
-}
-@media screen and (max-width: 320px){
-    .slime{
-        padding-left: 20px;
-        display: flex;
-        justify-content: end;
-    }
-    .slime span i{
-        margin-left: 20px;
-    }
-}
-@media screen and (max-width: 425px) {
-    .account-icon{
-        margin-left: 10px;
+@media screen and (max-width: 426px) {
+    .logo img{
+        width: 6rem;
+        margin-left: 50px; 
     }
     
 }
 
+                       /* IMPORTANT STYLING FOR AUTHENTICATED USER NAVBAR */
+.profile-notification{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+.profile-notification a{
+  border-radius: 8px;
+  background-color: white;
+  border:none;
+  font-weight: 500;
+  outline: none;
+  transition: 0.5s;
+  color: black;
+  font-size: 20px;
+}
+
+.profile-notification img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+  
+.profile-notification a:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-notification{
+    display: none;
+  }
+
+}
+@media screen and (width: 768px) {
+    .profile-notification{
+        gap: 30px;
+        font-size: 16px;
+    }
+    
+  }
 
 
-/* main */
+                                   /* main */
+
+                          /* HERO SECTION */
 main{
     min-height: calc(100vh - 211px - 58px);
-    margin-top: 20px;
     margin-bottom: 80px;
 }
 .hero{
     width: 100%;
-    background-image: /*linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0, 0, 0, 0.8)),*/ url(../assets/hero-bg.jpg); 
+    background-image:  url(../assets/hero-bg.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     height:70vh;
@@ -225,26 +204,26 @@ main{
     width: 100%;
     display: flex;
     align-items: center;
-    height: 73.48px;
     gap: 16px;
     justify-content: center;
 }
-.top-form{
-    width: 70%;
+.hero-search .input-search-box{
     display: flex;
-    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
     border-radius: 8px;
-    margin: 0 10px;
+    padding-left: 15px;
+    height: 4rem;
+    width: 60%;
 }
-.top-form img{
-    height: 25.33px;
-    width: 24.17px;
-    margin: 25px 20px 0;
+.input-search-box i{
+    font-size: 20px;
+    color: gray;
 }
+
 .hero-search input{
-    width: 90%;
-    height: 73.48px;
-    border-radius: 8px;
+    width: 100%;
     padding: 0 20px;
     border: none;
     margin-right: 0px;
@@ -252,19 +231,183 @@ main{
 }
 .hero-search button{
     width: 20%;
-    height: 72px;
+    height: 4rem;
     border-radius: 8px;
     border: none;
     background-color: rgba(255, 124, 68, 1);
     color: white;
     font-size: 20px;
 }
-.second-container{
+@media screen and (max-width: 1200px) {
+    .hero h1{
+        font-size: 45px;
+    }
+    
+}
+@media screen and (max-width: 992px) {
+    .hero h1{
+        font-size: 35px;
+    }
+    .hero-search .input-search-box{
+        width: 80%
+    }
+    .hero-search{
+        width: 80%;
+    }
+    .hero{
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero h1{
+        font-size: 32px;
+    }
+    .hero-search .input-search-box{
+        height: 3.5rem;
+    }
+    .hero-search button{
+        height: 3.5rem;
+        width: 30%;
+    }
+    .hero-search{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 426px) {
+    .hero h1{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .hero-search .input-search-box{
+        height: 3.2rem;
+    }
+    .hero-search button{
+        height: 3.2rem;
+        width: 30%;
+        font-size: 14px;
+    }
+    .hero-search{
+        width: 90%;
+    }
+    .hero-search form{
+        gap:12px
+    }
+    .hero{
+        background-position: 25% 15%;
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 376px) {
+    .hero h1{
+         font-size: 21px;
+    }
+    .hero-search{
+        width: 95%;
+    }
+    .hero-search .input-search-box{
+        height: 3rem;
+    }
+    .hero-search button{
+        height: 3rem;
+        width: 35%
+    }
+    .hero-search .input-search-box i{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 322px) {
+    .hero-search{
+        width: 98%;
+    }
+    .hero-search .input-search-box, .hero-search button{
+        height: 2.5rem;
+    }
+    .hero h1{
+        font-size: 19px;
+    }
+    
+}
+
+
+                                              /* CATEGORIES BOXES */
+.categories-container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 62px;
+    gap: 3%;
     margin-top: 24px;
 }
+.categories-mobile{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .categories-container{
+        gap: 2%;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .category-box{
+        padding: 3px ;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .categories-container{
+        display: none;
+    }
+    .categories-mobile{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .categories-mobile .flickity-button {
+        width: 15px;
+        height: 15px;
+      } 
+      .categories-mobile .carousel-cell{
+        width: 25%;
+        margin-right: 20px;
+      }
+}
+@media screen and (max-width: 400px) {
+    .categories-mobile .carousel-cell{
+        margin-right: 15px;
+        width: 25%;
+    }
+     
+    
+}
+.carousel {
+    background: white;
+    
+}
+.categories-mobile .flickity-button {
+    background: white;
+    width: 20px;
+    height: 20px;
+  } 
+.carousel-cell {
+    width: 20%;
+    height: 50px;
+    margin: 15px 35px 15px 0;
+    background: rgba(255, 124, 68, 1);
+    border-radius: 8px;
+}
+  
+.category-mobile{
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .category-mobile:active{
+    color: white;
+  }
 .category-box{ 
     /* background-image: linear-gradient(to right, rgba(255, 124, 68, 1), rgba(225, 145, 51, 1)); */
     background: rgba(255, 124, 68, 1);
@@ -274,10 +417,16 @@ main{
     color: white;
     text-align: center;
 }
+
+
 .section{
     margin: 120px 0;
     width: 100%;
 }
+
+
+
+                             /*         BEST SELLING SECTION     */
 .best-selling-container, .promo-deals-container{
     display: flex;
     width: 100%;
@@ -355,6 +504,12 @@ main{
 .section-header h5{
     color: rgba(187, 187, 187, 1);
 }
+@media screen and (max-width: 768px) {
+    .best-selling-container, .promo-deals-container{
+        flex-direction: column;
+    }
+}
+
 
 .img-slider{
     width: 100%;
@@ -496,28 +651,50 @@ main{
         gap: 20px;
     }
     .footer-icons{
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .footer-icons img{
-        width: 25px;
-        height: 25px;
+        width: 18px;
+        height: 18px;
     }
     .footer-logo img{
         width: 30%;
     }
 }
-
-@media screen and (min-width: 500px) and (max-width: 768px){
+@media only screen and (width: 540px) {
     .newsletter form input{
         width: 8rem;
+        border: 1px solid red;
+        position: relative;
+    }
+    .email-support-mobile{
+        margin-left: 20px;
+        position: absolute;
+        transform: translateX(50px);
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 768px){
+    .newsletter form input{
+        width: 13rem;
         padding: 0.5rem 0.7rem;
+        font-size: 14px;
+        
     }
     .newsletter form button{
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 0.2rem;
+        font-size: 14px;
+        position: absolute;
     }
     .footer-icons{
         margin-right: 10px;
-        transform: translateX(-20px);
+        transform: translateX(px);
+        
+        
+    }
+    .footer-icons img{
+        width: 18px;
+        height: 18px;
     }
     .footer-list h1{
         font-size: smaller;   
@@ -525,24 +702,23 @@ main{
     .footer-list p{
         font-size: 14px;
     }
-    .email-icon{
+    .email-support-mobile .email-icon{
         transform: translateY(-15px);
+        font-size: 18px;
     }
     .footer-logo img{
         width: 30%;
     }
 
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 479px){
     .email-support{
         display: none;
     }
-    .email-support-mobile{
+    .footer-flexbox .email-support-mobile{
         display: block;
         display: flex;
         align-items: center;
-        gap: 20px;
-        transform: translateY(-60px);
     }
     .footer-flexbox{
         display: grid;
@@ -569,14 +745,15 @@ main{
     }
     .footer-icons{
         margin: 0;
+        position: absolute;
     }
     .footer-icons img{
         width: 20px;
         height: 20px;
         margin-left: 2px;
     }
-    .spaced-icon{
-        margin-left: 0;
+    .footer-icons .spaced-icon{
+        margin-left: 10px;
     }
 }
 
@@ -585,12 +762,12 @@ main{
         display: none;
     }
     .email-support-mobile{
-        display: block;
-        display: flex;
-        align-items: center;
+        margin-top: 120px;
         gap: 20px;
-        transform: translateY(-65px);
-        padding-left: 20%;
+        transform: translateY(30px);
+        transform: translateX(170px);
+        position: absolute;
+        margin-bottom: 30px;
     }
     .footer-flexbox{
         display: grid;
@@ -598,8 +775,11 @@ main{
         padding-left: 30px;
         row-gap: 20px;
     }
+    .footer-flexbox  .guidelines{
+        padding-left: 0;
+    }
     .email-icon{
-        transform: translateY(-10px);
+        transform: translateY(0px);
     }
     .email-support-mobile .email-icon img{
         width: 12px;
@@ -610,7 +790,7 @@ main{
         width: 100%;
     }
     .newsletter form input{
-        width: 17rem;
+        width: 15rem;
         padding: 0.7rem 0.8rem;
     }
     .newsletter h5{
@@ -618,6 +798,7 @@ main{
     }
     .newsletter{
         padding: 0px;
+        margin: auto;
     }
     .footer-flexbox h5{
         font-size: 18px;
@@ -641,7 +822,10 @@ main{
         display: block;
         display: flex;
         align-items: center;
-        transform: translateY(-65px);
+        transform: translateY(30px);
+        transform: translateX(170px);
+        position: absolute;
+        margin-bottom: 30px;
         
     }
     .slime span i{
@@ -655,6 +839,7 @@ main{
     }
     .email-support-mobile .footer-icons{
         margin-right: 0px;
+        transform: translateX(3px);
     }
     .email-support-mobile .footer-icons img{
         width: 15px;
@@ -667,7 +852,7 @@ main{
         row-gap: 20px;
     }
     .email-icon{
-        transform: translateY(-10px);
+        transform: translateY(0px);
     }
     .email-support-mobile .email-icon img{
         width: 10px;
@@ -678,7 +863,7 @@ main{
         width: 100%;
     }
     .newsletter form input{
-        width: 15rem;
+        width: 14rem;
         padding: 0.7rem 0.8rem;
     }
     .newsletter h5{
@@ -703,11 +888,12 @@ main{
 }
 
 @media screen and (max-width: 321px){
-    .email-support-mobile{
-        padding-left: 0px;
-        padding-right: 0px;
-        gap: 0px;
-        transform: translateY(-75px);
+    .footer-flexbox .email-support-mobile{
+        transform: translateY(0px);
+        transform: translateX(140px);
+        position: absolute;
+        gap: 0;
+        margin-bottom: 40px;
     }
     .email-support-mobile .email p{
         width: fit-content;
@@ -726,9 +912,7 @@ main{
         padding-left: 10px;
     }
     .email-support-mobile .footer-icons img{
-        margin-left: 0px;
-        
-        
+        margin-left: 0px; 
     }
     .email-support-mobile .footer-icons .spaced-icon{
         margin-left: 15px;

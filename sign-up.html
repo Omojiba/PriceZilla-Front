@@ -23,7 +23,7 @@
 
             <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
     <a class="navbar-brand logo" href="./index.html"><span>
-      <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
+      <img src="./assets/Pricezilla logo.png"  ></span>
     </a>
     <button class="navbar-toggler slime" 
             type="button" 
@@ -50,10 +50,10 @@
             Categories
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Laptops</a>
-            <a class="dropdown-item" href="#">Phones</a>
-            <a class="dropdown-item" href="#">Accessories</a>
-            <a class="dropdown-item" href="#">Home Appliances</a>
+            <a class="dropdown-item" href="#">Furniture</a>
+              <a class="dropdown-item" href="#">Kitchen Appliances</a>
+              <a class="dropdown-item" href="#">Laundry</a>
+              <a class="dropdown-item" href="#">Entertainment</a>
           </div>
         </li>
         <li class="nav-item">
@@ -79,6 +79,7 @@
         <div class="form-container">
           <div class="form-header-text">
           <h3>CREATE AN ACCOUNT AND ENJOY THE  BENEFITS PRICEZILLA OFFERS</h3>
+          <div class="last-line">  <p>Already a member? <a href="./login.html">Sign in here</a></p></div>
         </div>
 
 
@@ -87,25 +88,30 @@
         
         <div class="form-group line-1">
           <label for="fullName">Full Name</label>
-          <input type="text" name="fullName" id="fullName" class="form-control" placeholder="John Doe" >
+          <input type="text" name="fullName" id="fullName" class="form-control" placeholder="John Doe" required >
         </div>
 
         <div class="form-group line-2">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="form-control" placeholder="e.g johndoe@gmail.com">
+          <input type="email" name="email" id="email" class="form-control" placeholder="e.g johndoe@gmail.com" required>
         </div>
         
 
         <div class="form-group line-3">
           <label for="password">Password</label>
         <div class="toggle-password">
-          <input type="password" name="password" id="password" class="form-control">
+          <input type="password" name="password" id="password" class="form-control" required>
           <i class="bi bi-eye-slash visibility-icon"></i>
           </div>
         
         </div>
+
+        <div class="mb-4 form-check">
+          <input type="checkbox" class="form-check-input" id="rememberMe">
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
         
-          <input type="submit" name="Sign in" value="Sign up" class="sign-up-btn">
+          <input type="submit" name="Sign in"  class="sign-up-btn">
 
           <div class="or-divider-text">
             <span></span>
@@ -226,7 +232,7 @@
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=5){
+        if($(window).scrollTop() <=15){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');
