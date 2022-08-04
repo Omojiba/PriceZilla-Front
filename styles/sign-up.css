@@ -151,6 +151,7 @@ footer{
         width: 90%;
         padding: 20px;
         box-shadow: none;
+        border: none;
     }
     .toggle-password i{
         transform: translateX(340px);
