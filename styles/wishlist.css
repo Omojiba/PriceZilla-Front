@@ -1,16 +1,19 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  max-height: 100vh;
-  max-width: 1440px;
+}
+main{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+footer{
+  margin-top: 150px;
 }
 
 /* STYLING FOR THE ENTIRE HEADER SECTION 
@@ -146,38 +149,30 @@ body {
 
 /* STYLING THE BOX AROUND THE MAIN CONTENT  */
 
-#wishlist-box {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  /* display: flex;
+.wishlist-container{
+  display: flex;
   align-items: center;
-  justify-content: center;  */
-   display: grid;
-  place-items: center;  
-  
-}
-
-.wishlist.box {
-  width: 70vw;
-  height: 100vh;
+  justify-content: center;
+  width: 60%;
+ 
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 20px 20px 0px;
+  padding: 250px 0 200px 0;
+  margin: auto;
 }
 
-/* STYLING THE MAIN CHILD CONTAINER CONTENT TO FIT IN THE MIDDLE OF THE BOX */
-.content {
-  display: grid;
-  place-items: center;
+.wishlist-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.wishlist-content img{
+  width: 20rem;
+  opacity: 0.3;
 }
 
-/* REDUCED THE SIZE & OPACITY OF THE CART IMAGE */
-
-.cart {
-  height: 60%;
-  opacity: 0.7;
-}
 
 /* STYLING THE MAIN TEXT (h2) IN THE BOX */
 
@@ -217,9 +212,6 @@ body {
   text-transform: uppercase;
   transition: transform 0.3s ease-in;
 }
-
-
-
 
 
 /* STYLING THE RESPONSIVENESS OF THE BOX */
