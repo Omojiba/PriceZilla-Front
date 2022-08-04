@@ -165,7 +165,10 @@ footer{
         
     }
     .or-divider-text span{
-        background-color: rgba(38, 35, 34, 0.4);
+    height: 0.2px;
+    width: 45%;
+    background-color:   rgba(38, 35, 34, 0.4);
+    margin-top: 0.75rem;
     }
     .sign-up-form button{
         color: rgba(38, 35, 34, 0.4);
@@ -214,6 +217,7 @@ footer{
     .sign-up-form{
         width: 100%;
         padding: 15px;
+        border: none;
     }
     .form-container .form-header-text h3{
         font-size: 16px;
