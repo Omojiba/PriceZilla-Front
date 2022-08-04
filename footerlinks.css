@@ -1,0 +1,31 @@
+header {
+  background-color: #e7b2ae;
+  padding: 1em 0;
+}
+h5 {
+  color: white;
+}
+.btn,
+.form-control {
+  padding: 0.8em 1.5em;
+}
+.btn {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+span {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+span > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.section {
+  margin: 1em 0;
+}
+pre {
+  font-family: inherit;
+  margin: -1em 0 0 -2em;
+}
