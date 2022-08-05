@@ -8,6 +8,7 @@
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -21,7 +22,7 @@
 
                 <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
         <a class="navbar-brand logo" href="#"><span>
-          <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
+          <img src="./assets/Pricezilla logo.png"  ></span>
         </a>
         <button class="navbar-toggler slime" 
                 type="button" 
@@ -48,17 +49,17 @@
                 Categories
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Laptops</a>
-                <a class="dropdown-item" href="#">Phones</a>
-                <a class="dropdown-item" href="#">Accessories</a>
-                <a class="dropdown-item" href="#">Home Appliances</a>
+              <a class="dropdown-item" href="#">Furniture</a>
+              <a class="dropdown-item" href="#">Kitchen Appliances</a>
+              <a class="dropdown-item" href="#">Laundry</a>
+              <a class="dropdown-item" href="#">Entertainment</a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Wishlist</a>
+              <a class="nav-link" href="./wishlist.html">Wishlist</a>
             </li>
           </ul>
           <div class="form-inline my-lg-0 login-signup">
@@ -73,14 +74,14 @@
       </header> 
 
 
-      <main class="container ">
+      <main class="container">
 
         <section class=" hero">
             <div class="hero-search">
                 <h1>Search household items from different platforms around you</h1>
                 <form>
-                  <div class="top-form">
-                    <img src="assets/search2.svg" alt="">
+                  <div class="input-search-box">
+                    <i class="bi bi-search"></i>
                     <input type="text" required>
                   </div>
                   <button type="submit">Search</button>
@@ -88,7 +89,9 @@
             </div>
         </section>
 
-        <section class="second-container">
+
+               <!-- DESKTOP VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES <= 768PX) -->
+        <section class="categories-container ">
           <div class="category-box">Categories</div>
           <div class="category-box">Categories</div>
           <div class="category-box">Categories</div>
@@ -98,6 +101,19 @@
           <div class="category-box">Categories</div>
           <div class="category-box">Categories</div>
         </section>
+
+                   <!-- MOBILE VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES >= 768PX) -->
+        <section class="carousel categories-mobile" data-flickity='{ "groupCells": true }'>
+          <a href="" class="carousel-cell category-mobile" >Categories</a>
+          <a href="" class="carousel-cell category-mobile" >Categories</a>
+          <a href="" class="carousel-cell category-mobile" >Categories</a>
+          <a href="" class="carousel-cell category-mobile" >Categories</a>
+          <a href="" class="carousel-cell category-mobile" >Categories</a>
+          <a href="" class="carousel-cell category-mobile" >Categories</a>
+          <a href="" class="carousel-cell category-mobile" >Categories</a>
+         <a href="" class="carousel-cell category-mobile" >Categories</a>
+        </section>
+        
 
                                <!--           BEST SELLING SECTION         -->
       
@@ -111,7 +127,7 @@
 
     <div class="product-price-card">
       <div class="product-image-container">
-        <img  src="/assets/microwave.png" width="70%" alt="assets">
+        <img  src="./assets/microwave.png" width="70%" alt="assets">
       </div>
       <div class="price">
         <h4>HAMILTON MICROWAVE</h4>
@@ -121,7 +137,7 @@
 
     <div class="product-price-card">
       <div class="product-image-container">
-        <img  src="/assets/tv.png"  alt="assets">
+        <img  src="./assets/tv.png"  alt="assets">
       </div>
       <div class="price">
         <h4>ENKOR PLASMA TV</h4>
@@ -131,7 +147,7 @@
 
     <div class="product-price-card">
       <div class="product-image-container">
-        <img  src="/assets/washing-machine.png" width="55%" alt="assets">
+        <img  src="./assets/washing-machine.png" width="55%" alt="assets">
       </div>
       <div class="price">
         <h4>HAIER WASHING MACHINE</h4>
@@ -141,10 +157,10 @@
 
   </div>
 
-      
-
    
 </section>
+
+
 
                                      <!--     PROMO DEALS SECTION       -->
 <section class="section">
@@ -156,9 +172,9 @@
   <div class="promo-deals-container">
 
     <div class="product-price-card">
-      <div class="discount-1">-15%</div>
+      <!-- <div class="discount-1">-15%</div> -->
       <div class="product-image-container">
-        <img  src="/assets/couch.png"  alt="assets">
+        <img  src="./assets/couch.png"  alt="assets" width="70%">
       </div>
       <div class="price">
         <h4>COZY YELLOW COUCH</h4>
@@ -167,9 +183,9 @@
     </div>
 
     <div class="product-price-card">
-      <div class="discount-2">-27%</div>
+      <!-- <div class="discount-2">-27%</div> -->
       <div class="product-image-container">
-        <img src="/assets/chandelier.png" alt="assets">
+        <img src="./assets/chandelier.png" alt="assets" width="70%">
       </div>
       <div class="price">
         <h4>ELITE VIP CHANDELIER</h4>
@@ -178,9 +194,9 @@
     </div>
 
     <div class="product-price-card">
-      <div class="discount-3">-8%</div>
+      <!-- <div class="discount-3">-8%</div> -->
       <div class="product-image-container">
-        <img src="/assets/speakers.png" alt="assets">
+        <img src="./assets/speakers.png" width="70%" alt="assets">
       </div>
       <div class="price">
         <h4>LG BOOM STUDIO</h4>
@@ -195,64 +211,54 @@
 
 
                                            <!-- IMAGE SLIDESHOW SECTION -->
-<section class="img-slider">
+<!-- <section class="img-slider">
 
 <img class="image" name="slide"  alt="img" width="100%" height="500px">
-</section>
+</section> -->
 </main> 
    
+
+
+                                  <!--                FOOTER SECTION -->
 
     <footer class="footer">
         <div class="container">
         <div class="footer-logo"><h1>Pricezilla</h1></div>
 
-        <div class="grid-container">
+
+        <!--           DESKTOP VIEW FOOTER      -->
+
+    <div class="desktop-footer">
         <div class="footer-flexbox">
            
            <div class="footer-list">
                <h5>Information</h5>
-               <p>About PriceZilla</p>
-               <p>Reviews</p>
-               <p>Contact - PriceZilla</p>
-               <p>Register your shop</p>
-               <p>Help Center</p>
+               <a href="">About PriceZilla</a>
+               <a href="">Reviews</a>
+               <a href="">Contact - PriceZilla</a>
+               <a href="">Register your shop</a>
+               <a href="">Help Center</a>
    
            </div>
            <div class="footer-list guidelines">
                <h5>Guidelines</h5>
-               <p>Terms and Conditions</p>
-               <p>Disclaimer</p>
-               <p>Privacy Policy</p>
-               <p>Cookie Policy</p>
-               <p>Privacy Settings</p>
+               <a href="">Terms and Conditions</a>
+               <a href="">Disclaimer</a>
+               <a href="">Privacy Policy</a>
+               <a href="">Cookie Policy</a>
+               <a href="">Privacy Settings</a>
            </div>
-           <div class="footer-list">
+           <div class="footer-list on-pricezilla">
                <h5>On PriceZilla</h5>
-               <p>Themes and Campaigns</p>
-               <p>Newsroom</p>
-               <p>Articles</p>
-               <p>Shop of the year</p>
-               <p>Categories</p>
+               <a href="">Themes and Campaigns</a>
+               <a href="">Newsroom</a>
+               <a href="">Articles</a>
+               <a href="">Shop of the year</a>
+               <a href="">Categories</a>
            </div>
-
-           <div class="email-support-mobile">
-            <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
-            </div>
-            <div class="email">
-                <h5>Email Support</h5>
-                <p>help@pricezilla.com</p>
-                <div class="footer-icons">
-                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" class="spaced-icon" alt="facebook-icon"/>
-
-                </div>
-            </div>
-        </div>
+           
        </div>
-    </div>
+    
         
     <div class="news-email-flexbox">
         <div class="newsletter">
@@ -265,31 +271,102 @@
 
         <div class="email-support">
             <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
+                <i class="bi bi-envelope"></i>
             </div>
             <div class="email">
                 <h5>Email Support</h5>
                 <p>help@pricezilla.com</p>
                 <div class="footer-icons">
                     <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" alt="facebook-icon"/>
-
+                    <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
                 </div>
             </div>
         </div>
 
     </div>
+  </div>
+
+
+
+                       <!--                MOBILE VIEW FOOTER                    -->
+
+
+
+      <div class="mobile-footer">
+        <div class="footer-flexbox1">
+           
+           <div class="footer-list-mobile information-mobile">
+               <h5>Information</h5>
+               <a href="">About PriceZilla</a>
+               <a href="">Reviews</a>
+               <a href="">Contact - PriceZilla</a>
+               <a href="">Register your shop</a>
+               <a href="">Help Center</a>
+   
+           </div>
+           <div class="footer-list-mobile guidelines-mobile">
+               <h5>Guidelines</h5>
+               <a href="">Terms and Conditions</a>
+               <a href="">Disclaimer</a>
+               <a href="">Privacy Policy</a>
+               <a href="">Cookie Policy</a>
+               <a href="">Privacy Settings</a>
+           </div>
+        </div>
+
+        <div class="footer-flexbox2">
+           <div class="footer-list-mobile pricezilla-mobile">
+               <h5>On PriceZilla</h5>
+               <a href="">Themes and Campaigns</a>
+               <a href="">Newsroom</a>
+               <a href="">Articles</a>
+               <a href="">Shop of the year</a>
+               <a href="">Categories</a>
+           </div>
+
+           <div class="email-support">
+            <div class="email-icon">
+                <i class="bi bi-envelope"></i>
+            </div>
+            <div class="email">
+                <h5>Email Support</h5>
+                <p>help@pricezilla.com</p>
+                <div class="footer-icons">
+                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
+                </div>
+            </div>
+        </div>
+           
+       </div>
+    
+        
+    
+        <div class="newsletter">
+            <h5>Subscribe to our newsletter</h5>
+            <form>
+                <input type="email" placeholder="enter email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    
+  </div>
 </div>
+
        </footer>
 
 
 
 
-
                                    <!-- SCRIPTS -->
-   
+
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
              crossorigin="anonymous"></script>
