@@ -388,7 +388,7 @@ main{
     width: 20px;
     height: 20px;
   } 
-.carousel-cell {
+.categories-mobile .carousel-cell {
     width: 20%;
     height: 50px;
     margin: 15px 35px 15px 0;
@@ -546,7 +546,120 @@ main{
 }
 
 
+/*    IMAGE SLIDESHOW STYLES */
+.image-slideshow{
+    margin-top:  180px;
+    margin-bottom: 250px;
+}
+.cell-1{
+    background-image: url(../assets/pexels-marcelo-jaboo-696407\ 1.jpg);
+    background-size: cover;
+    padding: 50px;
+}
+.cell-1 .slideshow-text h1 .up-to, .slideshow-text h1 .off-for{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.cell-1 .slideshow-text .percent-off{
+    font-size: 64px;
+    font-weight: 600;
+}
+.cell-1 .slideshow-text .home-decore{
+    font-size: 48px;
+    font-weight: 600;
+}
+.home-lander{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 50px;
+}
+.home-lander h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.cell-2{
+    background-image: url(../assets/pexels-tranmautritam-326503.jpg);
+    background-size: cover;
+}
+.cell-3{
+    background-image: url(../assets/homepage-slideshow3.jpg);
+    background-size: cover;
+    background-position: 10% 30%;
+}
+.image-slideshow .carousel-cell {
+    width: 100%;
+    height: 60vh;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    color: white;
+  }
+  .image-slideshow .flickity-page-dots {
+    top: 400px;
+  }
+  
+  .image-slideshow .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: rgba(157, 157, 157, 1);
+  }
 
+  /* fill-in selected dot */
+  .image-slideshow .flickity-page-dots .dot.is-selected {
+    background: rgba(255, 124, 68, 1);
+  }
+  .image-slideshow .flickity-button{
+    display: none;
+  }
+@media screen and (max-width: 1024px) {
+    .image-slideshow .carousel-cell{
+        height: 60vh;
+    }
+    .image-slideshow .flickity-page-dots {
+        top: 420px;
+      }
+      .cell-1{
+        padding: 30px;
+      }
+    
+}
+@media screen and (max-width: 768px){
+    .up-to, .off-for{
+        font-size: 20px ;
+    }
+    .percent-off{
+        font-size: 48px;
+    }
+    .home-decore{
+        font-size: 36px;
+    }
+    .image-slideshow .flickity-page-dots {
+        top: 450px;
+      }
+    
+}
+@media screen and (max-width: 426px) {
+    .cell-1 .slideshow-text h1 .up-to, .slideshow-text h1 .off-for, .home-lander h1{
+        font-size: 18px;
+    }
+    .cell-1 .slideshow-text .percent-off{
+        font-size: 28px;
+    }
+    .cell-1 .slideshow-text .home-decore{
+        font-size: 20px;
+    }
+    .cell-1{
+        padding: 5;
+        background-position: 75% 10%;
+        padding-right: 2px;
+    }
+    .home-lander{
+        transform: translateY(28vh);
+    }
+}
 
 
 /* FOOTER STYLING FOR DESKTOP / TABLET */
@@ -684,7 +797,6 @@ footer a{
     }
     .guidelines-mobile{
         margin-left: 40px;
-        border: 1px solid green;
     }
     .information-mobile, .pricezilla-mobile{
         margin-left: 35px;

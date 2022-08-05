@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'roboto', sans-serif;
     /* color: rgba(255, 255, 255, 1); */
     position: relative;
    
@@ -376,9 +376,6 @@ flex-direction: row;
 align-items: center;
 gap: 12px;
 
-}
-.frame-79 .frame-4{
- 
 }
 .frame-4 img{
     margin-bottom: 5px;

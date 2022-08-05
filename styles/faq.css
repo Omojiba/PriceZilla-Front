@@ -43,9 +43,7 @@ main{
 }
 
 /* TABS STYLING */
-.FAQ-tabs{
-   
-}
+
 .tabs{
     position: relative;
     width: 100%;
@@ -79,9 +77,6 @@ main{
     cursor: pointer;
     transition: color 300ms ease-in-out;
     position: relative;
-}
-.tabs .tab-header > div.active{
-
 }
 .tabs .tab-indicator{
     position: relative;
@@ -133,7 +128,7 @@ main{
 .accordion {
     width: 100%;
 
-    margin: 2rem auto;
+    margin: 5rem auto;
   }
   .accordion-item {
     background-color: #F4F4F4;
@@ -271,14 +266,18 @@ main{
     .tabs .tab-indicator > div{
         width: 18%
     }
-    
-    
+    .question-form{
+      margin-top: 80px;
+    }
 
     
   }
   @media screen and (max-width: 322px) {
     .tabs .tab-indicator > div{
         width: 15%;
+    }
+    .question-form{
+      margin-top: 120px;
     }
     
     
