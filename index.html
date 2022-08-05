@@ -1,368 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css"/>
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
     <title>PriceZilla</title>
-</head>
-<body>
-   <header class="header"> 
-        <div class="header-inner" id="navscroll">
-          <div class="container">
-            <nav class="navbar navbar-expand-md my-navbar">
-
-                <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-        <a class="navbar-brand logo" href="#"><span>
-          <img src="./assets/Pricezilla logo.png"  ></span>
-        </a>
-        <button class="navbar-toggler slime" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                 href="#" id="navbarDropdown" 
-                 role="button" 
-                 data-toggle="dropdown" 
-                 aria-haspopup="true" 
-                 aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./account-info.html">Furniture</a>
-                <a class="dropdown-item" href="#">Home Appliances</a>
-                <a class="dropdown-item" href="#">Kitchen Utensils</a>
-                <a class="dropdown-item" href="#">Exercise tools</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./wishlist.html">Wishlist</a>
-            </li>
-          </ul>
-          <div class="form-inline my-lg-0 login-signup">
-            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
-            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
-          </div>
-        </div>
-      </nav>
-      
-          </div>
-        </div>
-      </header> 
-
-
-      <main class="container">
-
-        <section class=" hero">
-            <div class="hero-search">
-                <h1>Search household items from different platforms around you</h1>
-                <form>
-                  <div class="input-search-box">
-                    <i class="bi bi-search"></i>
-                    <input type="text" required>
-                  </div>
-                  <button type="submit">Search</button>
-                </form>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner" id="navscroll">
+        <div class="container">
+          <nav class="navbar navbar-expand-md my-navbar">
+            <div class="account-icon">
+              <i class="bi bi-person-circle h1"></i>
             </div>
-        </section>
+            <a class="navbar-brand logo" href="#"
+              ><span> <img src="./assets/Pricezilla logo.png" /></span>
+            </a>
+            <button
+              class="navbar-toggler slime"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./account-info.html"
+                      >Furniture</a
+                    >
+                    <a class="dropdown-item" href="#">Home Appliances</a>
+                    <a class="dropdown-item" href="#">Kitchen Utensils</a>
+                    <a class="dropdown-item" href="#">Exercise tools</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./wishlist.html">Wishlist</a>
+                </li>
+              </ul>
+              <div class="form-inline my-lg-0 login-signup">
+                <a class="header-btn my-sm-0" href="./login.html">Login</a>
+                <a class="header-btn my-sm-0" href="./sign-up.html"> Sign Up</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-               <!-- DESKTOP VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES <= 768PX) -->
-        <section class="categories-container ">
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-          <div class="category-box">Categories</div>
-        </section>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-search">
+          <h1>Search household items from different platforms around you</h1>
+          <form>
+            <div class="input-search-box">
+              <i class="bi bi-search"></i>
+              <input type="text" required />
+            </div>
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </section>
 
-                   <!-- MOBILE VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES >= 768PX) -->
-        <section class="carousel categories-mobile" data-flickity='{ "groupCells": true }'>
-          <a href="" class="carousel-cell category-mobile" >Categories</a>
-          <a href="" class="carousel-cell category-mobile" >Categories</a>
-          <a href="" class="carousel-cell category-mobile" >Categories</a>
-          <a href="" class="carousel-cell category-mobile" >Categories</a>
-          <a href="" class="carousel-cell category-mobile" >Categories</a>
-          <a href="" class="carousel-cell category-mobile" >Categories</a>
-          <a href="" class="carousel-cell category-mobile" >Categories</a>
-         <a href="" class="carousel-cell category-mobile" >Categories</a>
-        </section>
-        
+      <!-- DESKTOP VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES <= 768PX) -->
+      <section class="categories-container">
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+        <div class="category-box">Categories</div>
+      </section>
 
-                               <!--           BEST SELLING SECTION         -->
+      <!-- MOBILE VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES >= 768PX) -->
+      <section
+        class="carousel categories-mobile"
+        data-flickity='{ "groupCells": true }'
+      >
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+        <a href="" class="carousel-cell category-mobile">Categories</a>
+      </section>
+
+      <!--           BEST SELLING SECTION         -->
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Best Selling</h2>
+          <h5>See more</h5>
+        </div>
+
+        <div class="best-selling-container">
+          <div class="product-price-card">
+            <div class="product-image-container">
+              <img src="./assets/microwave.png" width="70%" alt="assets" />
+            </div>
+            <div class="price">
+              <h4>HAMILTON MICROWAVE</h4>
+              <p>N27,800</p>
+            </div>
+          </div>
+
+          <div class="product-price-card">
+            <div class="product-image-container">
+              <img src="./assets/tv.png" alt="assets" />
+            </div>
+            <div class="price">
+              <h4>ENKOR PLASMA TV</h4>
+              <p>N47, 500</p>
+            </div>
+          </div>
+
+          <div class="product-price-card">
+            <div class="product-image-container">
+              <img
+                src="./assets/washing-machine.png"
+                width="55%"
+                alt="assets"
+              />
+            </div>
+            <div class="price">
+              <h4>HAIER WASHING MACHINE</h4>
+              <p>N32,000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--     PROMO DEALS SECTION       -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Promo deals</h2>
+          <h5>See more</h5>
+        </div>
+
+        <div class="promo-deals-container">
+          <div class="product-price-card">
+            <div class="discount-1">-15%</div>
+            <div class="product-image-container">
+              <img src="./assets/couch.png" alt="assets" width="70%" />
+            </div>
+            <div class="price">
+              <h4>COZY YELLOW COUCH</h4>
+              <div class="old-price">
+                <span>N184,000</span>
+                <p>N156,400</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-price-card">
+            <div class="discount-2">-27%</div>
+            <div class="product-image-container">
+              <img src="./assets/chandelier.png" alt="assets" width="70%" />
+            </div>
+            <div class="price">
+              <h4>ELITE VIP CHANDELIER</h4>
+              <div class="old-price">
+                <span>N32,500</span>
+                <p>N23,725</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-price-card">
+            <div class="discount-3">-8%</div>
+            <div class="product-image-container">
+              <img src="./assets/speakers.png" width="70%" alt="assets" />
+            </div>
+            <div class="price">
+              <h4>LG BOOM STUDIO</h4>
+              <div class="old-price">
+                <span>N87,000</span>
+                <p>N80,040</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMAGE SLIDESHOW SECTION -->
+      <!---
+      <section class="img-slider">
+        <style>
+          .slider {
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+          .slides {
+            width: 500%;
+            height: 500px;
+            display: flex;
+          }
+          .slides input {
+            display: none;
+          }
+          .slide {
+            width: 20%;
+            transition: 2s;
+          }
+          .slide img {
+            width: 800px;
+            height: 500px;
+          }
+          /* css for manual slide navigation*/
+
+          .navigation-manual {
+            position: absolute;
+            width: 800px;
+            margin-top: -30px;
+            display: flex;
+            justify-content: center;
+          }
+
+          .manual-btn {
+            border: 2px solid #40d3dc;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+          }
+          .manual-btn:not(:last-child) {
+            margin-right: 40px;
+          }
+
+          .manual-btn:hover {
+            background: #40d3dc;
+          }
+          #radio1:checked ~ .first {
+            margin-left: 0;
+          }
+          #radio2:checked ~ .first {
+            margin-left: -20%;
+          }
+          #radio3:checked ~ .first {
+            margin-left: -40%;
+          }
+          #radio4:checked ~ .first {
+            margin-left: -60%;
+          }
+          /*css for automatic navigation*/
+          .navigation-auto {
+            position: absolute;
+            display: flex;
+            width: 800px;
+            justify-content: center;
+            margin-top: 470px;
+          }
+
+          .navigation-auto div {
+            border: 2px solid #40d3dc;
+            padding: 5px;
+            border-radius: 10px;
+            transition: 1s;
+          }
+          .navigation-auto div:not(:last-child) {
+            margin-right: 40px;
+          }
+          #radio1:checked ~ .navigation-auto .auto-btn1 {
+            background: #40d3dc;
+          }
+          #radio2:checked ~ .navigation-auto .auto-btn2 {
+            background: #40d3dc;
+          }
+          #radio3:checked ~ .navigation-auto .auto-btn3 {
+            background: #40d3dc;
+          }
+          #radio4:checked ~ .navigation-auto .auto-btn4 {
+            background: #40d3dc;
+          }
+          .slide {
+            position: relative;
+          }
+          .slide img {
+            max-width: 100%;
+            height: auto;
+          }
+          .img-text {
+            position: absolute;
+            top: 25%;
+            color: #fff;
+            padding: 10px;
+          }
+          .img-text h4 {
+            font-size: 26px;
+            font-weight: bold;
+          }
+          .fth {
+            color: aqua;
+          }
+
+          @media screen and (max-width: 600px) {
+            body {
+              overflow-x: hidden;
+            }
+            .slider {
+              width: 100%;
+              height: 100%;
+            }
+            .slide img {
+              width: 100%;
+              height: 90%;
+            }
+            .navigation-manual {
+              margin-left: 15px;
+            }
+            .navigation-auto {
+              margin-left: 15px;
+            }
+          }
+        </style>
       
-<section class="section">
-  <div class="section-header">
-    <h2>Best Selling</h2>
-    <h5>See more</h5>
-  </div>
 
-  <div class="best-selling-container">
+        <div class="slider">
+          <div class="slides">
+            
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            
+            
+            <div class="slide first">
+              <img
+                class="image"
+                src="/assets/pexel3.jpg"
+                name="slide"
+                alt="img"
+                width="70%"
+                height="500px"
+              />
+              <div class="img-text">
+                <p><b>Up to</b></p>
+                <h1>40%</h1>
+                <p><b>off for your</b></p>
+                <h1>HOME DECOR</h1>
+              </div>
+            </div>
+            <div class="slide t">
+              <img
+                class="image"
+                src="/assets/pexel2.jpg"
+                name="slide"
+                alt="img"
+                width="70%"
+                height="500px"
+              />
+              <div class="img-text">
+                <p><b>Up to</b></p>
+                <h1>40%</h1>
+                <p><b>off for your</b></p>
+                <h1>HOME DECOR</h1>
+              </div>
+            </div>
+            <div class="slide 2t">
+              <img
+                class="image"
+                src="/assets/pexel4.jpg"
+                name="slide"
+                alt="img"
+                width="70%"
+                height="500px"
+              />
+              <div class="img-text">
+                <p><b>Up to</b></p>
+                <h1>40%</h1>
+                <p><b>off for your</b></p>
+                <h1>HOME DECOR</h1>
+              </div>
+            </div>
+            <div class="slide th">
+              <img src="assets/pexel1.jpg"class="image" name="slide" alt="img"
+              width="70%" height="500px"">
+              <div class="img-text fth">
+                <p><b>Up to</b></p>
+                <h1>40%</h1>
+                <p><b>off for your</b></p>
+                <h1>HOME DECOR</h1>
+              </div>
+            </div>
+            
+          
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
 
-    <div class="product-price-card">
-      <div class="product-image-container">
-        <img  src="./assets/microwave.png" width="70%" alt="assets">
-      </div>
-      <div class="price">
-        <h4>HAMILTON MICROWAVE</h4>
-        <P>N27,800</P>
-      </div>
-    </div>
-
-    <div class="product-price-card">
-      <div class="product-image-container">
-        <img  src="./assets/tv.png"  alt="assets">
-      </div>
-      <div class="price">
-        <h4>ENKOR PLASMA TV</h4>
-        <P>N47, 500</P>
-      </div>
-    </div>
-
-    <div class="product-price-card">
-      <div class="product-image-container">
-        <img  src="./assets/washing-machine.png" width="55%" alt="assets">
-      </div>
-      <div class="price">
-        <h4>HAIER WASHING MACHINE</h4>
-        <P>N32,000</P>
-      </div>
-    </div>
-
-  </div>
-
-   
-</section>
-
-
-
-                                     <!--     PROMO DEALS SECTION       -->
-<section class="section">
-  <div class="section-header">
-    <h2>Promo deals</h2>
-    <h5>See more</h5>
-  </div>
-       
-  <div class="promo-deals-container">
-
-    <div class="product-price-card">
-      <div class="discount-1">-15%</div>
-      <div class="product-image-container">
-        <img  src="./assets/couch.png"  alt="assets" width="70%">
-      </div>
-      <div class="price">
-        <h4>COZY YELLOW COUCH</h4>
-           <div class="old-price"><span>N184,000</span> <P>N156,400</P></div>
-      </div>
-    </div>
-
-    <div class="product-price-card">
-      <div class="discount-2">-27%</div>
-      <div class="product-image-container">
-        <img src="./assets/chandelier.png" alt="assets" width="70%">
-      </div>
-      <div class="price">
-        <h4>ELITE VIP CHANDELIER</h4>
-            <div class="old-price"><span>N32,500</span> <P>N23,725</P></div>
-      </div>
-    </div>
-
-    <div class="product-price-card">
-      <div class="discount-3">-8%</div>
-      <div class="product-image-container">
-        <img src="./assets/speakers.png" width="70%" alt="assets">
-      </div>
-      <div class="price">
-        <h4>LG BOOM STUDIO</h4>
-            <div class="old-price"><span>N87,000</span> <P>N80,040</P></div>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-                                           <!-- IMAGE SLIDESHOW SECTION -->
-<!-- <section class="img-slider">
-
-<img class="image" name="slide"  alt="img" width="100%" height="500px">
-</section> -->
-</main> 
-   
+        
+          </div>
+      
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          
+        </div>
+  
+        <script type="text/javascript">
+          var counter = 1;
+          setInterval(function () {
+            document.getElementById("radio" + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+              counter = 1;
+            }
+          }, 5000);
+        </script>
+      </section>
+    -->
+    </main>
 
     <footer class="footer">
-        <div class="container">
+      <div class="container">
         <div class="footer-logo"><h1>Pricezilla</h1></div>
 
         <div class="grid-container">
-        <div class="footer-flexbox">
-           
-           <div class="footer-list">
-               <h5>Information</h5>
-               <p>About PriceZilla</p>
-               <p>Reviews</p>
-               <p>Contact - PriceZilla</p>
-               <p>Register your shop</p>
-               <p>Help Center</p>
-   
-           </div>
-           <div class="footer-list guidelines">
-               <h5>Guidelines</h5>
-               <p>Terms and Conditions</p>
-               <p>Disclaimer</p>
-               <p>Privacy Policy</p>
-               <p>Cookie Policy</p>
-               <p>Privacy Settings</p>
-           </div>
-           <div class="footer-list">
-               <h5>On PriceZilla</h5>
-               <p>Themes and Campaigns</p>
-               <p>Newsroom</p>
-               <p>Articles</p>
-               <p>Shop of the year</p>
-               <p>Categories</p>
-           </div>
-
-           <div class="email-support-mobile">
-            <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
+          <div class="footer-flexbox">
+            <div class="footer-list">
+              <h5>Information</h5>
+              <p>About PriceZilla</p>
+              <p>Reviews</p>
+              <p>Contact - PriceZilla</p>
+              <p>Register your shop</p>
+              <p>Help Center</p>
             </div>
-            <div class="email">
+            <div class="footer-list guidelines">
+              <h5>Guidelines</h5>
+              <p>Terms and Conditions</p>
+              <p>Disclaimer</p>
+              <p>Privacy Policy</p>
+              <p>Cookie Policy</p>
+              <p>Privacy Settings</p>
+            </div>
+            <div class="footer-list">
+              <h5>On PriceZilla</h5>
+              <p>Themes and Campaigns</p>
+              <p>Newsroom</p>
+              <p>Articles</p>
+              <p>Shop of the year</p>
+              <p>Categories</p>
+            </div>
+
+            <div class="email-support-mobile">
+              <div class="email-icon">
+                <i class="bi bi-envelope h1"></i>
+              </div>
+              <div class="email">
                 <h5>Email Support</h5>
                 <p>help@pricezilla.com</p>
                 <div class="footer-icons">
-                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" class="spaced-icon" alt="facebook-icon"/>
-
+                  <img src="./assets/facebook-icon.png" alt="facebook-icon" />
+                  <img
+                    src="./assets/twitter-icon.png"
+                    class="spaced-icon"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./assets/youtube-icon.png"
+                    class="spaced-icon"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./assets/instagram-icon.png"
+                    class="spaced-icon"
+                    alt="facebook-icon"
+                  />
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-       </div>
-    </div>
-        
-    <div class="news-email-flexbox">
-        <div class="newsletter">
+
+        <div class="news-email-flexbox">
+          <div class="newsletter">
             <h5>Subscribe to our newsletter</h5>
             <form>
-                <input type="email" placeholder="enter email address" required>
-                <button type="submit">Subscribe</button>
+              <input type="email" placeholder="enter email address" required />
+              <button type="submit">Subscribe</button>
             </form>
-        </div>
+          </div>
 
-        <div class="email-support">
+          <div class="email-support">
             <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
+              <i class="bi bi-envelope h1"></i>
             </div>
             <div class="email">
-                <h5>Email Support</h5>
-                <p>help@pricezilla.com</p>
-                <div class="footer-icons">
-                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" alt="facebook-icon"/>
-
-                </div>
+              <h5>Email Support</h5>
+              <p>help@pricezilla.com</p>
+              <div class="footer-icons">
+                <img src="./assets/facebook-icon.png" alt="facebook-icon" />
+                <img src="./assets/twitter-icon.png" alt="facebook-icon" />
+                <img src="./assets/youtube-icon.png" alt="facebook-icon" />
+                <img src="./assets/instagram-icon.png" alt="facebook-icon" />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </footer>
 
-    </div>
-</div>
-       </footer>
+    <!-- SCRIPTS -->
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script
+      type="text/javascript"
+      src="../PriceZilla-Front/scripts/index.js"
+    ></script>
 
-                                   <!-- SCRIPTS -->
-
-   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-             crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
-            crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-  <script type="text/javascript" src="../PriceZilla-Front/scripts/index.js"></script>
-
-     <!-- NAVBAR SCRIPT -->
-  <script type="text/javascript">
-    $(function(){
-      var navbar = $('.header-inner');
-      $(window).scroll(function(){
-        if($(window).scrollTop() <=5){
-          navbar.removeClass('navbar-scroll');
-        }else{
-          navbar.addClass('navbar-scroll');
-        }
+    <!-- NAVBAR SCRIPT -->
+    <script type="text/javascript">
+      $(function () {
+        var navbar = $(".header-inner");
+        $(window).scroll(function () {
+          if ($(window).scrollTop() <= 5) {
+            navbar.removeClass("navbar-scroll");
+          } else {
+            navbar.addClass("navbar-scroll");
+          }
+        });
       });
-    });  
-  </script>
+    </script>
 
-             <!-- IMAGE SLIDESHOW SCRIPT -->
-<script>
-  var i =0;
-  var images = [];
-  var time = 5000;
-  
-  //image list
-  
-  images[0] = '/assets/pexels-marcelo-jaboo-696407 1.jpg';
-  images[1] = '/assets/pexels-tranmautritam-326503.jpg';
-  
-  
-  
-  // change img
-  
-  function changeImg(){
-    document.slide.src=images[i];
-  
-    if(i < images.length -1){
-      i++;
-    }else{
-      i =0;
-    }
-    setTimeout('changeImg()', time)
-  }
-  
-  window.onload = changeImg;
-  </script>
-</body>
+    <!-- IMAGE SLIDESHOW SCRIPT -->
+    <script>
+      var i = 0;
+      var images = [];
+      var time = 5000;
+
+      //image list
+
+      images[0] = "/assets/pexels-marcelo-jaboo-696407 1.jpg";
+      images[1] = "/assets/pexels-tranmautritam-326503.jpg";
+
+      // change img
+
+      function changeImg() {
+        document.slide.src = images[i];
+
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("changeImg()", time);
+      }
+
+      window.onload = changeImg;
+    </script>
+  </body>
 </html>

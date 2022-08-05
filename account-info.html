@@ -29,107 +29,156 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/account-info.css" />
     <title>PriceZilla</title>
-
   </head>
   <body>
-    <header class="header"> 
-        <div class="header-inner" id="navscroll">
-          <div class="container">
-            <nav class="navbar navbar-expand-md my-navbar">
+    <header class="header">
+      <div class="header-inner" id="navscroll">
+        <div class="container">
+          <nav class="navbar navbar-expand-md my-navbar">
+            <div class="account-icon">
+              <i class="bi bi-person-circle h1"></i>
+            </div>
+            <a class="navbar-brand logo" href="#"
+              ><span> <img src="./assets/Pricezilla logo.png" /></span>
+            </a>
+            <button
+              class="navbar-toggler slime"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
 
-                <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-        <a class="navbar-brand logo" href="#"><span>
-          <img src="./assets/Pricezilla logo.png"></span>
-        </a>
-        <button class="navbar-toggler slime" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                 href="#" id="navbarDropdown" 
-                 role="button" 
-                 data-toggle="dropdown" 
-                 aria-haspopup="true" 
-                 aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Laptops</a>
-                <a class="dropdown-item" href="#">Phones</a>
-                <a class="dropdown-item" href="#">Accessories</a>
-                <a class="dropdown-item" href="#">Home Appliances</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Laptops</a>
+                    <a class="dropdown-item" href="#">Phones</a>
+                    <a class="dropdown-item" href="#">Accessories</a>
+                    <a class="dropdown-item" href="#">Home Appliances</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Wishlist</a>
+                </li>
+              </ul>
+              <div class="form-inline my-lg-0 login-signup">
+                <a class="header-btn my-sm-0" href="./login.html">Login</a>
+                <a class="header-btn my-sm-0" href="./sign-up.html"> Sign Up</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Wishlist</a>
-            </li>
-          </ul>
-          <div class="form-inline my-lg-0 login-signup">
-            <a class="header-btn  my-sm-0" href="./login.html">Login</a>
-            <a class="header-btn  my-sm-0"  href="./sign-up.html"> Sign Up</a>
-          </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-      
-          </div>
-        </div>
-    </header> 
-
+      </div>
+    </header>
 
     <main class="container">
-      <div class="form">
-        <div class="acc">
-          <strong><h3>ACCOUNT INFO</h3></strong>
-        </div>
-        <form action="" class="frm" method="post">
-          <label for="name">First Name</label>
-          <input type="text" name="name" id="name" placeholder="John" />
-          <label for="name">Last Name</label>
-          <input type="text" name="name" id="name" placeholder="Doe" />
-          <label for="email">Email</label>
-          <input type="email" name="" id="email" placeholder="eg. johndoe@gmail.com">
-          <label for="address">Address</label>
-          <input type="text" name="address" id="ad">
-          <label for="state">State</label>
-          <select id="select">
-            <option value="state"></option>
-            <option value="state"></option>
-            <option value="state"></option>
-            <option value="state"></option>
-            <option value="state"></option>
-          </select>
-          <label for="state">Country</label>
-          <select id="select">
-            <option value="state"></option>
-            <option value="state"></option>
-            <option value="state"></option>
-            <option value="state"></option>
-            <option value="state"></option>
-          </select>
-          <label for="Phone No">Phone No</label>
-          <input type="number" name="" id="num">
-          <label for="password">Password</label>
-          <input type="password" name="" id="pass">
-          <div class="click">
-            <b>Click 'Save' to confirm your changes </b>
+      <div class="acc">
+        <strong><h3>ACCOUNT INFO</h3></strong>
+      </div>
+      <div
+        class="full-width d-flex justify-content-center and align-items-center"
+      >
+        <form action="" class="rounded p-4 p-sm-3" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="John"
+            />
           </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Last Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Doe"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="eg. johndoe@gmail.com"
+              aria-describedby="emailHelp"
+              class="form-control"
+            />
+            <div id="emailHelp" class="form-text">Your email is secured</div>
+          </div>
+
+          <div class="mb-3">
+            <div class="mb-3">
+              <label for="address">Address</label>
+              <input type="text" name="address" id="ad" />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="state">State</label>
+            <select id="select">
+              <option value="state"></option>
+              <option value="state"></option>
+              <option value="state"></option>
+              <option value="state"></option>
+              <option value="state"></option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="state">Country</label>
+            <select id="select">
+              <option value="state"></option>
+              <option value="state"></option>
+              <option value="state"></option>
+              <option value="state"></option>
+              <option value="state"></option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="Phone No">Phone No</label>
+            <input type="number" name="" id="num" />
+          </div>
+          <div class="mb-3">
+            <label for="password"class="form-label">Password</label>
+            <input type="password" name="" id="password" class="form-control" />
+          </div>
+          <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label  class="form-check-label" for="rememberMe">Remember Me</label>
+          </div>
+          <div class="click mb-3"> <b>Click 'Save' to confirm your changes </b></div>
           <div class="but">
-            <button class="bot1">Save</button>
+            <button type="submit" class="bot1">Save</button>
             <button class="bot2">Cancel</button>
           </div>
         </form>
