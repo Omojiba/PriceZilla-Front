@@ -568,19 +568,30 @@ main{
     width: 100%;
     margin-bottom: 50px;
 }
-.footer-list{
+.footer-list, .footer-list-mobile{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .footer-flexbox .guidelines{
-    padding-left: 70px;
+    padding-left: 0px;
 }
-.footer-list p, .email p{
+.footer-list a, .email p{
     font-size: 16px;
 }
 .news-email-flexbox{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    color: rgba(255, 124, 68, 1);
+    cursor: pointer;
 }
 .email-support{
     display: flex;
@@ -629,7 +640,7 @@ main{
         padding-left: 0;
     }
     .on-pricezilla{
-        padding-left: 40px;
+        padding-left: 0px;
     }
 }
 
@@ -671,6 +682,13 @@ main{
         margin-bottom: 30px;
         padding: 0 20px;
     }
+    .guidelines-mobile{
+        margin-left: 40px;
+        border: 1px solid green;
+    }
+    .information-mobile, .pricezilla-mobile{
+        margin-left: 35px;
+    }
     .newsletter{
         width: 100%;
         margin: auto;
@@ -680,23 +698,44 @@ main{
         width: 70%;
     } 
 }
+@media screen and (max-width: 454px) {
+    .information-mobile, .pricezilla-mobile{
+        margin-left: 5px;
+    }
+    
+}
 @media screen and (max-width: 425px) {
     .footer-flexbox1, .footer-flexbox2{
-        padding: 0;
+        padding: 0 ;
+    }
+    .information-mobile, .pricezilla-mobile{
+        margin-left: 0;
     }
     
 }
 @media screen and (max-width: 380px) {
     .email-support{
-        gap: 10px
+        gap: 10px;
+        ;
     }
-    .mobile-footer p{
+    .mobile-footer a, .mobile-footer p{
         font-size: 13px;
     }
     .email-icon{
         font-size: 20px;
         transform: translateX(-10px);
     }
+    .footer-icons img{
+        width: 16px;
+        height: 16px;
+    }
+    .spaced-icon{
+        margin-left: 5px;
+    }
+    .email-support h5{
+        font-size: 17px;
+    }
+
 }
 @media screen and (max-width: 341px) {
     .newsletter form input{
@@ -709,7 +748,12 @@ main{
         width: 16px;
         height: 16px;
     }
-    
+    .email-icon{
+        font-size: 16px;
+    }
+    .navbar-scroll{
+        width: 100%;
+    }
 }
 
 
