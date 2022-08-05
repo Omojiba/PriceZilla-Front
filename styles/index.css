@@ -85,6 +85,13 @@ body{
     .account-icon{
         display: block;
     }
+    .slime{
+        
+        display: flex;
+        justify-content: end;
+        text-align: end;
+        padding-right: 0;
+    }
     
 }
 @media only screen and (min-width: 768px){
@@ -409,7 +416,6 @@ main{
     color: white;
   }
 .category-box{ 
-    /* background-image: linear-gradient(to right, rgba(255, 124, 68, 1), rgba(225, 145, 51, 1)); */
     background: rgba(255, 124, 68, 1);
     border-radius: 8px;
     padding: 10px 15px;
@@ -641,7 +647,7 @@ main{
       }
     
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 481px) {
     .cell-1 .slideshow-text h1 .up-to, .slideshow-text h1 .off-for, .home-lander h1{
         font-size: 18px;
     }
@@ -655,10 +661,16 @@ main{
         padding: 5;
         background-position: 75% 10%;
         padding-right: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
     }
-    .home-lander{
-        transform: translateY(28vh);
+    .home-lander h1{
+        font-size: 16px;
     }
+    .image-slideshow .flickity-page-dots {
+        top: 340px;
+      }
 }
 
 
