@@ -274,7 +274,9 @@ padding-bottom: 50px;
 .link .tabs{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    
+    /* align-items: flex-start; */
+   
     padding: 0px;
     gap: 43px;
 }
@@ -285,18 +287,19 @@ padding-bottom: 50px;
     align-items: center;
 /* background-color: red; */
 padding-bottom: 16px;
+cursor: pointer;
 
   
 }
 .link .tabs .tab a[data-switcher]{
-    font-size: 32px;
+    font-size: 28px;
     line-height: 38px;
     /* identical to box height */
     font-weight: 500;
     display: flex;
     align-items: center;
 
-    
+    cursor: pointer;
     color: #BBBBBB;
     
     /* transition: all 0.5s ease; */
@@ -318,6 +321,51 @@ padding-bottom: 16px;
 .link .tabs .tab.is-active a{
     color: #131313;
 }
+
+
+
+
+.pages{
+  
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    /* background-color: red; */
+}
+.pages .page{
+    display: none;
+ transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+}
+.pages .page.is-active {
+    display: block;
+   opacity: 1;
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .information h3{
     /* background-color: red; */
     font-weight: 700;
