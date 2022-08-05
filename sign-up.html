@@ -22,8 +22,8 @@
         <nav class="navbar navbar-expand-md my-navbar">
 
             <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
-    <a class="navbar-brand logo" href="#"><span>
-      <img src="./assets/Pricezilla logo.png"  style="width: 8rem "></span>
+    <a class="navbar-brand logo" href="./index.html"><span>
+      <img src="./assets/Pricezilla logo.png"  ></span>
     </a>
     <button class="navbar-toggler slime" 
             type="button" 
@@ -38,7 +38,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="./index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" 
@@ -50,10 +50,10 @@
             Categories
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Laptops</a>
-            <a class="dropdown-item" href="#">Phones</a>
-            <a class="dropdown-item" href="#">Accessories</a>
-            <a class="dropdown-item" href="#">Home Appliances</a>
+            <a class="dropdown-item" href="#">Furniture</a>
+              <a class="dropdown-item" href="#">Kitchen Appliances</a>
+              <a class="dropdown-item" href="#">Laundry</a>
+              <a class="dropdown-item" href="#">Entertainment</a>
           </div>
         </li>
         <li class="nav-item">
@@ -75,62 +75,112 @@
   </header> 
 
 
-      <main class="container">
-<h1>THIS IS THE SIGN UP PAGE</h1>
+      <main class="container main-container">
+        <div class="form-container">
+          <div class="form-header-text">
+          <h3>CREATE AN ACCOUNT AND ENJOY THE  BENEFITS PRICEZILLA OFFERS</h3>
+          <div class="last-line">  <p>Already a member? <a href="./login.html">Sign in here</a></p></div>
+        </div>
+
+
+        <form class="sign-up-form" method="post">
+        
+        
+        <div class="form-group line-1">
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullName" id="fullName" class="form-control" placeholder="John Doe" required >
+        </div>
+
+        <div class="form-group line-2">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="e.g johndoe@gmail.com" required>
+        </div>
+        
+
+        <div class="form-group line-3">
+          <label for="password">Password</label>
+        <div class="toggle-password">
+          <input type="password" name="password" id="password" class="form-control" required>
+          <i class="bi bi-eye-slash visibility-icon"></i>
+          </div>
+        
+        </div>
+
+        <div class="mb-4 form-check">
+          <input type="checkbox" class="form-check-input" id="rememberMe">
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+        
+          <input type="submit" name="Sign in"  class="sign-up-btn">
+
+          <div class="or-divider-text">
+            <span></span>
+            <p>OR</p> 
+            <span></span>
+          </div>
+
+          <button>
+            <img src="assets/icons/flat-color-icons_google.svg" alt="">
+            Continue with Google
+          </button>
+          <button>
+            <img src="assets/icons/logos_facebook.svg" alt="">
+            Continue with Facebook
+          </button>
+
+        <div class="last-line">  <p>Already a member? <a href="./login.html">Sign in here</a></p></div>
+
+          
+        
+          </form>
+       
+        </div>
+
+
       </main>
     
+
+    
+                                 <!--                FOOTER SECTION -->
 
     <footer class="footer">
         <div class="container">
         <div class="footer-logo"><h1>Pricezilla</h1></div>
 
-        <div class="grid-container">
+
+        <!--           DESKTOP VIEW FOOTER      -->
+
+    <div class="desktop-footer">
         <div class="footer-flexbox">
            
            <div class="footer-list">
                <h5>Information</h5>
-               <p>About PriceZilla</p>
-               <p>Reviews</p>
-               <p>Contact - PriceZilla</p>
-               <p>Register your shop</p>
-               <p>Help Center</p>
+               <a href="">About PriceZilla</a>
+               <a href="">Reviews</a>
+               <a href="">Contact - PriceZilla</a>
+               <a href="">Register your shop</a>
+               <a href="">Help Center</a>
    
            </div>
            <div class="footer-list guidelines">
                <h5>Guidelines</h5>
-               <p>Terms and Conditions</p>
-               <p>Disclaimer</p>
-               <p>Privacy Policy</p>
-               <p>Cookie Policy</p>
-               <p>Privacy Settings</p>
+               <a href="">Terms and Conditions</a>
+               <a href="">Disclaimer</a>
+               <a href="">Privacy Policy</a>
+               <a href="">Cookie Policy</a>
+               <a href="">Privacy Settings</a>
            </div>
-           <div class="footer-list">
+           <div class="footer-list on-pricezilla">
                <h5>On PriceZilla</h5>
-               <p>Themes and Campaigns</p>
-               <p>Newsroom</p>
-               <p>Articles</p>
-               <p>Shop of the year</p>
-               <p>Categories</p>
+               <a href="">Themes and Campaigns</a>
+               <a href="">Newsroom</a>
+               <a href="">Articles</a>
+               <a href="">Shop of the year</a>
+               <a href="">Categories</a>
            </div>
-
-           <div class="email-support-mobile">
-            <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
-            </div>
-            <div class="email">
-                <h5>Email Support</h5>
-                <p>help@pricezilla.com</p>
-                <div class="footer-icons">
-                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" class="spaced-icon" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" class="spaced-icon" alt="facebook-icon"/>
-
-                </div>
-            </div>
-        </div>
+           
        </div>
-    </div>
+    
         
     <div class="news-email-flexbox">
         <div class="newsletter">
@@ -143,24 +193,94 @@
 
         <div class="email-support">
             <div class="email-icon">
-                <i class="bi bi-envelope h1"></i>
+                <i class="bi bi-envelope"></i>
             </div>
             <div class="email">
                 <h5>Email Support</h5>
                 <p>help@pricezilla.com</p>
                 <div class="footer-icons">
                     <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/twitter-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/youtube-icon.png" alt="facebook-icon"/>
-                    <img src="./assets/instagram-icon.png" alt="facebook-icon"/>
-
+                    <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
                 </div>
             </div>
         </div>
 
     </div>
+  </div>
+
+
+
+                       <!--                MOBILE VIEW FOOTER                    -->
+
+
+
+      <div class="mobile-footer">
+        <div class="footer-flexbox1">
+           
+           <div class="footer-list-mobile information-mobile">
+               <h5>Information</h5>
+               <a href="">About PriceZilla</a>
+               <a href="">Reviews</a>
+               <a href="">Contact - PriceZilla</a>
+               <a href="">Register your shop</a>
+               <a href="">Help Center</a>
+   
+           </div>
+           <div class="footer-list-mobile guidelines-mobile">
+               <h5>Guidelines</h5>
+               <a href="">Terms and Conditions</a>
+               <a href="">Disclaimer</a>
+               <a href="">Privacy Policy</a>
+               <a href="">Cookie Policy</a>
+               <a href="">Privacy Settings</a>
+           </div>
+        </div>
+
+        <div class="footer-flexbox2">
+           <div class="footer-list-mobile pricezilla-mobile">
+               <h5>On PriceZilla</h5>
+               <a href="">Themes and Campaigns</a>
+               <a href="">Newsroom</a>
+               <a href="">Articles</a>
+               <a href="">Shop of the year</a>
+               <a href="">Categories</a>
+           </div>
+
+           <div class="email-support">
+            <div class="email-icon">
+                <i class="bi bi-envelope"></i>
+            </div>
+            <div class="email">
+                <h5>Email Support</h5>
+                <p>help@pricezilla.com</p>
+                <div class="footer-icons">
+                    <img src="./assets/facebook-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/twitter-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/youtube-icon.png" alt="facebook-icon"/>
+                    <img class="spaced-icon" src="./assets/instagram-icon.png" alt="facebook-icon"/>
+                </div>
+            </div>
+        </div>
+           
+       </div>
+    
+        
+    
+        <div class="newsletter">
+            <h5>Subscribe to our newsletter</h5>
+            <form>
+                <input type="email" placeholder="enter email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    
+  </div>
 </div>
-</footer>
+
+       </footer>
 
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -172,12 +292,31 @@
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=70){
+        if($(window).scrollTop() <=15){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');
         }
       });
+    });
+  </script>
+  <script>
+    const visibilityIcon = document.querySelector(".visibility-icon");
+    const passwordInput = document.querySelector(".toggle-password input");
+
+    var passwordVisible = true;
+
+
+    visibilityIcon.addEventListener('click', function() {
+      if (passwordVisible){
+        passwordInput.setAttribute('type', 'text');
+        visibilityIcon.setAttribute('class', "bi-eye");
+      }else{
+        passwordInput.setAttribute('type', 'password')
+        visibilityIcon.setAttribute('class', 'bi-eye-slash')
+      }
+      passwordVisible = !passwordVisible
+
     });
   </script>
 </body>
