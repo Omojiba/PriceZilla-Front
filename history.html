@@ -12,6 +12,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
         <link rel="stylesheet" type="text/css" href="./styles/history.css">
+        <script src="momentum.min.js"></script>
     <title>PriceZilla</title>
 </head>
 <body>
@@ -81,6 +82,8 @@
         </div>
         <h1>HISTORY</h1>
 
+        <div class="line"></div>
+
         <section class="history-search">
           <div class="history-sort">
             <p>Sort list by:</p>
@@ -127,6 +130,8 @@
                  </div>
                 </div>
              </section>
+
+             <div class="line"></div>
      
              <section class="history-item">
                  <div class="history-item-first">
@@ -151,6 +156,8 @@
                   </div>
                  </div>
               </section>
+
+              <div class="line"></div>
      
               <section class="history-item">
                  <div class="history-item-first">
@@ -175,8 +182,10 @@
                   </div>
                  </div>
               </section>
+
+              <div class="line"></div>
      
-              <section class="history-item">
+              <section class="history-item ">
                  <div class="history-item-first">
                   <div class="product">
                     <img src="assets/images/speakers.svg" alt="" id="item-img">
@@ -202,11 +211,11 @@
         </section>
 
         <section class="next-item">
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-          <a href="">4</a>
-          <a href="">Next</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a  class="next">Next</a>
         </section>
       </main>
 
@@ -369,6 +378,13 @@
         }
       });
     });
+
+    $(document).ready(function(){
+      $('.next').click(function(){
+        $('.next-item').find('.next-item.active').next().addClass('active');
+        $('.next-item').find('.next-item.active').next().removeClass('active');
+      })
+    })
   </script>
 </body>
 </html>
