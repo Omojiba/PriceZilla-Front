@@ -38,8 +38,8 @@ body {
 .point {
     
     display: flex;
-    background: url('Background 4.png') ;
- /* opacity: 0.2; */
+    background: url('img.png');
+ 
     margin: 20px 4px;
     padding-top: 30px;
     /* background-color: red; */
@@ -62,7 +62,7 @@ body {
     font-size: 64px;
     /* width: 256px; */
     margin-left: 30.22%;
-    color: rgba(255, 124, 68, 1);
+    color: rgba(187, 187, 187, 1);
     top: 2.17%;
     /* background-color: red; */
     line-height: 96px;
@@ -70,7 +70,7 @@ body {
 }
 
 .category h3 span {
-    color: #00303C;;
+    color: rgba(244, 244, 244, 1);
     /* left: 300px; */
 }
 
@@ -148,7 +148,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    color: #262322;;
+    color: #BBBBBB;
     line-height: 36px;
 }
 
@@ -182,7 +182,7 @@ body {
 
 .frame-76 h3 {
     font-weight: 700;
-    color: rgba(255, 124, 68, 1);
+
     font-size: 48px;
     line-height: 72px;
 
@@ -192,15 +192,12 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    color: #262322;
 }
 
 .frame-76 p {
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: #262322;
-
 }
 
 .frame-76 .frame-50 {
@@ -244,7 +241,6 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
-    color: rgba(255, 124, 68, 1);
     /* background-color: firebrick; */
     margin-bottom: 24px;
 }
@@ -284,7 +280,7 @@ body {
 
     width: 100%;
     height: 328px;
-    background: none;
+    background: #BBBBBB;
     border: 1px solid #F4F4F4;
     border-radius: 0px 32px;
 }
@@ -294,7 +290,7 @@ body {
     width: 100%;
     height: 100%;
     order: 1px solid #F4F4F4;
-    border-radius: 32px 0;
+    border-radius: 0px 32px;
 
 }
 
@@ -304,7 +300,6 @@ body {
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    color: #262322;
 }
 
 .flex .text h6 {
@@ -330,73 +325,133 @@ body {
 /* Testimonials */
 
 .testimonial-row{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+/* background-color: red; */
 gap: 24px;
 margin-bottom: 125px;
+position: relative;
 }
 .testimonial-row .frame-81{
-text-align: center;
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
 }
 .testimonial-row .frame-81 p{
-font-weight: 400;
+    font-weight: 400;
 font-size: 24px;
 line-height: 36px;
-color: #262322;
 }
 .testimonial-row .frame-81 h5{
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
-    color: rgba(255, 124, 68, 1);
 }
-
 .testimonials{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-column-gap: 5rem;
-margin-top: 50px;
+    /* background-color: red; */
 
 
+display: flex;
+width: 100%;
+gap: 72px;
+position: relative;
+align-items: flex-start;
+padding: 0px;
 
 }
 .testimonials .testimonial{
-background: #00303C;
-color: #BBBBBB;
-padding: 40px 0 0px 10px;
+    position: absolute;
+/* width: 348px; */
+width: 28.95%;
+height: auto;
+/* padding: 700px; */
+background: #BBBBBB;
+color: #F4F4F4;
+
+position: relative;
+/* left: 0px;
+top: 0px; */
+border: 1px solid #F4F4F4;
 border-radius: 0px 32px;
-height: 40vh;
+padding: 0 8px;
+}
+ .testimonial .frame-80{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+position: relative;
+/* position: absolute; */
+width: 100%;
+padding-left: 8px;
+margin-top: 41px;
+margin-bottom: 10px;
+}
+.frame-80 .frame-77{
+    display: flex;
+flex-direction: column;
+position: relative;
+align-items: flex-start;
+padding: 0px;
+width: 100%;
+gap: 16px;
+}
+.frame-80 .frame-77 .icons{
+   position: relative;
+  
+}
+.frame-77 .icons .fa{
+font-size: 24px;
+/* position: absolute; */
 
 }
-.testimonial .testimony{
+
+
+.frame-80 .frame-77 p{
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
+    line-height: 36px;  
 }
-
 .frame-79{
-display: flex;
+    display: flex;
 flex-direction: row;
 align-items: center;
+padding: 0px;
 gap: 12px;
+
 
 }
 .frame-79 .frame-4{
- 
+    width: 64px;
+height: 64px;
+background: #F4F4F4;
+border-radius: 200px;
 }
-.frame-4 img{
-    margin-bottom: 5px;
-}
+
 .frame-78{
-display: flex;
+    display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding-top: 10px;
-gap: 3px;
+padding: 0px;
+gap: 4px;
 }
 .frame-78 h4{
-font-weight: 400;
+    font-weight: 400;
 font-size: 20px;
+line-height: 30px;
 }
 .frame-78 p{
-font-weight: 400;
+    font-weight: 400;
 font-size: 16px;
+line-height: 24px;
 } 
 
 /* Testimonials Ends*/
@@ -439,42 +494,35 @@ flex-direction: row;
 align-items: flex-start;
 padding: 12px 20px;
 gap: 10px;
-border: 1px solid #00303C;;
+border: 1px solid #BBBBBB;
 border-radius: 8px;
-}
-.buttons a{
-    text-decoration: none;
 }
 .buttons .faq{
     font-weight: 400;
 font-size: 24px;
 line-height: 36px;
 background-color:white ;
-color: #00303C;
+color: #BBBBBB;
 }
 .buttons .contact{
     font-weight: 400;
 font-size: 24px;
 line-height: 36px;
 color: #F4F4F4;
-background-color: rgba(255, 124, 68, 1);
-border: none;
+background-color: #BBBBBB;
 }
 
 /* Questions Ends */
 
 /* Go to shop */
 .shop{
-
-background-image: url(../assets/tele\ 1.png);
-background-size: cover;
-background-repeat: no-repeat;
+    /* background-color: red; */
+    background: #BBBBBB;
+position: relative;
+/* width: 1184px; */
 border: 1px solid #F4F4F4;
 border-radius: 0px 50px;
 height: 274px;
-display: flex;
-align-items: center;
-justify-content: center;
 }
 .shop img{
     width: 100%;
@@ -482,9 +530,17 @@ justify-content: center;
 border-radius: 0px 50px;
 }
 .shop button{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
 padding: 12px 20px;
-border: none;
-background:  rgba(255, 124, 68, 1);
+gap: 10px;
+position: absolute;
+left: 30.66%;
+top: 55.5%;
+
+border: 0;
+background:  #F4F4F4;
 border-radius: 8px;
 }
 .shop .primary{
@@ -492,9 +548,7 @@ border-radius: 8px;
 font-size: 24px;
 line-height: 36px;
 
-color: #F4F4F4;
+color: #BBBBBB;
 }
 
 /* Go to shop */
-
-
