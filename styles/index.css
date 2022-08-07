@@ -23,6 +23,9 @@ body{
     padding:12px 18px;
 
 }
+header{
+    margin-bottom: 100px;
+}
 .header-inner{
     width: 100%;
     padding-top: 15px;
@@ -31,9 +34,8 @@ body{
     width:100%;
     z-index: 99;
     background-color: white;
-    
+    position: fixed;
 }
-
 .nav-item .nav-link{
     display: block;
     text-transform: capitalize;
@@ -62,21 +64,24 @@ body{
      color: white; 
 
 }
+.container-me{
+    margin: 0 120px;
+}
 .header{
     position: relative;
     width: 100%;
     padding-top: 0px;
 }
 .navbar-scroll{
-    background-color: white;
+    /* background-color: white;
     padding: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
-    transition-duration: 0.8s;
-    box-shadow:0px 1px 10px rgba(0,0,0,0.4);
-    padding-top: 15px;
+    transition-duration: 0.8s; */
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+    /* padding-top: 15px; */
 }
 .logo img{
     width: 9rem;
@@ -181,7 +186,7 @@ body{
                           /* HERO SECTION */
 main{
     min-height: calc(100vh - 211px - 58px);
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .hero{
     width: 100%;
@@ -194,11 +199,20 @@ main{
     justify-content: center;
     
 }
-.hero h1{
+.hero h4{
     color: white;
-    font-size: 56px;
+    font-size: 48px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 72px;
+}
+.hero-search p{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 70px;
 }
 .hero-search{
     display: flex;
