@@ -7,7 +7,6 @@
 .container{
     font-family: 'Roboto';
     width: 100%;
-    /* max-width: 1440px; */
 }
 .first-section{
     display: flex;
@@ -56,6 +55,7 @@
 }
 .doc-search img{
     margin-right: 0.7rem;
+    margin-top: -0.1rem;
 }
 .doc-search input{
     font-family: 'Roboto';
@@ -68,7 +68,7 @@
     width: 87%;
     height: 35px;
     margin-top: 0.1rem;
-    padding-top: 0rem;
+    padding-top: 0.2rem;
     border: 0;
     outline: 0;
 
