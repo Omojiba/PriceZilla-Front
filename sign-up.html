@@ -146,7 +146,7 @@ rel="stylesheet"
                                  <!--                FOOTER SECTION -->
 
     <footer class="footer">
-        <div class="container">
+        <div class="container-lg">
         <div class="footer-logo"><h1>Pricezilla</h1></div>
 
 
@@ -294,7 +294,7 @@ rel="stylesheet"
     $(function(){
       var navbar = $('.header-inner');
       $(window).scroll(function(){
-        if($(window).scrollTop() <=15){
+        if($(window).scrollTop() <=55){
           navbar.removeClass('navbar-scroll');
         }else{
           navbar.addClass('navbar-scroll');
@@ -302,6 +302,8 @@ rel="stylesheet"
       });
     });
   </script>
+
+<!--               PASSWORD VISIBILITY TOGGLE -->
   <script>
     const visibilityIcon = document.querySelector(".visibility-icon");
     const passwordInput = document.querySelector(".toggle-password input");
