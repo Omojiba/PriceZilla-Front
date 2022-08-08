@@ -14,12 +14,13 @@ rel="stylesheet"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
         <link rel="stylesheet" type="text/css" href="./styles/history.css">
+        <script src="momentum.min.js"></script>
     <title>PriceZilla</title>
 </head>
 <body>
     <header class="header"> 
         <div class="header-inner" id="navscroll">
-          <div class="container">
+          <div class="container-lg">
             <nav class="navbar navbar-expand-md my-navbar">
 
                 <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
@@ -75,13 +76,15 @@ rel="stylesheet"
         </div>
       </header> 
 
-      <main class="container">
+      <main class="container-lg">
         <div class="history-top">
           <a href="">Home</a>
           <a href=""><img src="assets/images/next-icon.svg" alt=""></a>
           <p>History Page</p>
         </div>
         <h1>HISTORY</h1>
+
+        <div class="line"></div>
 
         <section class="history-search">
           <div class="history-sort">
@@ -129,6 +132,8 @@ rel="stylesheet"
                  </div>
                 </div>
              </section>
+
+             <div class="line"></div>
      
              <section class="history-item">
                  <div class="history-item-first">
@@ -153,6 +158,8 @@ rel="stylesheet"
                   </div>
                  </div>
               </section>
+
+              <div class="line"></div>
      
               <section class="history-item">
                  <div class="history-item-first">
@@ -177,8 +184,10 @@ rel="stylesheet"
                   </div>
                  </div>
               </section>
+
+              <div class="line"></div>
      
-              <section class="history-item">
+              <section class="history-item ">
                  <div class="history-item-first">
                   <div class="product">
                     <img src="assets/images/speakers.svg" alt="" id="item-img">
@@ -204,11 +213,11 @@ rel="stylesheet"
         </section>
 
         <section class="next-item">
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-          <a href="">4</a>
-          <a href="">Next</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a  class="next">Next</a>
         </section>
       </main>
 
@@ -371,6 +380,13 @@ rel="stylesheet"
         }
       });
     });
+
+    $(document).ready(function(){
+      $('.next').click(function(){
+        $('.next-item').find('.next-item.active').next().addClass('active');
+        $('.next-item').find('.next-item.active').next().removeClass('active');
+      })
+    })
   </script>
 </body>
 </html>

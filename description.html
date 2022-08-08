@@ -149,7 +149,9 @@ rel="stylesheet"
     </nav>
 
 
-<h3>Electric Iron</h3>
+    <section class="pages">
+      <div class="page  is-active " data-page="1">
+        <h3>Electric Iron</h3>
 <div class="electric">
     
     <img src="./assets/iron2.png">
@@ -222,7 +224,15 @@ rel="stylesheet"
     ridiculus sollicitudin. Amet lacus euismod 
     porta eget nulla nisl orci <br>orci ligula. Sit mollis hendrerit.
   </div>
-</div>
+</div> 
+      </div>
+      <div class="page two" data-page="2">2</div>
+      <div class="page" data-page="3">3</div>
+      <div class="page" data-page="4">4</div>
+      </section>
+
+
+
 
 
 
@@ -408,8 +418,41 @@ rel="stylesheet"
     
   </div>
 </div>
+       </footer>
+    <script>
+      window.onload = () => {
+    const tab_switchers = document.querySelectorAll('[data-switcher]');
 
-   </footer>
+    for (let i = 0; i < tab_switchers.length; i++) {
+        const tab_switcher = tab_switchers[i];
+        const page_id = tab_switcher.dataset.tab;
+
+        tab_switcher.addEventListener('click', () => {
+            document.querySelector('.tabs .tab.is-active').classList.remove('is-active');
+            tab_switcher.parentNode.classList.add('is-active');
+
+            SwitchPage(page_id);
+        });
+    }
+}
+
+function SwitchPage (page_id) {
+    const current_page = document.querySelector('.pages .page.is-active');
+    current_page.classList.remove('is-active');
+
+    const next_page = document.querySelector(`.pages .page[data-page="${page_id}"]`);
+     next_page.classList.add('is-active');
+}
+    </script>
+
+
+
+
+
+
+
+
+
    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
