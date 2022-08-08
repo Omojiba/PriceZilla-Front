@@ -105,6 +105,19 @@ main {
 main a {
   color: rgba(255, 124, 68, 1);
 }
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: rgba(255, 124, 68, 1);
+  font-weight: bold;
+  margin-left: -1em;
+  display: inline-block;
+  width: 1em;
+}
 footer {
   grid-area: footer;
   padding: 40px 40px;
