@@ -64,8 +64,8 @@ header{
      color: white; 
 
 }
-.container-me{
-    margin: 0 120px;
+svg{
+  color: rgba(38, 35, 34, 0.7);
 }
 .header{
     position: relative;
@@ -184,6 +184,10 @@ header{
                                    /* main */
 
                           /* HERO SECTION */
+.mysection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 main{
     min-height: calc(100vh - 211px - 58px);
     margin-bottom: 60px;
@@ -205,7 +209,6 @@ main{
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
-    line-height: 72px;
 }
 .hero-search p{
     font-size: 16px;
@@ -261,13 +264,13 @@ main{
     font-size: 20px;
 }
 @media screen and (max-width: 1200px) {
-    .hero h1{
-        font-size: 45px;
+    .hero h4{
+        font-size: 40px;
     }
     
 }
 @media screen and (max-width: 992px) {
-    .hero h1{
+    .hero h4{
         font-size: 35px;
     }
     .hero-search .input-search-box{
@@ -281,8 +284,9 @@ main{
     }
 }
 @media screen and (max-width: 768px) {
-    .hero h1{
-        font-size: 32px;
+    .hero h4{
+        font-size: 24px;
+        margin-bottom: 10px;
     }
     .hero-search .input-search-box{
         height: 3.5rem;
@@ -294,11 +298,17 @@ main{
     .hero-search{
         width: 90%;
     }
+    .hero p{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 426px) {
-    .hero h1{
-        font-size: 25px;
-        margin-bottom: 25px;
+    .hero h4{
+        font-size: 18px;
+    }
+    .hero p{
+        font-size: 10px;
+        margin-bottom: 20px;
     }
     .hero-search .input-search-box{
         height: 3.2rem;
@@ -312,7 +322,8 @@ main{
         width: 90%;
     }
     .hero-search form{
-        gap:12px
+        gap:12px;
+        padding: 0 10px;
     }
     .hero{
         background-position: 25% 15%;
@@ -320,8 +331,8 @@ main{
     }
 }
 @media screen and (max-width: 376px) {
-    .hero h1{
-         font-size: 21px;
+    .hero p{
+         font-size: 9px;
     }
     .hero-search{
         width: 95%;
@@ -463,8 +474,14 @@ main{
     align-items: center;
     justify-content: center;
     padding: 30px 0;
-    min-height: 50vh;
-    
+    height: 45vh;
+}
+
+.product-image-container .microwave, .couch, .speakers, .chandelier{
+    width: 70%;
+}
+.product-image-container .washing-machine{
+    width: 50%;
 }
 .product-price-card{
     width: 100%;
@@ -503,6 +520,9 @@ main{
 .price{
     margin-top: 15px;
 }
+.price h4{
+    font-size: 24px;
+}
 .price .old-price{
     display: flex;
     gap: 5px;
@@ -516,6 +536,7 @@ main{
     color: rgba(240, 17, 17, 1);
     font-weight: 500;
 }
+
 .section-header{
     display: flex;
     align-items: center;
@@ -525,19 +546,105 @@ main{
 .section-header h5{
     color: rgba(187, 187, 187, 1);
 }
+@media screen and (max-width: 1024px) {
+   .product-image-container .microwave, .couch, .chandelier, .speakers, .tv{
+    width: 60%;
+   }
+   .product-image-container{
+    height: 30vh;
+   }
+   .price h4{
+    font-size: 22px;
+   }
+}
 @media screen and (max-width: 768px) {
-    .best-selling-container, .promo-deals-container{
-        flex-direction: column;
+    .price h4{
+        font-size: 17px;
+       }
+    
+}
+@media screen and (max-width: 525px) {
+    .product-image-container{
+        height: 20vh;
     }
+    .product-image-container .microwave .tv .speakers{
+        width: 50%;
+    }
+    .price h4{
+    display: -webkit-box;
+   -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+    overflow: hidden;
+        
+    }
+    .old-price{
+        display: flex;
+        flex-direction: column;
+        column-gap: 0;
+       
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .product-image-container .washing-machine .tv{
+        width: 40%;
+    }
+    .price h4{
+        font-size: 15px;
+    }
+    .old-price, .price p{
+        font-size: 12px;
+    }
+    .product-image-container{
+        height: 15vh;
+    }
+    .section-header h2{
+        font-size: 20px;
+    }
+    .section-header h5{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .product-image-container .washing-machine .tv {
+        width: 30%;
+    }
+    .product-image-container{
+        height: 12vh;
+    }
+    .best-selling-container, .promo-deals-container{
+        gap:15px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .product-image-container{
+        height: 11vh;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    .product-image-container .chandelier .speakers{
+        width: 50%;
+        border: 1px solid red;
+    }
+    .product-image-container{
+        min-width: 80px;
+    }
+    .best-selling-container, .promo-deals-container{
+        gap: 7px;
+        padding: 7px;
+    }
+    
 }
 
 
 
 /*    IMAGE SLIDESHOW STYLES */
-.image-slideshow{
-    margin-top:  180px;
-    margin-bottom: 250px;
-}
+
 .cell-1 img, .cell-2 img, .cell-3 img{
     width: 100%;
     width: 100%; 
@@ -565,7 +672,7 @@ main{
   .image-slideshow .flickity-page-dots .dot.is-selected {
     background: rgba(255, 124, 68, 1);
   }
-  .image-slideshow .flickity-button{
+   .flickity-button{
     display: none;
   }
 
@@ -604,19 +711,19 @@ main{
     .image-slideshow .flickity-page-dots {
         top: 150px;
       }
-      .image-slideshow{
+      /* .image-slideshow{
         margin-top:  100px;
         margin-bottom: 150px;
-    }
+    } */
 }
 @media screen and (max-width: 481px) {
     .image-slideshow .flickity-page-dots {
         top: 100px;
       }
-      .image-slideshow{
+      /* .image-slideshow{
         margin-top:  70px;
         margin-bottom: 100px;
-    }
+    } */
 }
 @media screen and (max-width: 320px) {
     .image-slideshow .flickity-page-dots {
@@ -632,7 +739,8 @@ main{
 .footer{
     background-color: #00303C;
     padding: 20px 0px; 
-    color: white; 
+    color: white;
+    
 }
 .footer-logo{
     text-align: center;
@@ -691,17 +799,30 @@ footer a{
     border: none;
     width: 30rem;
     outline: 0;
+    font-size: 21px;
+}
+.newsletter form ::-webkit-input-placeholder{
+    font-size: 16px;
 }
 .newsletter form button{
     padding: 1rem 2rem;
     border-radius: 0px 10px 10px 0px ;
     border: none;
     background-color: rgba(255, 124, 68, 1);
+    color: white;
+    font-size: 21px;
+    font-family: "Poppins", sans-serif;
 }
 .mobile-footer{
     display: none;
 }
 
+@media screen and (min-width:1200px) {
+    footer{
+        padding-bottom: 50px; 
+    }
+    
+}
 @media screen and (max-width: 992px) {
     .newsletter form input{
         width: 20rem
@@ -732,6 +853,7 @@ footer a{
     .newsletter form button{
         padding: 0.8rem 0.7rem;
         border-radius: 0px 10px 10px 0px ;
+        
     }
     
 }
