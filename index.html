@@ -32,7 +32,7 @@
   <body>
     <header class="header">
       <div class="header-inner" id="navscroll">
-        <div class="container">
+        <div class="container-lg">
           <nav class="navbar navbar-expand-md my-navbar">
             <div class="account-icon">
               <i class="bi bi-person-circle h1"></i>
@@ -95,10 +95,11 @@
       </div>
     </header>
 
-    <main class="container">
+    <main class="">
       <section class="hero">
         <div class="hero-search">
-          <h1>Search household items from different platforms around you</h1>
+          <h4>Find the right price for your home!</h4>
+          <p>Start comparing, save money and get the best deals on household items</p>
           <form>
             <div class="input-search-box">
               <i class="bi bi-search"></i>
@@ -110,7 +111,7 @@
       </section>
 
       <!-- DESKTOP VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES <= 768PX) -->
-      <section class="categories-container">
+      <section class="categories-container container-lg">
         <div class="category-box">Categories</div>
         <div class="category-box">Categories</div>
         <div class="category-box">Categories</div>
@@ -136,32 +137,38 @@
         <a href="" class="carousel-cell category-mobile">Categories</a>
       </section>
 
+
+
       <!--           BEST SELLING SECTION         -->
 
-      <section class="section">
+      <section class="mysection container-lg">
         <div class="section-header">
           <h2>Best Selling</h2>
           <h5>See more</h5>
         </div>
 
         <div class="best-selling-container">
+
           <div class="product-price-card">
             <div class="product-image-container">
-              <img src="./assets/microwave.png" width="70%" alt="assets" />
+              <img src="./assets/microwave.png" alt="hamilton microwave" class="microwave" />
             </div>
             <div class="price">
               <h4>HAMILTON MICROWAVE</h4>
-              <p>N27,800</p>
+              <p>₦27,800</p>
             </div>
           </div>
 
           <div class="product-price-card">
             <div class="product-image-container">
-              <img src="./assets/tv.png" alt="assets" />
+              <img 
+                  src="./assets/tv.png" 
+                  alt="Enkor plasma tv" 
+                  class="tv" />
             </div>
             <div class="price">
               <h4>ENKOR PLASMA TV</h4>
-              <p>N47, 500</p>
+              <p>₦47, 500</p>
             </div>
           </div>
 
@@ -169,20 +176,20 @@
             <div class="product-image-container">
               <img
                 src="./assets/washing-machine.png"
-                width="55%"
-                alt="assets"
+                alt="Haier washing machine"
+                class="washing-machine"
               />
             </div>
             <div class="price">
               <h4>HAIER WASHING MACHINE</h4>
-              <p>N32,000</p>
+              <p>₦32,000</p>
             </div>
           </div>
         </div>
       </section>
 
       <!--     PROMO DEALS SECTION       -->
-      <section class="section">
+      <section class="mysection container-lg">
         <div class="section-header">
           <h2>Promo deals</h2>
           <h5>See more</h5>
@@ -192,13 +199,16 @@
           <div class="product-price-card">
             <!-- <div class="discount-1">-15%</div> -->
             <div class="product-image-container">
-              <img src="./assets/couch.png" alt="assets" width="70%" />
+              <img 
+                  src="./assets/couch.png" 
+                  alt="assets" 
+                  class="couch" />
             </div>
             <div class="price">
               <h4>COZY YELLOW COUCH</h4>
               <div class="old-price">
-                <span>N184,000</span>
-                <p>N156,400</p>
+                <span>₦184,000</span>
+                <p>₦156,400</p>
               </div>
             </div>
           </div>
@@ -206,13 +216,16 @@
           <div class="product-price-card">
             <!-- <div class="discount-2">-27%</div> -->
             <div class="product-image-container">
-              <img src="./assets/chandelier.png" alt="assets" width="70%" />
+              <img 
+                  src="./assets/chandelier.png" 
+                  alt="vip chandelier" 
+                  class="chandelier"/>
             </div>
             <div class="price">
               <h4>ELITE VIP CHANDELIER</h4>
               <div class="old-price">
-                <span>N32,500</span>
-                <p>N23,725</p>
+                <span>₦32,500</span>
+                <p>₦23,725</p>
               </div>
             </div>
           </div>
@@ -220,42 +233,39 @@
           <div class="product-price-card">
             <!-- <div class="discount-3">-8%</div> -->
             <div class="product-image-container">
-              <img src="./assets/speakers.png" width="70%" alt="assets" />
+              <img 
+              src="./assets/speakers.png"  
+              alt="speakers" 
+              class="speakers"/>
             </div>
             <div class="price">
               <h4>LG BOOM STUDIO</h4>
               <div class="old-price">
-                <span>N87,000</span>
-                <p>N80,040</p>
+                <span>₦87,000</span>
+                <p>₦80,040</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="image-slideshow">
-        <div
-          class="carousel"
-          data-flickity='{ "autoPlay": true, "wrapAround": true }'
-        >
+      <!--              IMAGE SLIDESHOW      -->
+
+      <section class="mysection container-lg image-slideshow">
+        <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'>
+
           <div class="carousel-cell cell-1">
-            <div class="slideshow-text">
-              <h1>
-                <span class="up-to">up to</span><br />
-                <span class="percent-off">40%</span><br />
-                <span class="off-for">off for your</span><br />
-                <span class="home-decore">HOME DECORE</span>
-              </h1>
+             <img src="./assets/home-slide1.jpg" alt="banner"/> 
             </div>
-            <div class="home-lander">
-              <h1>
-                HOME<br />
-                LANDER
-              </h1>
-            </div>
+
+          <div class="carousel-cell cell-2"> 
+            <img src="./assets/home-slide2.jpg">
+           </div>
+
+          <div class="carousel-cell cell-3"> 
+            <img src="./assets/home-slide3.jpg"> 
           </div>
-          <div class="carousel-cell cell-2"></div>
-          <div class="carousel-cell cell-3"></div>
+
         </div>
       </section>
     </main>
@@ -263,7 +273,7 @@
     <!--                FOOTER SECTION -->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container-lg">
         <div class="footer-logo"><h1>Pricezilla</h1></div>
 
         <!--           DESKTOP VIEW FOOTER      -->
@@ -305,7 +315,7 @@
                   placeholder="enter email address"
                   required
                 />
-                <button type="submit">Subscribe</button>
+                <button type="submit">subscribe</button>
               </form>
             </div>
 
@@ -443,13 +453,26 @@
       $(function () {
         var navbar = $(".header-inner");
         $(window).scroll(function () {
-          if ($(window).scrollTop() <= 5) {
+          if ($(window).scrollTop() <= 55) {
             navbar.removeClass("navbar-scroll");
           } else {
             navbar.addClass("navbar-scroll");
           }
         });
       });
+    </script>
+
+    <script>
+    const  hero = document.querySelector(".hero");
+
+
+      window.addEventListener("resize", () => {
+  if (window.innerWidth < 1024) {
+    hero.classList.remove("container");
+  }else{
+    hero.classList.add("container");
+  }
+});
     </script>
   </body>
 </html>

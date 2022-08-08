@@ -25,7 +25,7 @@ rel="stylesheet"
 
 <header class="header">
     <div class="header-inner">
-      <div class="container">
+      <div class="container-lg">
         <nav class="navbar navbar-expand-md my-navbar">
 
             <div class="account-icon"><i class="bi bi-person-circle h1"></i></div>
@@ -322,7 +322,7 @@ rel="stylesheet"
                 <h3>You've got a question?<br>
                     We got you</h3>
                 <div class="buttons">
-                    <button class="faq">FAQS</button>
+                    <a href="./faqs.html"> <button class="faq">FAQS</button> </a>
                     <a href="./contact.html"> <button class="contact">Contact us</button></a>
                 </div>
             </section>
@@ -348,7 +348,7 @@ rel="stylesheet"
                                      <!--                FOOTER SECTION -->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container-lg">
       <div class="footer-logo"><h1>Pricezilla</h1></div>
 
 
@@ -502,7 +502,7 @@ rel="stylesheet"
         $(function () {
             var navbar = $('.header-inner');
             $(window).scroll(function () {
-                if ($(window).scrollTop() <= 5) {
+                if ($(window).scrollTop() <= 55) {
                     navbar.removeClass('navbar-scroll');
                 } else {
                     navbar.addClass('navbar-scroll');
