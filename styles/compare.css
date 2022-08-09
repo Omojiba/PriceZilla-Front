@@ -1,62 +1,144 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-color: #262322;
-;
-
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #262322;
 }
 
-main {
-    /* margin-left: 10%; */
-    margin-top: 10%;
-    
-
-}
-
-.arrow-icons  {
+.arrow-icons {
     display: flex;
-    
-    
+    margin-top: -3.5%;
 }
 
 .arrow-icons p {
-    padding-right: 30px;
-    font-size: 16px;
+    padding-right: 1.8rem;
+    font-size: 1rem;
 }
+
 .fa-angle-right {
-    padding-left:20px ;
+    padding-left: 20px;
+}
+
+
+.Frame-246 {
+    width: 90%;
 }
 
 .price-compare {
     display: flex;
     justify-content: space-around;
-    /* margin-right: 30px;
-    margin-left: 100px; */
-}
-
-
-.electric-iron {
-    /* margin-right: 3px; */
-    margin-left: 75px; 
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
     
 
+
+    /* margin-right: 30px; 
+margin-left: 100px;  */
+}
+
+.electric-iron {
+    /* margin-right: 150px;  */
+    /* padding-left: 50px; */
+    /* margin-right: 3px; */
+    /* margin-left: 75px; */
 }
 
 .electric-iron img {
-    border-radius: 25px;
-    max-width: 50%;
+    border-radius: 20px;
+    /* height: 100%; */
+    width: 100%;
+    /* margin-right: 60px; */
+
+    /* height: 92%; */
+}
+
+.store-buttons {
+    background-color: #FF7C44;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    line-height: 36px;
+    width: 40%;
+
+
+    /* margin-bottom: 100px; */
+
+
+    /* height: 48px; */
+    /* left: 33px; */
+}
+
+.hoover-iron {
+    /* padding-bottom: 9em; */
+    margin-top: 60px;
+
+    /* margin-bottom: 100px; */
 
 }
 
- 
+.hoover-iron h4 {
+    color: #131313;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
 
-    
-    
 
+    line-height: 30px;
+    /* width: 427px;
+    height: 72px; */
+    */
+}
+
+
+.fa-star {
+    padding: 0.3em;
+    font-size: 1.3em;
+
+}
+
+.fa-star.color {
+    color: #FF7C44;
+}
+
+.brand-names {
+    font-size: 2em;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 0.6em;
+    padding-bottom: 0.5em;
+    line-height: 48px;
+
+}
+
+.hoover-iron h3 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #262322;
+
+}
+
+button {
+    background-color: #FF7C44;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2em;
+    width: 60%;
+    
+}
+
+.buy-button {
+    padding: 12px, 20px, 12px, 20px
+}
