@@ -30,79 +30,69 @@
     <title>PriceZilla</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-inner" id="navscroll">
-        <div class="container">
-          <nav class="navbar navbar-expand-md my-navbar">
-            <div class="account-icon">
-              <i class="bi bi-person-circle h1"></i>
-            </div>
-            <a class="navbar-brand logo" href="#"
-              ><span> <img src="./assets/Pricezilla logo.png" /></span>
-            </a>
-            <button
-              class="navbar-toggler slime"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"
-                ><i class="fas fa-bars"></i
-              ></span>
-            </button>
+    <header>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Categories
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="">Furniture</a>
-                    <a class="dropdown-item" href="#">Kitchen Equipment</a>
-                    <a class="dropdown-item" href="#">Laundry / Dry cleaning</a>
-                    <a class="dropdown-item" href="#">Home Entertainment</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./wishlist.html">Wishlist</a>
-                </li>
-              </ul>
-              <div class="form-inline my-lg-0 login-signup">
-                <a class="header-btn my-sm-0" href="./login.html">Login</a>
-                <a class="header-btn my-sm-0" href="./sign-up.html"> Sign Up</a>
-              </div>
-            </div>
-          </nav>
+      <div class="headerr container-lg">
+        <div class="account-icon">
+          <i class="bi bi-person-circle h1"></i>
         </div>
+  
+      <div class="mylogo">
+        <a href="./index.html">
+          <img src="./assets/Pricezilla logo.png" alt="Pricezilla-logo">
+        </a>
       </div>
+  
+  
+      <div class="navigation">
+  
+        <input type="checkbox" class="toggle-menu"/>
+        <div class="hamburger"></div>
+         
+        <ul class="menu">
+          <li id="home"><a href="./index.html">Home</a></li>
+          <li class=" " id="categories-menu">
+            <a
+              class="dropdown-toggle spaced-link drop"
+              href="#"
+              id="navbarDropright"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <div class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="">Furniture</a>
+              <a class="dropdown-item" href="./unauthenticated-to-signup.html">Kitchen Equipment</a>
+              <a class="dropdown-item" href="./unauthenticated-to-signup.html">Laundry / Dry cleaning</a>
+              <a class="dropdown-item " href="./unauthenticated-to-signup.html">Home Entertainment</a>
+            </div>
+          </li>
+          <li class="spaced-link"><a class="spaced-link" href="./about.html">About us</a></li>
+          <li class="spaced-link"><a class="spaced-link" href="./wishlist.html">Wishlist</a></li>
+          <li><a class="nav-btn-mobile" href="./login.html">Login</a></li>
+          <li><a class="nav-btn-mobile" href="./sign-up.html">Sign up</a></li>
+        </ul>
+      </div>
+  
+  
+      <div class="nav2">
+        <ul class="nav-buttons">
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./sign-up.html">Sign up</a></li>
+        </ul>
+      </div>
+  
+    </div>
     </header>
 
-    <main class="container">
+    <main class="">
       <section class="hero">
         <div class="hero-search">
           <h4>Find the right price for your home!</h4>
-          <p>
-            Start comparing, save money and get the best deals on household
-            items
-          </p>
+          <p>Start comparing, save money and get the best deals on household items</p>
           <form>
             <div class="input-search-box">
               <i class="bi bi-search"></i>
@@ -114,7 +104,7 @@
       </section>
 
       <!-- DESKTOP VIEW OF CATEGORIES (HIDDEN ON SCREEN SIZES <= 768PX) -->
-      <section class="categories-container">
+      <section class="categories-container container-lg">
         <div class="category-box">Categories</div>
         <div class="category-box">Categories</div>
         <div class="category-box">Categories</div>
@@ -140,32 +130,38 @@
         <a href="" class="carousel-cell category-mobile">Categories</a>
       </section>
 
+
+
       <!--           BEST SELLING SECTION         -->
 
-      <section class="section">
+      <section class="mysection container-lg">
         <div class="section-header">
           <h2>Best Selling</h2>
           <h5>See more</h5>
         </div>
 
         <div class="best-selling-container">
+
           <div class="product-price-card">
             <div class="product-image-container">
-              <img src="./assets/microwave.png" width="70%" alt="assets" />
+              <img src="./assets/microwave.png" alt="hamilton microwave" class="microwave" />
             </div>
             <div class="price">
               <h4>HAMILTON MICROWAVE</h4>
-              <p>N27,800</p>
+              <p>₦27,800</p>
             </div>
           </div>
 
           <div class="product-price-card">
             <div class="product-image-container">
-              <img src="./assets/tv.png" alt="assets" />
+              <img 
+                  src="./assets/tv.png" 
+                  alt="Enkor plasma tv" 
+                  class="tv" />
             </div>
             <div class="price">
               <h4>ENKOR PLASMA TV</h4>
-              <p>N47, 500</p>
+              <p>₦47, 500</p>
             </div>
           </div>
 
@@ -173,20 +169,20 @@
             <div class="product-image-container">
               <img
                 src="./assets/washing-machine.png"
-                width="55%"
-                alt="assets"
+                alt="Haier washing machine"
+                class="washing-machine"
               />
             </div>
             <div class="price">
               <h4>HAIER WASHING MACHINE</h4>
-              <p>N32,000</p>
+              <p>₦32,000</p>
             </div>
           </div>
         </div>
       </section>
 
       <!--     PROMO DEALS SECTION       -->
-      <section class="section">
+      <section class="mysection container-lg">
         <div class="section-header">
           <h2>Promo deals</h2>
           <h5>See more</h5>
@@ -196,13 +192,16 @@
           <div class="product-price-card">
             <!-- <div class="discount-1">-15%</div> -->
             <div class="product-image-container">
-              <img src="./assets/couch.png" alt="assets" width="70%" />
+              <img 
+                  src="./assets/couch.png" 
+                  alt="assets" 
+                  class="couch" />
             </div>
             <div class="price">
               <h4>COZY YELLOW COUCH</h4>
               <div class="old-price">
-                <span>N184,000</span>
-                <p>N156,400</p>
+                <span>₦184,000</span>
+                <p>₦156,400</p>
               </div>
             </div>
           </div>
@@ -210,13 +209,16 @@
           <div class="product-price-card">
             <!-- <div class="discount-2">-27%</div> -->
             <div class="product-image-container">
-              <img src="./assets/chandelier.png" alt="assets" width="70%" />
+              <img 
+                  src="./assets/chandelier.png" 
+                  alt="vip chandelier" 
+                  class="chandelier"/>
             </div>
             <div class="price">
               <h4>ELITE VIP CHANDELIER</h4>
               <div class="old-price">
-                <span>N32,500</span>
-                <p>N23,725</p>
+                <span>₦32,500</span>
+                <p>₦23,725</p>
               </div>
             </div>
           </div>
@@ -224,13 +226,16 @@
           <div class="product-price-card">
             <!-- <div class="discount-3">-8%</div> -->
             <div class="product-image-container">
-              <img src="./assets/speakers.png" width="70%" alt="assets" />
+              <img 
+              src="./assets/speakers.png"  
+              alt="speakers" 
+              class="speakers"/>
             </div>
             <div class="price">
               <h4>LG BOOM STUDIO</h4>
               <div class="old-price">
-                <span>N87,000</span>
-                <p>N80,040</p>
+                <span>₦87,000</span>
+                <p>₦80,040</p>
               </div>
             </div>
           </div>
@@ -239,69 +244,58 @@
 
       <!--              IMAGE SLIDESHOW      -->
 
-      <section class="image-slideshow">
-        <div
-          class="carousel"
-          data-flickity='{ "autoPlay": true, "wrapAround": true }'
-        >
+      <section class="mysection container-lg image-slideshow">
+        <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'>
+
           <div class="carousel-cell cell-1">
-            <img src="./assets/home-slide1.jpg" alt="banner" />
+             <img src="./assets/home-slide1.jpg" alt="banner"/> 
+            </div>
+
+          <div class="carousel-cell cell-2"> 
+            <img src="./assets/home-slide2.jpg">
+           </div>
+
+          <div class="carousel-cell cell-3"> 
+            <img src="./assets/home-slide3.jpg"> 
           </div>
 
-          <div class="carousel-cell cell-2">
-            <img src="./assets/home-slide2.jpg" />
-          </div>
-
-          <div class="carousel-cell cell-3">
-            <img src="./assets/home-slide3.jpg" />
-          </div>
         </div>
       </section>
     </main>
 
+ 
     <!--                FOOTER SECTION -->
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-logo"><h1>Pricezilla</h1></div>
+      <div class="container-lg">
+        <div class="footer-logo"> <img src="./assets/footer-logo.png"></div>
 
         <!--           DESKTOP VIEW FOOTER      -->
 
         <div class="desktop-footer">
           <div class="footer-flexbox">
+
             <div class="footer-list">
               <h5>Information</h5>
-              <a href="">About PriceZilla</a>
-              <a href="./footer-pages/how-we-show-reviews.html" target="_blank"
-                >Reviews</a
-              >
-              <a href="./footer-pages/contact-pricezilla.html" target="_blank"
-                >Contact - PriceZilla</a
-              >
-              <a
-                href="./documentation-pages/start-comparing.html"
-                target="_blank"
-                >Documentation</a
-              >
+              <a href="">About Pricezilla</a>
+              <a href="./footer-pages/how-we-show-reviews.html" target="_blank">Reviews</a>
+              <a href="./footer-pages/contact-pricezilla.html" target="_blank">Contact - Pricezilla</a>
+              <a href="#" target="_blank">Documentation</a>
               <a href="">Help Center</a>
             </div>
             <div class="footer-list guidelines">
               <h5>Guidelines</h5>
-              <a href="./footer-pages/rules-and-guidelines.html" target="_blank"
-                >Terms and Conditions</a
-              >
+              <a href="./footer-pages/rules-and-guidelines.html" target="_blank">Terms and Conditions</a>
               <a href="">Disclaimer</a>
               <a href="">Privacy Policy</a>
               <a href="">Cookie Policy</a>
               <a href="">Privacy Settings</a>
             </div>
-            <div class="footer-list on-pricezilla">
-              <h5>On PriceZilla</h5>
-              <a href="">Themes and Campaigns</a>
-              <a href="">Newsroom</a>
-              <a href="">Articles</a>
-              <a href="">Shop of the year</a>
-              <a href="">Categories</a>
+            <div class="footer-list partners">
+              <h5>Partners & Advertising</h5>
+              <a href="">Why Pricezilla?</a>
+              <a href="">Register your shop</a>
+              <a href="">Advertising</a>
             </div>
           </div>
 
@@ -314,7 +308,7 @@
                   placeholder="enter email address"
                   required
                 />
-                <button type="submit">Subscribe</button>
+                <button type="submit">subscribe</button>
               </form>
             </div>
 
@@ -354,10 +348,10 @@
           <div class="footer-flexbox1">
             <div class="footer-list-mobile information-mobile">
               <h5>Information</h5>
-              <a href="">About PriceZilla</a>
+              <a href="">About Pricezilla</a>
               <a href="">Reviews</a>
-              <a href="">Contact - PriceZilla</a>
-              <a href="">Register your shop</a>
+              <a href="">Contact - Pricezilla</a>
+              <a href="">Documentation</a>
               <a href="">Help Center</a>
             </div>
             <div class="footer-list-mobile guidelines-mobile">
@@ -371,13 +365,11 @@
           </div>
 
           <div class="footer-flexbox2">
-            <div class="footer-list-mobile pricezilla-mobile">
-              <h5>On PriceZilla</h5>
-              <a href="">Themes and Campaigns</a>
-              <a href="">Newsroom</a>
-              <a href="">Articles</a>
-              <a href="">Shop of the year</a>
-              <a href="">Categories</a>
+            <div class="footer-list-mobile partners-mobile">
+              <h5>Partners & Advertising</h5>
+              <a href="">Why Pricezilla?</a>
+              <a href="">Register your shop</a>
+              <a href="">Advertising</a>
             </div>
 
             <div class="email-support">
@@ -447,10 +439,35 @@
       src="../PriceZilla-Front/scripts/index.js"
     ></script>
 
+
+
+    <!-- SCRIPT TO RESIZE HERO BACKGROUND IMAGE BASED ON SCREEN SIZE -->
+    <script>
+    const  hero = document.querySelector(".hero");
+
+
+      window.addEventListener("load", () => {
+  if (window.innerWidth < 1024) {
+    hero.classList.remove("container");
+  }else{
+    hero.classList.add("container");
+  }
+});
+
+   const categoriesMenu = document.querySelector("#categories-menu");
+
+   window.addEventListener("load", () => {
+  if (window.innerWidth <= 768) {
+    categoriesMenu.classList.add("dropright");
+  }else{
+    categoriesMenu.classList.add("dropdown");
+  }
+});
+    </script>
     <!-- NAVBAR SCRIPT -->
     <script type="text/javascript">
       $(function () {
-        var navbar = $(".header-inner");
+        var navbar = $(".nav");
         $(window).scroll(function () {
           if ($(window).scrollTop() <= 55) {
             navbar.removeClass("navbar-scroll");
