@@ -29,20 +29,20 @@ body{
     height: 28px;
     border-radius: 50%;
 }header{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     width: 100%;
-    position: relative;
+    
 }
 .headerr{
     width: 100%;
     padding-top: 15px;
     top: 0;
-    left: 0;
     right: 0;
-    width:100%;
+    left: 0;
+    position: fixed;
     z-index: 99;
     background-color: white;
-    position: fixed;
+    
 }
 svg{
   color: rgba(38, 35, 34, 0.7);
@@ -296,7 +296,7 @@ svg{
           margin-bottom: 10px;  
       }
       header{
-          margin-bottom: 50px;
+          margin-bottom: 100px;
       }
       #home{
           margin-top: 20px;
