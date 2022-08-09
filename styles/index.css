@@ -29,7 +29,7 @@ body{
     height: 28px;
     border-radius: 50%;
 }header{
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     width: 100%;
     
 }
@@ -49,8 +49,8 @@ svg{
 }
     
 @media only screen and (min-width: 768px){
-    .nav-link{
-        font-size: 14px;
+    .mylogo img{
+        padding-left: 10px;
     }
 
 
@@ -117,7 +117,7 @@ svg{
       justify-content: center;
       margin-left: 10%;
   }
-   .nav2 .nav-buttons{
+   .nav2 .nav-buttons, .nav2 .profile-notification{
       display: flex;
       align-items: center;
       list-style: none;
@@ -205,6 +205,39 @@ svg{
       }
       
   }
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .mylogo img{
+        width: 40%;
+    }
+    .navigation .menu li .spaced-link {
+        margin-left: 30px;
+    }
+    .navigation .menu li a{
+        width: max-content ;
+    }
+    .navigation{
+        margin-right: 0px;
+    }
+    .nav2 .nav-buttons li a, .nav2 .profile-notification li a{
+        padding: 10px 14px;
+        width: max-content;
+    }
+    .nav2{
+        width: 50%;
+        margin-left: 0px;
+        justify-content: end;
+    }
+    .navigation{
+        margin-left: 12%;
+    
+    }
+    .mylogo img{
+        width: 70%;
+    }
+    
+}
+    
+
   @media screen and (min-width: 1100px) and (max-width: 1200px) {
       .navigation .menu li .spaced-link {
           margin-left: 30px;
@@ -215,7 +248,7 @@ svg{
       .navigation{
           margin-right: 0px;
       }
-      .nav2 .nav-buttons li a{
+      .nav2 .nav-buttons li a, .nav2 .profile-notification li a{
           padding: 10px 14px;
           width: max-content;
       }
@@ -281,11 +314,11 @@ svg{
       .navigation{
           margin-left: 3%;
       }
-      .menu li a, .nav-buttons li a{
+      .menu li a, .nav-buttons li a, .profile-notification li a{
           font-size: 16px;
   
       }
-      .nav-buttons li a{
+      .nav-buttons li a, .profile-notification li a{
           padding: 8px 14px;
       }
       
@@ -405,11 +438,10 @@ svg{
       
   }
                        /* IMPORTANT STYLING FOR AUTHENTICATED USER NAVBAR */
-.profile-notification{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 70px;
+.nav2 .profile-notification{
+   display: flex; 
+   justify-content: space-between;
+
 }
 .profile-notification a{
   border-radius: 8px;
@@ -421,17 +453,30 @@ svg{
   color: black;
   font-size: 20px;
 }
+.nav2 .profile-notification li .bell{
+    margin-left: 60px;
+}
 
 .profile-notification img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+
 }
   
-.profile-notification a:hover{
+.profile-notification li:hover{
   cursor: pointer;
+  background-color: white;
 }
-
+.profile-pic{
+    display: none;
+}
+@media screen and (max-width: 841px) {
+    .nav2 .profile-notification li .bell{
+        margin-left: 30px;
+    }
+    
+}
 @media screen and (max-width: 767px) {
   .profile-notification{
     display: none;
@@ -444,14 +489,63 @@ svg{
         font-size: 16px;
     }
     
-  }
+}
+@media screen and (max-width: 768px) {
+    .profile-pic{
+        color: black;
+        display: block;
+    }
+    .profile-pic a .chevron{
+        color: black;
+        font-size: 20px;
+    }
+    .profile-pic a img{
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+}
+@media screen and (max-width: 614px) {
+    .mylogo img{
+        width: 55%;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
+    
+}
+@media screen and (max-width: 560px) {
+    .mylogo img{
+       
+        transform: translateX(-22px);
+
+    }
+}
+@media screen and (min-width: 431px) and (max-width: 515px) {
+    .mylogo img{
+       
+        transform: translateX(-72px);
+        width: 90%
+
+    }
+}
+@media screen  and (max-width: 375px){
+    .mylogo img{
+       
+        
+        width: 70%
+
+    }
+    
+}
 
 
                                    /* main */
 
                           /* HERO SECTION */
 .mysection{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 100px;
 }
 main{
@@ -631,95 +725,146 @@ main{
 
 
                                               /* CATEGORIES BOXES */
-.categories-container{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 3%;
-    margin-top: 24px;
+.categories-section{
+    margin-top: 40px;
+    margin-bottom: 83px;
 }
-.categories-mobile{
-    display: none;
-}
-
-@media screen and (max-width:1200px) {
-    .categories-container{
-        gap: 2%;
-        grid-template-columns: repeat(8, 1fr);
-    }
-    .category-box{
-        padding: 3px ;
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 992px) {
-    .categories-container{
-        display: none;
-    }
-    .categories-mobile{
-        display: block;
-    }
-    
-}
-@media screen and (max-width: 500px) {
-    .categories-mobile .flickity-button {
-        width: 15px;
-        height: 15px;
-      } 
-      .categories-mobile .carousel-cell{
-        width: 25%;
-        margin-right: 20px;
-      }
-}
-@media screen and (max-width: 400px) {
-    .categories-mobile .carousel-cell{
-        margin-right: 15px;
-        width: 25%;
-    }
-     
-    
-}
-.carousel {
-    background: white;
-    
-}
-.categories-mobile .flickity-button {
-    background: white;
-    width: 20px;
-    height: 20px;
-  } 
-.categories-mobile .carousel-cell {
-    width: 20%;
-    height: 50px;
-    margin: 15px 35px 15px 0;
-    background: rgba(255, 124, 68, 1);
-    border-radius: 8px;
-}
-  
-.category-mobile{
-    color: white;
-    text-align: center;
-    align-items: center;
+.category-box{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .category-mobile:active{
-    color: white;
-  }
-.category-box{ 
-    background: rgba(255, 124, 68, 1);
+    background-color: #F4F4F4;
     border-radius: 8px;
-    padding: 10px 15px;
-    font-weight: 400;
-    color: white;
-    text-align: center;
+    padding: 48px 16px 16px;
+    width: 100%;
 }
-
-
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 70px;
+    gap: 50px;
+}
+.categories a{
+    text-decoration: none;
+}
+.category-box p{
+    color: rgba(38, 35, 34, 0.7);
+    font-size: 16px;
+    
+}
+.category-box:hover{
+    background-color: rgba(255, 124, 68, 1);
+    color: white;
+    cursor: pointer;
+}
+.category-box:hover *  svg, .category-box:hover p{
+    color: white;
+    font-weight: 700;
+    fill: white;
+    font-weight: bold;
+}
 .section{
     margin: 120px 0;
     width: 100%;
+}
+@media screen and (max-width: 1200px) {
+    .category-box{
+        padding: 35px 16px 16px 16px; 
+    }
+    .categories{
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .category-box{
+        padding: 30px 16px 16px 15px;
+    }
+    .categories{
+        gap: 35px
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .category-box{
+        padding: 24px 16px 16px 15px;
+    }
+    .categories{
+        gap: 30px;
+        padding: 0 40px;
+    }
+    .category-box p{
+        font-size: 14px;
+    }
+    .category-box .category-icon{
+        transform: scale(0.75);
+    }
+    
+}
+@media screen and (max-width: 688px) {
+    .category-box{
+        padding: 20px 16px 15px 16px;
+    }
+    .categories{
+        gap:20px;
+        padding: 0 20px;
+    }
+    
+}
+@media screen and (max-width: 530px) {
+    .category-box p{
+        font-size: 12px;
+    }
+    .categories{
+        gap:15px;
+        padding: 0 15px;
+    }
+    .category-box{
+        padding: 16px 14px 12px 14px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .categories{
+        gap:12px;
+        padding: 0 10px;
+    }
+    .category-box{
+        padding: 10px 14px 10px 14px;
+    }
+    .category-box .category-icon{
+        transform: scale(0.6);
+    }
+}
+@media screen and (max-width: 430px) {
+    .category-box{
+        padding: 9px 8px 3px 8px;
+        
+    }
+    .categories{
+        gap:10px;
+        padding: 0 5px;
+    }
+    .categories p{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 375px) {
+
+    .category-box{
+        padding: 5px 5px 1px 5px;
+        
+    }
+    .category-box p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .category-box p{
+        font-size: 9px;
+    }
 }
 
 
