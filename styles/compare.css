@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+color: #262322;
+;
+
+}
+
+main {
+    /* margin-left: 10%; */
+    margin-top: 10%;
+    
+
+}
+
+.arrow-icons  {
+    display: flex;
+    
+    
+}
+
+.arrow-icons p {
+    padding-right: 30px;
+    font-size: 16px;
+}
+.fa-angle-right {
+    padding-left:20px ;
+}
+
+.price-compare {
+    display: flex;
+    justify-content: space-around;
+    /* margin-right: 30px;
+    margin-left: 100px; */
+}
+
+
+.electric-iron {
+    /* margin-right: 3px; */
+    margin-left: 75px; 
+    
+
+}
+
+.electric-iron img {
+    border-radius: 25px;
+    max-width: 50%;
+
+}
+
+ 
+
+    
+    
+
