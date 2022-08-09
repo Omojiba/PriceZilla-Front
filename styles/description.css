@@ -25,8 +25,9 @@ body {
 }
 main{
     margin-top: 24px;
-    padding: 0 128px;
-    padding-bottom: 100px;
+    padding: 150px 128px;
+    
+    
 }
 .pad{
     padding: 0 128px;
