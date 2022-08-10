@@ -24,8 +24,10 @@ body {
     box-sizing: border-box;
 }
 main{
-    margin-top: 24px;
-    padding: 150px 128px;
+    margin-top: 104px;
+    padding-right: 128px;
+    padding-left: 128px;
+    padding-bottom: 150px;
     
     
 }
@@ -112,7 +114,8 @@ align-items: flex-start;
 gap: 16px;
 padding: 7px 35px;
 
-background: #FF7C44;
+background: #BBBBBB;
+border-radius: 8px;
 /* background-color: firebrick; */
 }
 .showcase .frame-196 p{
@@ -233,12 +236,12 @@ padding: 16px 0;
 background: #F2F2F2;
 
 }
-.frame-198 .dropdown{
+.frame-198 .drop{
     position: relative;
     /* background-color: red; */
     
 }
-.dropdown img {
+.drop img {
     position: relative;
    width: 50px;
    height: 50px;
@@ -247,12 +250,12 @@ background: #F2F2F2;
 
 
 
-.dropdown.one{
+.drop.one{
    
     margin-left: 80px;
 }
 
-.dropdown .menu {
+.drop .men {
     visibility: hidden;
      position: absolute;
     right: 0;
@@ -260,7 +263,7 @@ background: #F2F2F2;
     opacity: 0;
     z-index: 300;
  }
- .menu::before{
+ .men::before{
     content: " ";
     position: absolute;
     bottom: -20px;
@@ -271,14 +274,14 @@ background: #F2F2F2;
     border-color: #F2F2F2  transparent transparent;
 
  }
- .dropdown:hover .menu{
+ .drop:hover .men{
      visibility: visible;
       opacity: 1;
       
       transition: all 0.4s ease-in-out;
       -webkit-transition: all 0.4s ease-in-out;
  }
- .dropdown ul{
+ .drop ul{
     margin-bottom: 0;
     padding-left: 0;
     background-color: #F2F2F2;
@@ -286,7 +289,7 @@ background: #F2F2F2;
    border: 1px solid #F2F2F2;
     /* width: 437px; */
  }
-.dropdown ul li{
+.drop ul li{
     list-style: none;
     /* dis play: flex; */
     align-items: center;
@@ -301,7 +304,7 @@ background: #F2F2F2;
 li span{
     visibility: hidden;
 }
-.dropdown ul li a{
+.drop ul li a{
     text-decoration: none;
     font-weight: 600;
 font-size: 18px;
@@ -312,7 +315,7 @@ position: relative;
 padding:42px 100px ;
 
 }
-.dropdown ul li:hover{
+.drop ul li:hover{
     background-color: #F2F2F2;
     margin-bottom: 8px;
    
@@ -860,7 +863,7 @@ right: 70px;
     background: #F2F2F2;
     
     }
-    .dropdown.one {
+    .drop.one {
         margin-left: 10px;
     }
     .group-62 .fa{
@@ -893,22 +896,22 @@ right: 70px;
    
 
 
-    .dropdown .menu {
+    .drop .men {
         visibility: visible;
          position: absolute;
-        right: 0;
-        top: -200px;
+        right: -10px;
+        top: -270px;
         opacity: 0;
         z-index: 300;
      }
-     .dropdown:hover .menu{
+     .drop:hover .men{
          visibility: visible;
           opacity: 1;
           
           transition: all 0.4s ease-in-out;
           -webkit-transition: all 0.4s ease-in-out;
      }
-     .dropdown ul{
+     .drop ul{
         margin-bottom: 0;
         padding-left: 0;
         background-color: #F2F2F2;
@@ -916,7 +919,7 @@ right: 70px;
        border: 1px solid #F2F2F2;
         /* width: 437px; */
      }
-    .dropdown ul li{
+    .drop ul li{
         list-style: none;
         /* dis play: flex; */
         align-items: center;
@@ -928,13 +931,13 @@ right: 70px;
         border-radius: 4px;
         
     }
-    .dropdown img {
+    .drop img {
         position: relative;
        width: 40px;
        height: 40px;
     
     }
-    .menu::before{
+    .men::before{
         content: " ";
         position: absolute;
         bottom: -20px;
@@ -1236,6 +1239,12 @@ right: 70px;
 
 
 @media screen and (max-width: 900px){
+    
+    main {
+        margin-top: 24px;
+        padding: 0 28px;
+        padding-bottom: 32px;
+    }
 .frame-198 .group-62{
     /* background-color: #000000; */
     width: 100%;

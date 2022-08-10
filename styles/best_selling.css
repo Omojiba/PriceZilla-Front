@@ -25,17 +25,24 @@ body {
 }
 main{
    margin-bottom: 250px; 
+ margin-top: 100px;
+
 }
 
+.pad{
+    padding-left: 110px;
+    padding-right: 110px;
+}
 
 .frame-162{
     display: flex;
 flex-direction: row;
 align-items: center;
-padding: 0px;
+/* padding: 0px; */
 gap: 25px;
 margin-top: 28px;
 margin-bottom: 24px;
+
 }
 .frame-162 p{
     font-weight: 400;
@@ -113,6 +120,7 @@ color: #FFFFFF;
 
 .second{
     padding-top: 86px;
+ 
 }
 .second .flex-container{
     display: flex;
@@ -134,7 +142,7 @@ color: #FFFFFF;
 display: flex;
 flex-direction: column;
 gap: 18px;
-
+flex-wrap: wrap;
     flex-basis: calc(25% - 28px);
     max-width: calc(25% - 28px);
 
@@ -210,4 +218,66 @@ line-height: 18px;
 
 
 
-/* @media screen and (max-width: 900px) */
+.search-mobile{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+    .pad{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+}
+@media screen and (max-width: 768px){
+    .search-mobile{
+        display: block;
+        padding: 5px 25px;
+        margin-bottom: 24px;
+        background-color: red;
+    }
+    .search-mobile .inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .inner .buttons{
+        display: flex;
+        gap: 8px;
+
+    }
+    .buttons button{
+        font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+border: 0;
+background: #FFFFFF;
+border-radius: 8px;
+padding:10px 12px;
+    }
+    .mainLoginInput{
+        height: 40px;
+        width: 100%;
+        padding: 0px;
+        font-size: 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+      
+      .mainLoginInput::-webkit-input-placeholder { 
+      font-family: FontAwesome;
+      font-weight: normal;
+      overflow: visible;
+      vertical-align: top;
+      display: inline-block ;
+      padding-left: 10px;
+      padding-top: 2px;
+      color: 2px solid #BBBBBB;
+        
+      
+      }
+}
