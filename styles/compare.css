@@ -140,7 +140,7 @@ margin-left: 100px;  */
 
 }
 
-button {
+.buy-button button {
     background-color: #FF7C44;
     outline: none;
     border: none;
@@ -169,13 +169,19 @@ hr {
 }
 
 
-.suggested-products {
+.products-pictures {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    margin-top: -3.5%; */
+    width: 67%;
+    margin: 0 auto;
+    /* margin: 0 auto; */
 }
+
