@@ -107,13 +107,18 @@
 .topics img{
     width: 100%;
 }
-.topics h4{
+.topics a{
     margin-top: 12px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
+    color: #262322;
+    text-decoration: none;
+}
+.topics a:hover{
+    color: #FF7C44;
 }
 .topics{
     font-family: 'Roboto';
