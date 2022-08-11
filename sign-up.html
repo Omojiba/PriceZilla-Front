@@ -18,15 +18,16 @@ rel="stylesheet"
     <title>PriceZilla</title>
 </head>
 <body>
-  <header>
-
-    <div class="headerr container-lg">
+  <header class="header">
+    <div class="header-inner">
+  <div class="container-lg">
+    <div class="headerr">
       <div class="account-icon">
         <i class="bi bi-person-circle h1"></i>
       </div>
 
     <div class="mylogo">
-      <a>
+      <a href="./index.html">
         <img src="./assets/Pricezilla logo.png" alt="Pricezilla-logo">
       </a>
     </div>
@@ -38,7 +39,7 @@ rel="stylesheet"
       <div class="hamburger"></div>
        
       <ul class="menu">
-        <li id="home"><a href="./">Home</a></li>
+        <li id="home"><a href="./index.html">Home</a></li>
         <li class=" " id="categories-menu">
           <a
             class="dropdown-toggle spaced-link drop"
@@ -69,13 +70,14 @@ rel="stylesheet"
     <div class="nav2">
       <ul class="nav-buttons">
         <li><a href="./login.html">Login</a></li>
-        <li><a href="#">Sign up</a></li>
+        <li><a href="./sign-up.html">Sign up</a></li>
       </ul>
     </div>
 
   </div>
+</div>
+</div>
   </header>
-
 
       <main class="container-lg main-container">
         <div class="form-container">
@@ -97,6 +99,11 @@ rel="stylesheet"
           <label for="email">Email</label>
           <input type="email" name="email" id="email" class="form-control" placeholder="e.g johndoe@gmail.com" required>
         </div>
+
+        <div class="form-group line-2">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="form-control" required>
+        </div>
         
 
         <div class="form-group line-3">
@@ -113,7 +120,7 @@ rel="stylesheet"
           <label class="form-check-label" for="rememberMe">Remember me</label>
         </div>
         
-          <input type="submit" name="Sign in"  class="sign-up-btn">
+          <input type="submit" value="Sign up"  class="sign-up-btn">
 
           <div class="or-divider-text">
             <span></span>
@@ -362,6 +369,20 @@ categoriesMenu.classList.add("dropdown");
       }
       passwordVisible = !passwordVisible
 
+    });
+  </script>
+
+   <!-- NAVBAR SCRIPT -->
+   <script type="text/javascript">
+    $(function () {
+      var navbar = $(".header-inner");
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 55) {
+          navbar.removeClass("navbar-scroll");
+        } else {
+          navbar.addClass("navbar-scroll");
+        }
+      });
     });
   </script>
 </body>
