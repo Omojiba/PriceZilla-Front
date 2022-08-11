@@ -22,23 +22,23 @@ rel="stylesheet"
 
 <body>
 
-
-    <header>
-
-        <div class="headerr container-lg">
+      <header class="header">
+        <div class="header-inner">
+      <div class="container-lg">
+        <div class="headerr">
           <div class="account-icon">
             <i class="bi bi-person-circle h1"></i>
           </div>
-  
+    
         <div class="mylogo">
-          <a>
+          <a href="./index.html">
             <img src="./assets/Pricezilla logo.png" alt="Pricezilla-logo">
           </a>
         </div>
-  
-  
+    
+    
         <div class="navigation">
-  
+    
           <input type="checkbox" class="toggle-menu"/>
           <div class="hamburger"></div>
            
@@ -69,18 +69,19 @@ rel="stylesheet"
             <li><a class="nav-btn-mobile" href="./sign-up.html">Sign up</a></li>
           </ul>
         </div>
-  
-  
+    
+    
         <div class="nav2">
           <ul class="nav-buttons">
             <li><a href="./login.html">Login</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="./sign-up.html">Sign up</a></li>
           </ul>
         </div>
-  
+    
       </div>
+    </div>
+  </div>
       </header>
-
 
     <main class="main-container">
 
@@ -520,7 +521,19 @@ rel="stylesheet"
     src="../PriceZilla-Front/scripts/index.js"
   ></script>
 
-
+ <!-- NAVBAR SCRIPT -->
+ <script type="text/javascript">
+  $(function () {
+    var navbar = $(".header-inner");
+    $(window).scroll(function () {
+      if ($(window).scrollTop() <= 55) {
+        navbar.removeClass("navbar-scroll");
+      } else {
+        navbar.addClass("navbar-scroll");
+      }
+    });
+  });
+</script>
 
   <!-- SCRIPT TO RESIZE HERO BACKGROUND IMAGE BASED ON SCREEN SIZE -->
   <script>

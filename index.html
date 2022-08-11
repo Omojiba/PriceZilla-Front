@@ -30,9 +30,10 @@
     <title>PriceZilla</title>
   </head>
   <body>
-    <header>
-
-      <div class="headerr container-lg">
+    <header class="header">
+      <div class="header-inner">
+    <div class="container-lg">
+      <div class="headerr">
         <div class="account-icon">
           <i class="bi bi-person-circle h1"></i>
         </div>
@@ -86,6 +87,8 @@
       </div>
   
     </div>
+  </div>
+</div>
     </header>
 
     <main class="">
@@ -196,7 +199,7 @@
       <section class="mysection container-lg">
         <div class="section-header">
           <h2>Best Selling</h2>
-          <h5>See more</h5>
+          <h5><a href="#">See more</a></h5>
         </div>
 
         <div class="best-selling-container">
@@ -244,7 +247,7 @@
       <section class="mysection container-lg">
         <div class="section-header">
           <h2>Promo deals</h2>
-          <h5>See more</h5>
+          <h5><a href="#">See more</a></h5>
         </div>
 
         <div class="promo-deals-container">
@@ -339,7 +342,7 @@
               <a href="">About Pricezilla</a>
               <a href="./footer-pages/how-we-show-reviews.html" target="_blank">Reviews</a>
               <a href="./footer-pages/contact-pricezilla.html" target="_blank">Contact - Pricezilla</a>
-              <a href="#" target="_blank">Documentation</a>
+              <a href="./documentation-first-page.html" target="_blank">Documentation</a>
               <a href="">Help Center</a>
             </div>
             <div class="footer-list guidelines">
@@ -513,20 +516,13 @@
   }
 });
 
-   const categoriesMenu = document.querySelector("#categories-menu");
-
-   window.addEventListener("load", () => {
-  if (window.innerWidth <= 768) {
-    categoriesMenu.classList.add("dropright");
-  }else{
-    categoriesMenu.classList.add("dropdown");
-  }
-});
+   
     </script>
+
     <!-- NAVBAR SCRIPT -->
     <script type="text/javascript">
       $(function () {
-        var navbar = $(".nav");
+        var navbar = $(".header-inner");
         $(window).scroll(function () {
           if ($(window).scrollTop() <= 55) {
             navbar.removeClass("navbar-scroll");
@@ -535,6 +531,16 @@
           }
         });
       });
+
+      const categoriesMenu = document.querySelector("#categories-menu");
+
+   window.addEventListener("load", () => {
+  if (window.innerWidth <= 768) {
+    categoriesMenu.classList.add("dropright");
+  }else{
+    categoriesMenu.classList.add("dropdown");
+  }
+});
     </script>
   </body>
 </html>
