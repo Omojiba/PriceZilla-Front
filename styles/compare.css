@@ -29,22 +29,16 @@ body {
     padding-left: 10px;
 }
 
-
-/* .Frame-246 {
-    width: 90%;
-} */
-
 .price-compare {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .electric-iron img {
     border-radius: 20px;
-    /* height: 100%; */
     width: 100%;
 }
 
@@ -72,7 +66,6 @@ body {
     font-weight: 700;
     margin-top: 2.3rem;
     margin-bottom: 2.5rem;
-    /* padding-top: 1rem; */
     line-height: 30px;
 }
 
@@ -139,17 +132,41 @@ hr {
     justify-content: center;
     align-items: center;
     
+    
 }
 
+
+.suggested-products {
+    margin-top: 7em;
+}
+
+
 .title {
-    /* display: flex;
-    margin-top: -3.5%; */
-    width: 67%;
-    margin: 0 auto;
+    width: 65%;
+    margin: 10px auto;
     font-size: 2em;
     font-weight: 400;
     line-height: 30px;
-    text-align: start;
-    /* margin: 0 auto; */
+    text-align: justify;
+    color: #262322;
+
+    
 }
 
+
+.products-1 img {
+
+    border-radius: 4px;
+    width: 80%;
+    
+}
+
+.iron-desc {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #131313;
+    margin-top: 7%;
+    line-height: 30px;
+
+
+}
