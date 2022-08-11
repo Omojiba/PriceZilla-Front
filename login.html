@@ -322,6 +322,19 @@ rel="stylesheet"
   ></script>
 
 
+  <!-- NAVBAR SCRIPT -->
+  <script type="text/javascript">
+    $(function () {
+      var navbar = $(".header-inner");
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 55) {
+          navbar.removeClass("navbar-scroll");
+        } else {
+          navbar.addClass("navbar-scroll");
+        }
+      });
+    });
+  </script>
 
   <!-- SCRIPT TO RESIZE HERO BACKGROUND IMAGE BASED ON SCREEN SIZE -->
   <script>
